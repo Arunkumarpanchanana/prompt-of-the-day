@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Data Insight Generator &amp; Strategic Recommender · Prompt of the Day</title>
+<title>Dataset Explorer &amp; Interpreter · Prompt of the Day</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -112,33 +112,27 @@
 <main>
 <header class="page-header">
   <div class="section-eyebrow">April 28, 2026 &middot; Data</div>
-  <h1>Data Insight Generator &amp; Strategic Recommender</h1>
-  <p>Transforms raw data descriptions and business questions into actionable insights and strategic recommendations.</p>
+  <h1>Dataset Explorer &amp; Interpreter</h1>
+  <p>Analyze, summarize, and extract insights from your provided dataset.</p>
 </header>
 
 <div class="prompt-block">
   <div class="prompt-block-header">
     <span class="prompt-label">Prompt</span>
-    <button class="copy-btn" data-target="prompt-90c060a4" type="button">Copy</button>
+    <button class="copy-btn" data-target="prompt-4f779976" type="button">Copy</button>
   </div>
-  <pre id="prompt-90c060a4" class="prompt-text">You are a Senior Data Analyst and Strategic Consultant. Your task is to rigorously analyze a given dataset description and a specific business question to extract actionable insights and provide strategic recommendations.
+  <pre id="prompt-4f779976" class="prompt-text">Act as a senior data analyst. I will provide you with a dataset in [SPECIFY FORMAT: e.g., CSV, JSON, or pasted table]. My goal is to [STATE YOUR PRIMARY OBJECTIVE: e.g., understand customer behavior, identify sales trends, find anomalies].
 
-I will provide you with:
-1.  **Dataset Description:** [Paste your dataset schema, a few sample rows, and any relevant context about how the data was collected or its source.]
-2.  **Business Question:** [State the precise business question or problem you want to solve using this data, e.g., &#39;Why are our customer churn rates increasing in Q3?&#39; or &#39;What factors drive high customer lifetime value?&#39;]
-3.  **Target Audience:** [Specify who these insights are for, e.g., &#39;Marketing Team,&#39; &#39;Executive Leadership,&#39; &#39;Product Development.&#39;]
+First, please provide a concise summary of the dataset, including the number of rows and columns, data types of each column, and any immediate observations about missing values or potential data quality issues. 
 
-Your analysis should include:
-*   **Key Findings:** Summarize the most important patterns, trends, or anomalies directly relevant to the business question.
-*   **Actionable Recommendations:** Based on the findings, propose concrete, implementable actions.
-*   **Potential Limitations &amp; Biases:** Identify any data quality issues, missing information, or inherent biases in the dataset that might affect the conclusions.
-*   **Further Data Needs:** Suggest additional data points or external datasets that would enhance the analysis or validate findings.
-*   **Suggested Visualizations:** Describe 2-3 specific chart types or dashboard components that would effectively communicate the key findings to the target audience.
+Next, based on my objective, perform the following analysis: [DETAIL SPECIFIC ANALYTICAL TASKS: e.g., Calculate average purchase value per customer segment, Identify the top 5 performing products by revenue, Visualize the distribution of user engagement over time].
 
-Maintain a professional, objective, and concise tone. Prioritize clarity and direct relevance to the business question. Do not make assumptions beyond the provided data description.</pre>
+Finally, interpret the results of your analysis, highlighting key findings, potential implications, and suggesting [SPECIFY NEXT STEPS OR FURTHER QUESTIONS: e.g., areas for further investigation, actionable recommendations for marketing, hypotheses to test].
+
+Present the output in a structured report format with clear headings for Summary, Analysis, and Interpretation.</pre>
 </div>
-<section class="why-section"><h3>How to use this</h3><p>This prompt is ideal when you have a dataset (or at least its structure and context) and a specific business problem you need to solve. Substitute your data details, precise question, and audience into the brackets. Expect a structured report that not only answers your question but also highlights data limitations and suggests next steps for deeper analysis or presentation.</p></section>
-<section class="example-section"><h3>Example</h3><p>For Dataset Description: &#39;Table &#39;sales_data&#39; with columns: transaction_id (UUID), customer_id (INT), product_category (TEXT), sales_amount (DECIMAL), transaction_date (DATE), region (TEXT). Sample: 123, 101, &#39;Electronics&#39;, 500.00, &#39;2023-01-15&#39;, &#39;North&#39;. Collected from e-commerce platform.&#39; For Business Question: &#39;Which product categories are underperforming in the &#39;South&#39; region over the last quarter?&#39; For Target Audience: &#39;Regional Sales Managers.&#39;</p></section>
+<section class="why-section"><h3>How to use this</h3><p>Paste your data directly or describe its format. Clearly state your main goal and specific analytical tasks. The AI will act as a data analyst, providing a structured report with insights and recommendations.</p></section>
+<section class="example-section"><h3>Example</h3><p>Format: CSV. Objective: Understand user engagement. Tasks: Calculate average session duration per device type, identify peak activity hours, and visualize user retention over the first 7 days. Next steps: Suggest A/B tests for improving engagement.</p></section>
 <script>
 (function() {
   document.querySelectorAll('.copy-btn').forEach(function(btn) {
@@ -167,7 +161,7 @@ Maintain a professional, objective, and concise tone. Prioritize clarity and dir
 </script></main>
 <footer>
   <div>Generated daily by AI.</div>
-  <div>Updated <time datetime="2026-04-28T17:59:04Z">2026-04-28T17:59:04Z</time></div>
+  <div>Updated <time datetime="2026-04-28T18:03:15Z">2026-04-28T18:03:15Z</time></div>
 </footer>
 </body>
 </html>
