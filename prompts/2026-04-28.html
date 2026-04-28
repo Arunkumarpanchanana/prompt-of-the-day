@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Insight Generator &amp; Strategic Recommender · Prompt of the Day</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:#fff;--bg-subtle:#fafafa;--border:#e5e7eb;
+    --text:#0a0a0a;--text-2:#3f3f46;--muted:#71717a;--muted-2:#a1a1aa;
+    --accent:#2563eb;
+    --font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:var(--font);background:var(--bg);color:var(--text);
+       line-height:1.6;-webkit-font-smoothing:antialiased}
+  .topbar{border-bottom:1px solid var(--border);padding:14px 24px}
+  .topbar-inner{max-width:720px;margin:0 auto;display:flex;
+                align-items:center;justify-content:space-between;font-size:13px}
+  .topbar a{color:var(--text-2);text-decoration:none}
+  .topbar a:hover{color:var(--accent)}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--text)}
+  .logo-mark{width:22px;height:22px;border-radius:6px;background:var(--text);
+             color:var(--bg);display:grid;place-items:center;font-weight:700;font-size:12px}
+  main{max-width:720px;margin:0 auto;padding:56px 24px 96px}
+  .page-header{margin-bottom:48px}
+  .page-header h1{font-size:32px;font-weight:700;letter-spacing:-0.025em;margin:8px 0}
+  .page-header p{color:var(--text-2);font-size:16px;margin:0}
+  .section-eyebrow{font-size:12px;font-weight:600;color:var(--accent);
+                   letter-spacing:0.05em;text-transform:uppercase;margin-bottom:8px}
+  .stories{list-style:none;padding:0;margin:0;counter-reset:story}
+  .story{counter-increment:story;padding:28px 0;border-bottom:1px solid var(--border);
+         position:relative;padding-left:44px}
+  .story:last-child{border-bottom:0}
+  .story::before{content:counter(story);position:absolute;left:0;top:30px;
+                 font-size:13px;font-weight:600;color:var(--muted-2);
+                 width:24px;height:24px;border:1px solid var(--border);border-radius:50%;
+                 display:grid;place-items:center;font-variant-numeric:tabular-nums}
+  .story-headline{font-size:19px;font-weight:600;line-height:1.35;
+                  letter-spacing:-0.015em;margin:0 0 8px}
+  .story-headline a{color:var(--text);text-decoration:none;transition:color 0.15s}
+  .story-headline a:hover{color:var(--accent)}
+  .story-summary{margin:0 0 10px;color:var(--text-2);font-size:15px}
+  .story-meta{display:flex;gap:8px;font-size:13px;color:var(--muted)}
+  .story-meta a{color:var(--muted);text-decoration:none}
+  .story-meta a:hover{color:var(--accent)}
+  .story-meta .dot{color:var(--muted-2)}
+  .story-detail h1{font-size:32px;font-weight:700;letter-spacing:-0.025em;
+                   line-height:1.2;margin:8px 0 24px}
+  .story-summary-large{font-size:18px;color:var(--text-2);line-height:1.6;margin:0 0 32px}
+  .why-section{background:var(--bg-subtle);border:1px solid var(--border);
+               border-radius:8px;padding:20px 24px;margin:32px 0}
+  .why-section h2,.why-section h3{font-size:13px;font-weight:600;text-transform:uppercase;
+                  letter-spacing:0.05em;color:var(--accent);margin:0 0 8px}
+  .why-section p{margin:0;color:var(--text);font-size:15px}
+  .example-section{margin:24px 0;padding:16px 20px;border-left:3px solid var(--border);background:var(--bg-subtle)}
+  .example-section h3{font-size:12px;font-weight:600;text-transform:uppercase;
+                      letter-spacing:0.05em;color:var(--muted);margin:0 0 6px}
+  .example-section p{margin:0;color:var(--text-2);font-size:14px;font-style:italic}
+  .read-original{margin-top:32px;padding-top:24px;border-top:1px solid var(--border)}
+  .read-original a{color:var(--accent);text-decoration:none;font-weight:500}
+  .read-original a:hover{text-decoration:underline}
+
+  /* Prompt-specific styles */
+  .prompt-title{font-size:24px;font-weight:700;letter-spacing:-0.02em;margin:8px 0 4px;line-height:1.3}
+  .prompt-subtitle{color:var(--text-2);font-size:15px;margin:0 0 24px}
+  .prompt-block{border:1px solid var(--border);border-radius:8px;overflow:hidden;
+                background:var(--bg-subtle);margin:24px 0}
+  .prompt-block-header{display:flex;align-items:center;justify-content:space-between;
+                       padding:10px 16px;background:#fff;border-bottom:1px solid var(--border)}
+  .prompt-label{font-size:11px;font-weight:600;text-transform:uppercase;
+                letter-spacing:0.08em;color:var(--muted)}
+  .copy-btn{background:var(--text);color:var(--bg);border:none;border-radius:6px;
+            padding:6px 14px;font:500 12px var(--font);cursor:pointer;
+            transition:background 0.15s,transform 0.05s}
+  .copy-btn:hover{background:#000}
+  .copy-btn:active{transform:scale(0.97)}
+  .copy-btn.copied{background:#059669}
+  .prompt-text{margin:0;padding:20px;font-family:var(--mono);font-size:13.5px;
+               line-height:1.65;color:var(--text);white-space:pre-wrap;word-wrap:break-word;
+               background:transparent}
+
+  .archive-section{margin-top:64px;padding-top:32px;border-top:1px solid var(--border)}
+  .archive-section h2{font-size:14px;font-weight:600;text-transform:uppercase;
+                      letter-spacing:0.05em;color:var(--muted);margin:0 0 12px}
+  .archive-list{list-style:none;padding:0;margin:0;
+                display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px}
+  .archive-list li{padding:6px 0}
+  .archive-list a{color:var(--text-2);text-decoration:none;font-size:14px}
+  .archive-list a:hover{color:var(--accent);text-decoration:underline}
+  .empty{color:var(--muted);font-style:italic}
+  footer{max-width:720px;margin:0 auto;padding:32px 24px;
+         border-top:1px solid var(--border);font-size:12px;color:var(--muted);
+         display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  footer time{font-variant-numeric:tabular-nums}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="logo">
+      <span class="logo-mark">A</span>
+      <span>Prompt of the Day</span>
+    </div>
+    <div><a href="../index.html">← Back to today</a></div>
+  </div>
+</div>
+<main>
+<header class="page-header">
+  <div class="section-eyebrow">April 28, 2026 &middot; Data</div>
+  <h1>Data Insight Generator &amp; Strategic Recommender</h1>
+  <p>Transforms raw data descriptions and business questions into actionable insights and strategic recommendations.</p>
+</header>
+
+<div class="prompt-block">
+  <div class="prompt-block-header">
+    <span class="prompt-label">Prompt</span>
+    <button class="copy-btn" data-target="prompt-90c060a4" type="button">Copy</button>
+  </div>
+  <pre id="prompt-90c060a4" class="prompt-text">You are a Senior Data Analyst and Strategic Consultant. Your task is to rigorously analyze a given dataset description and a specific business question to extract actionable insights and provide strategic recommendations.
+
+I will provide you with:
+1.  **Dataset Description:** [Paste your dataset schema, a few sample rows, and any relevant context about how the data was collected or its source.]
+2.  **Business Question:** [State the precise business question or problem you want to solve using this data, e.g., &#39;Why are our customer churn rates increasing in Q3?&#39; or &#39;What factors drive high customer lifetime value?&#39;]
+3.  **Target Audience:** [Specify who these insights are for, e.g., &#39;Marketing Team,&#39; &#39;Executive Leadership,&#39; &#39;Product Development.&#39;]
+
+Your analysis should include:
+*   **Key Findings:** Summarize the most important patterns, trends, or anomalies directly relevant to the business question.
+*   **Actionable Recommendations:** Based on the findings, propose concrete, implementable actions.
+*   **Potential Limitations &amp; Biases:** Identify any data quality issues, missing information, or inherent biases in the dataset that might affect the conclusions.
+*   **Further Data Needs:** Suggest additional data points or external datasets that would enhance the analysis or validate findings.
+*   **Suggested Visualizations:** Describe 2-3 specific chart types or dashboard components that would effectively communicate the key findings to the target audience.
+
+Maintain a professional, objective, and concise tone. Prioritize clarity and direct relevance to the business question. Do not make assumptions beyond the provided data description.</pre>
+</div>
+<section class="why-section"><h3>How to use this</h3><p>This prompt is ideal when you have a dataset (or at least its structure and context) and a specific business problem you need to solve. Substitute your data details, precise question, and audience into the brackets. Expect a structured report that not only answers your question but also highlights data limitations and suggests next steps for deeper analysis or presentation.</p></section>
+<section class="example-section"><h3>Example</h3><p>For Dataset Description: &#39;Table &#39;sales_data&#39; with columns: transaction_id (UUID), customer_id (INT), product_category (TEXT), sales_amount (DECIMAL), transaction_date (DATE), region (TEXT). Sample: 123, 101, &#39;Electronics&#39;, 500.00, &#39;2023-01-15&#39;, &#39;North&#39;. Collected from e-commerce platform.&#39; For Business Question: &#39;Which product categories are underperforming in the &#39;South&#39; region over the last quarter?&#39; For Target Audience: &#39;Regional Sales Managers.&#39;</p></section>
+<script>
+(function() {
+  document.querySelectorAll('.copy-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var target = document.getElementById(btn.getAttribute('data-target'));
+      if (!target) return;
+      var text = target.textContent;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function() { flash(btn); });
+      } else {
+        var range = document.createRange(); range.selectNode(target);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        try { document.execCommand('copy'); flash(btn); } catch (e) {}
+        window.getSelection().removeAllRanges();
+      }
+    });
+  });
+  function flash(btn) {
+    var orig = btn.textContent;
+    btn.textContent = 'Copied';
+    btn.classList.add('copied');
+    setTimeout(function() { btn.textContent = orig; btn.classList.remove('copied'); }, 1500);
+  }
+})();
+</script></main>
+<footer>
+  <div>Generated daily by AI.</div>
+  <div>Updated <time datetime="2026-04-28T17:59:04Z">2026-04-28T17:59:04Z</time></div>
+</footer>
+</body>
+</html>
