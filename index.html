@@ -350,19 +350,51 @@
 </header>
 
 <section>
-  <div class="section-eyebrow">April 29, 2026 &middot; Decision-making</div>
-  <h2 class="prompt-title">Structured Decision Tradeoff Analysis</h2>
-  <p class="prompt-subtitle">Systematically evaluate options by weighing pros, cons, and impact against your goals.</p>
+  <div class="section-eyebrow">April 30, 2026 &middot; Debugging</div>
+  <h2 class="prompt-title">Root Cause Analysis &amp; Troubleshooting</h2>
+  <p class="prompt-subtitle">Diagnose system failures, identify root causes, and get actionable troubleshooting steps from an AI debugging specialist.</p>
   
 <div class="prompt-block">
   <div class="prompt-block-header">
     <span class="prompt-label">Prompt</span>
-    <button class="copy-btn" data-target="prompt-2d9a2384" type="button">Copy</button>
+    <button class="copy-btn" data-target="prompt-962361fb" type="button">Copy</button>
   </div>
-  <pre id="prompt-2d9a2384" class="prompt-text">Act as a neutral, analytical advisor to help me make a critical decision. I am trying to choose between [OPTION A] and [OPTION B]. My primary goal is [PRIMARY GOAL]. My secondary goal is [SECONDARY GOAL]. For each option, please analyze the following: 1. Potential benefits (pros) related to my goals. 2. Potential drawbacks (cons) related to my goals. 3. The estimated impact (high, medium, low) of each pro and con on my primary and secondary goals. 4. Any critical assumptions I might be making about each option. 5. A brief summary of the key tradeoffs for each option. Present this information in a table with columns for &#39;Option&#39;, &#39;Pros&#39;, &#39;Cons&#39;, &#39;Impact on Primary Goal&#39;, &#39;Impact on Secondary Goal&#39;, &#39;Assumptions&#39;, and &#39;Key Tradeoffs&#39;.</pre>
+  <pre id="prompt-962361fb" class="prompt-text">You are a Senior Debugging Specialist with extensive experience in [DOMAIN, e.g., &#39;cloud infrastructure&#39;, &#39;backend APIs&#39;, &#39;mobile app development&#39;]. Your task is to diagnose a system failure, identify the most probable root cause(s), and propose concrete, actionable troubleshooting steps.
+
+I am experiencing an issue with [SYSTEM/APPLICATION NAME].
+
+**Problem Details:**
+1.  **Observed Failure**: [DESCRIBE THE EXACT SYMPTOM OR ERROR MESSAGE, e.g., &#39;User logins fail intermittently with a 401 Unauthorized error&#39;, &#39;The service crashes after processing 100 requests&#39;, &#39;Data synchronization between X and Y is delayed by several hours&#39;].
+2.  **Expected Behavior**: [WHAT SHOULD HAPPEN INSTEAD? e.g., &#39;Logins should always succeed with valid credentials&#39;, &#39;The service should handle continuous load without crashing&#39;, &#39;Data sync should complete within 30 minutes&#39;].
+3.  **Recent Changes/Context**: [ANY RECENT DEPLOYMENTS, CONFIGURATION UPDATES, INFRASTRUCTURE MODIFICATIONS, OR ENVIRONMENTAL FACTORS? e.g., &#39;Deployed a new authentication microservice&#39;, &#39;Increased memory allocation for the processing worker&#39;, &#39;Upgraded database from v12 to v14&#39;].
+4.  **Relevant Logs/Error Messages**: [PASTE KEY LOG SNIPPETS, STACK TRACES, OR ERROR MESSAGES. If none, state &#39;None available&#39; or &#39;Basic application logs show no errors&#39;].
+5.  **Environment Details**: [OPERATING SYSTEM, DEPENDENCIES, VERSIONS, HARDWARE, NETWORK CONFIGURATION, ETC. e.g., &#39;Kubernetes 1.26, Node.js 18, MongoDB 6.0&#39;, &#39;AWS Lambda, Python 3.10&#39;].
+
+Prioritize the most likely causes and provide a structured plan.
+
+**Output Format:**
+
+**1. Diagnosis Summary:**
+[A concise statement of the most probable root cause(s).]
+
+**2. Top Potential Root Causes &amp; Rationale:**
+*   **Cause 1**: [Description]. *Rationale*: [Why this is likely, referencing provided details].
+*   **Cause 2**: [Description]. *Rationale*: [Why this is moderately likely, referencing provided details].
+*   ... (up to 3 causes)
+
+**3. Actionable Troubleshooting Steps:**
+*   **Step 1**: [Specific action to take]. *Expected Outcome*: [What you expect to see if this step confirms/denies the cause].
+*   **Step 2**: [Specific action]. *Expected Outcome*: [What you expect].
+*   ... (3-5 steps, ordered by ease/impact)
+
+**4. Clarifying Questions (if any):**
+*   [Question 1]?
+*   [Question 2]?
+
+Aim for a deep, analytical perspective.</pre>
 </div>
-<section class="why-section"><h3>How to use this</h3><p>Use this prompt when facing a decision with two distinct choices and clear goals. Replace the bracketed placeholders with your specific options, goals, and any other relevant context. The AI will provide a structured comparison to aid your decision-making process.</p></section>
-<section class="example-section"><h3>Example</h3><p>Option A: Buy a new car. Option B: Keep and repair my current car. Primary Goal: Minimize monthly expenses. Secondary Goal: Ensure reliable transportation for work commute.</p></section>
+<section class="why-section"><h3>How to use this</h3><p>This prompt works best when you have a specific system failure, some context (recent changes, logs), and a clear understanding of expected behavior. Substitute the bracketed placeholders with your specific problem details. Expect a structured analysis, prioritized potential causes, and concrete steps to resolve or further investigate the issue.</p></section>
+<section class="example-section"><h3>Example</h3><p>For [DOMAIN], I&#39;d use &#39;backend APIs&#39;. For [OBSERVED FAILURE], &#39;User logins fail intermittently with a 401 Unauthorized error&#39;. For [RECENT CHANGES], &#39;Deployed a new authentication microservice yesterday&#39;.</p></section>
 <script>
 (function() {
   document.querySelectorAll('.copy-btn').forEach(function(btn) {
@@ -390,7 +422,8 @@
 })();
 </script>
 </section>
-<section class="archive-section"><h2>Past prompts</h2><ul class="archive-list"><li><a href="prompts/2026-04-28.html">April 28, 2026</a></li></ul></section>
+<section class="archive-section"><h2>Past prompts</h2><ul class="archive-list"><li><a href="prompts/2026-04-29.html">April 29, 2026</a></li>
+<li><a href="prompts/2026-04-28.html">April 28, 2026</a></li></ul></section>
 
   </div>
 </main>
@@ -400,7 +433,7 @@
     <p>Arunkumar Panchanana &middot; AI tools &middot; Automation &middot; IT Leadership</p>
     <p>Email: <a href="mailto:arunkumar.panchanana@gmail.com">arunkumar.panchanana@gmail.com</a></p>
     <div>Generated daily by AI.</div>
-    <div class="footer-meta">Updated <time datetime="2026-04-29T06:21:54Z">2026-04-29T06:21:54Z</time></div>
+    <div class="footer-meta">Updated <time datetime="2026-04-30T02:06:15Z">2026-04-30T02:06:15Z</time></div>
   </div>
 </footer>
 
