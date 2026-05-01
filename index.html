@@ -350,51 +350,27 @@
 </header>
 
 <section>
-  <div class="section-eyebrow">April 30, 2026 &middot; Debugging</div>
-  <h2 class="prompt-title">Root Cause Analysis &amp; Troubleshooting</h2>
-  <p class="prompt-subtitle">Diagnose system failures, identify root causes, and get actionable troubleshooting steps from an AI debugging specialist.</p>
+  <div class="section-eyebrow">May 1, 2026 &middot; Learning</div>
+  <h2 class="prompt-title">Personalized Concept Explainer &amp; Study Aid Generator</h2>
+  <p class="prompt-subtitle">Explains a complex concept tailored to your learning level and generates a custom study aid for reinforcement.</p>
   
 <div class="prompt-block">
   <div class="prompt-block-header">
     <span class="prompt-label">Prompt</span>
-    <button class="copy-btn" data-target="prompt-962361fb" type="button">Copy</button>
+    <button class="copy-btn" data-target="prompt-7c42024e" type="button">Copy</button>
   </div>
-  <pre id="prompt-962361fb" class="prompt-text">You are a Senior Debugging Specialist with extensive experience in [DOMAIN, e.g., &#39;cloud infrastructure&#39;, &#39;backend APIs&#39;, &#39;mobile app development&#39;]. Your task is to diagnose a system failure, identify the most probable root cause(s), and propose concrete, actionable troubleshooting steps.
+  <pre id="prompt-7c42024e" class="prompt-text">You are an expert educator and a personalized learning assistant, skilled at breaking down complex topics and creating effective study materials. Your goal is to help me deeply understand a specific concept and then reinforce that learning.
 
-I am experiencing an issue with [SYSTEM/APPLICATION NAME].
+First, provide a clear and comprehensive explanation of the concept: &#39;[CONCEPT]&#39;.
+When explaining, please consider my current understanding level, which is [BEGINNER/INTERMEDIATE/ADVANCED, or &#39;I have no prior knowledge&#39;].
+To make the explanation most effective, please use a [ANALOGY-BASED/STEP-BY-STEP/PROBLEM-SOLUTION/HISTORICAL CONTEXT] approach, and highlight why this concept is important or relevant in [FIELD/REAL-WORLD CONTEXT]. Keep the explanation between 200-400 words.
 
-**Problem Details:**
-1.  **Observed Failure**: [DESCRIBE THE EXACT SYMPTOM OR ERROR MESSAGE, e.g., &#39;User logins fail intermittently with a 401 Unauthorized error&#39;, &#39;The service crashes after processing 100 requests&#39;, &#39;Data synchronization between X and Y is delayed by several hours&#39;].
-2.  **Expected Behavior**: [WHAT SHOULD HAPPEN INSTEAD? e.g., &#39;Logins should always succeed with valid credentials&#39;, &#39;The service should handle continuous load without crashing&#39;, &#39;Data sync should complete within 30 minutes&#39;].
-3.  **Recent Changes/Context**: [ANY RECENT DEPLOYMENTS, CONFIGURATION UPDATES, INFRASTRUCTURE MODIFICATIONS, OR ENVIRONMENTAL FACTORS? e.g., &#39;Deployed a new authentication microservice&#39;, &#39;Increased memory allocation for the processing worker&#39;, &#39;Upgraded database from v12 to v14&#39;].
-4.  **Relevant Logs/Error Messages**: [PASTE KEY LOG SNIPPETS, STACK TRACES, OR ERROR MESSAGES. If none, state &#39;None available&#39; or &#39;Basic application logs show no errors&#39;].
-5.  **Environment Details**: [OPERATING SYSTEM, DEPENDENCIES, VERSIONS, HARDWARE, NETWORK CONFIGURATION, ETC. e.g., &#39;Kubernetes 1.26, Node.js 18, MongoDB 6.0&#39;, &#39;AWS Lambda, Python 3.10&#39;].
+After the explanation, generate a targeted study aid to help me review and test my understanding. The study aid should be in the format of [5 MULTIPLE-CHOICE QUESTIONS/3 SHORT-ANSWER QUESTIONS/A BULLETED SUMMARY OF KEY POINTS/10 FLASHCARD PAIRS (Concept: Definition)]. Focus on the core principles and most challenging aspects of the concept you just explained.
 
-Prioritize the most likely causes and provide a structured plan.
-
-**Output Format:**
-
-**1. Diagnosis Summary:**
-[A concise statement of the most probable root cause(s).]
-
-**2. Top Potential Root Causes &amp; Rationale:**
-*   **Cause 1**: [Description]. *Rationale*: [Why this is likely, referencing provided details].
-*   **Cause 2**: [Description]. *Rationale*: [Why this is moderately likely, referencing provided details].
-*   ... (up to 3 causes)
-
-**3. Actionable Troubleshooting Steps:**
-*   **Step 1**: [Specific action to take]. *Expected Outcome*: [What you expect to see if this step confirms/denies the cause].
-*   **Step 2**: [Specific action]. *Expected Outcome*: [What you expect].
-*   ... (3-5 steps, ordered by ease/impact)
-
-**4. Clarifying Questions (if any):**
-*   [Question 1]?
-*   [Question 2]?
-
-Aim for a deep, analytical perspective.</pre>
+Ensure your explanation is easy to follow, and the study aid directly relates to the content provided.</pre>
 </div>
-<section class="why-section"><h3>How to use this</h3><p>This prompt works best when you have a specific system failure, some context (recent changes, logs), and a clear understanding of expected behavior. Substitute the bracketed placeholders with your specific problem details. Expect a structured analysis, prioritized potential causes, and concrete steps to resolve or further investigate the issue.</p></section>
-<section class="example-section"><h3>Example</h3><p>For [DOMAIN], I&#39;d use &#39;backend APIs&#39;. For [OBSERVED FAILURE], &#39;User logins fail intermittently with a 401 Unauthorized error&#39;. For [RECENT CHANGES], &#39;Deployed a new authentication microservice yesterday&#39;.</p></section>
+<section class="why-section"><h3>How to use this</h3><p>This prompt works exceptionally well for learning new topics, reviewing existing ones, or preparing for exams. Substitute [CONCEPT] with your topic, [LEVEL] with your current understanding, [APPROACH] for your preferred learning style, [CONTEXT] for relevance, and [FORMAT] for your desired study method. Expect a tailored explanation followed by a practical study tool.</p></section>
+<section class="example-section"><h3>Example</h3><p>For [CONCEPT]: &#39;Quantum Entanglement&#39;, [LEVEL]: &#39;intermediate, I know basic quantum mechanics&#39;, [APPROACH]: &#39;analogy-based&#39;, [CONTEXT]: &#39;quantum computing&#39;, [FORMAT]: &#39;3 short-answer questions&#39;</p></section>
 <script>
 (function() {
   document.querySelectorAll('.copy-btn').forEach(function(btn) {
@@ -422,7 +398,8 @@ Aim for a deep, analytical perspective.</pre>
 })();
 </script>
 </section>
-<section class="archive-section"><h2>Past prompts</h2><ul class="archive-list"><li><a href="prompts/2026-04-29.html">April 29, 2026</a></li>
+<section class="archive-section"><h2>Past prompts</h2><ul class="archive-list"><li><a href="prompts/2026-04-30.html">April 30, 2026</a></li>
+<li><a href="prompts/2026-04-29.html">April 29, 2026</a></li>
 <li><a href="prompts/2026-04-28.html">April 28, 2026</a></li></ul></section>
 
   </div>
@@ -433,7 +410,7 @@ Aim for a deep, analytical perspective.</pre>
     <p>Arunkumar Panchanana &middot; AI tools &middot; Automation &middot; IT Leadership</p>
     <p>Email: <a href="mailto:arunkumar.panchanana@gmail.com">arunkumar.panchanana@gmail.com</a></p>
     <div>Generated daily by AI.</div>
-    <div class="footer-meta">Updated <time datetime="2026-04-30T02:06:15Z">2026-04-30T02:06:15Z</time></div>
+    <div class="footer-meta">Updated <time datetime="2026-05-01T02:05:50Z">2026-05-01T02:05:50Z</time></div>
   </div>
 </footer>
 
