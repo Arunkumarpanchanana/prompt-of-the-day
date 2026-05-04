@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personalized Productivity Planner · Prompt of the Day</title>
+<style>
+  /* ===== Hub-matched design tokens ===== */
+  :root {
+    --bg: #0B1F3A;
+    --surface: #111827;
+    --surface-2: #0F1F36;
+    --border: #1F2937;
+    --border-strong: #2A3548;
+    --text: #E5E7EB;
+    --text-2: #CBD5E1;
+    --muted: #9CA3AF;
+    --muted-2: #6B7280;
+    --white: #FFFFFF;
+    --accent: #2563EB;
+    --accent-hover: #3B82F6;
+    --green: #10B981;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Arial, sans-serif;
+    --mono: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  a { color: var(--accent); }
+  a:hover { color: var(--accent-hover); }
+
+  /* ===== Container — matches hub's 900px ===== */
+  .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+
+  /* ===== Top header (matches hub) ===== */
+  .site-header {
+    border-bottom: 1px solid var(--border);
+    padding: 15px 0;
+    background: var(--bg);
+  }
+  .nav-wrap {
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 12px;
+  }
+  .logo {
+    font-size: 1.1rem; font-weight: 700;
+    color: var(--white); text-decoration: none;
+    letter-spacing: 0.3px;
+  }
+  .logo:hover { color: var(--accent-hover); }
+  .nav a {
+    margin-left: 15px; text-decoration: none; color: var(--muted);
+    font-size: 0.95rem;
+  }
+  .nav a.active, .nav a:hover { color: var(--accent); }
+  .nav a:first-child { margin-left: 0; }
+
+  /* ===== Tool sub-bar (which tool you're in + breadcrumb) ===== */
+  .tool-bar {
+    border-bottom: 1px solid var(--border);
+    padding: 12px 0;
+    background: var(--surface-2);
+  }
+  .tool-bar-inner {
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 12px;
+    font-size: 0.85rem;
+  }
+  .tool-name {
+    color: var(--text-2); font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  .tool-bar a { color: var(--muted); text-decoration: none; }
+  .tool-bar a:hover { color: var(--accent); }
+
+  /* ===== Page header ===== */
+  main { padding: 56px 0 80px; }
+  .page-header { margin-bottom: 40px; }
+  .page-header h1 {
+    margin: 8px 0 12px;
+    font-size: 32px; font-weight: 700;
+    letter-spacing: -0.02em; line-height: 1.2;
+    color: var(--white);
+  }
+  .page-header p {
+    color: var(--text-2); font-size: 16px; margin: 0;
+    max-width: 600px;
+  }
+  .section-eyebrow {
+    font-size: 12px; font-weight: 600;
+    color: var(--accent); letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  /* ===== News: category nav (chips) ===== */
+  .category-nav {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    margin: 0 0 32px; padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .category-nav a {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 7px 14px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    text-decoration: none; color: var(--text-2);
+    font-size: 13px; font-weight: 500;
+    transition: all 0.15s;
+  }
+  .category-nav a:hover {
+    border-color: var(--accent); color: var(--accent);
+    background: rgba(37, 99, 235, 0.08);
+  }
+  .category-nav .cat-count {
+    font-size: 11px; font-weight: 600;
+    background: var(--bg); color: var(--muted);
+    padding: 1px 7px; border-radius: 999px;
+    font-variant-numeric: tabular-nums;
+  }
+  .category-section { margin: 48px 0 0; scroll-margin-top: 24px; }
+  .category-section:first-of-type { margin-top: 24px; }
+  .category-heading {
+    font-size: 20px; font-weight: 700;
+    letter-spacing: -0.015em;
+    margin: 0 0 16px; padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+    color: var(--white);
+  }
+
+  /* ===== News: story list ===== */
+  .stories { list-style: none; padding: 0; margin: 0; counter-reset: story; }
+  .story {
+    counter-increment: story;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    padding-left: 44px;
+  }
+  .story:last-child { border-bottom: 0; }
+  .story::before {
+    content: counter(story);
+    position: absolute; left: 0; top: 26px;
+    font-size: 12px; font-weight: 600; color: var(--muted);
+    width: 24px; height: 24px;
+    border: 1px solid var(--border); border-radius: 50%;
+    display: grid; place-items: center;
+    background: var(--surface);
+    font-variant-numeric: tabular-nums;
+  }
+  .story-headline {
+    font-size: 18px; font-weight: 600; line-height: 1.35;
+    letter-spacing: -0.01em; margin: 0 0 8px;
+  }
+  .story-headline a {
+    color: var(--white); text-decoration: none;
+    transition: color 0.15s;
+  }
+  .story-headline a:hover { color: var(--accent-hover); }
+  .story-summary { margin: 0 0 10px; color: var(--text-2); font-size: 15px; }
+  .story-meta { display: flex; gap: 8px; font-size: 13px; color: var(--muted); align-items: center; }
+  .story-meta a { color: var(--muted); text-decoration: none; }
+  .story-meta a:hover { color: var(--accent); }
+  .story-meta .dot { color: var(--muted-2); }
+
+  /* ===== News: per-story detail page ===== */
+  .story-detail h1 {
+    font-size: 32px; font-weight: 700;
+    letter-spacing: -0.02em; line-height: 1.2;
+    margin: 12px 0 24px; color: var(--white);
+  }
+  .story-summary-large {
+    font-size: 18px; color: var(--text-2);
+    line-height: 1.6; margin: 0 0 32px;
+  }
+  .why-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 24px; margin: 32px 0;
+  }
+  .why-section h2, .why-section h3 {
+    font-size: 12px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--accent); margin: 0 0 8px;
+  }
+  .why-section p { margin: 0; color: var(--text); font-size: 15px; }
+  .read-original {
+    margin-top: 32px; padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+  .read-original a {
+    color: var(--accent); text-decoration: none; font-weight: 500;
+    display: inline-block; padding: 10px 16px;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 6px;
+    transition: all 0.15s;
+  }
+  .read-original a:hover {
+    background: var(--accent); color: var(--white);
+    border-color: var(--accent);
+  }
+
+  /* ===== Prompt of the Day ===== */
+  .prompt-title {
+    font-size: 26px; font-weight: 700;
+    letter-spacing: -0.02em; line-height: 1.25;
+    margin: 8px 0 6px; color: var(--white);
+  }
+  .prompt-subtitle {
+    color: var(--text-2); font-size: 15px;
+    margin: 0 0 24px;
+  }
+  .prompt-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--surface);
+    margin: 24px 0;
+  }
+  .prompt-block-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 18px;
+    background: var(--surface-2);
+    border-bottom: 1px solid var(--border);
+  }
+  .prompt-label {
+    font-size: 11px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--muted);
+  }
+  .copy-btn {
+    background: var(--accent); color: var(--white);
+    border: none; border-radius: 6px;
+    padding: 7px 16px; font: 500 12px var(--font);
+    cursor: pointer;
+    transition: background 0.15s, transform 0.05s;
+  }
+  .copy-btn:hover { background: var(--accent-hover); }
+  .copy-btn:active { transform: scale(0.97); }
+  .copy-btn.copied { background: var(--green); }
+  .prompt-text {
+    margin: 0; padding: 22px 22px 24px;
+    font-family: var(--mono); font-size: 13.5px;
+    line-height: 1.7; color: var(--text);
+    white-space: pre-wrap; word-wrap: break-word;
+    background: transparent;
+  }
+  .example-section {
+    margin: 24px 0; padding: 14px 20px;
+    border-left: 3px solid var(--accent);
+    background: var(--surface);
+    border-radius: 0 8px 8px 0;
+  }
+  .example-section h3 {
+    font-size: 11px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--muted); margin: 0 0 6px;
+  }
+  .example-section p {
+    margin: 0; color: var(--text-2);
+    font-size: 14px; font-style: italic;
+  }
+
+  /* ===== Archive ===== */
+  .archive-section {
+    margin-top: 64px; padding-top: 32px;
+    border-top: 1px solid var(--border);
+  }
+  .archive-section h2 {
+    font-size: 13px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--muted); margin: 0 0 16px;
+  }
+  .archive-list {
+    list-style: none; padding: 0; margin: 0;
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 8px;
+  }
+  .archive-list li { padding: 4px 0; }
+  .archive-list a {
+    color: var(--text-2); text-decoration: none;
+    font-size: 14px;
+  }
+  .archive-list a:hover { color: var(--accent); }
+  .empty { color: var(--muted); font-style: italic; }
+
+  /* ===== Footer (matches hub) ===== */
+  .footer {
+    text-align: center;
+    padding: 24px 20px;
+    margin-top: 40px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 13px;
+  }
+  .footer p { margin: 4px 0; }
+  .footer a { color: var(--text-2); text-decoration: none; }
+  .footer a:hover { color: var(--accent); }
+  .footer .footer-meta {
+    margin-top: 8px;
+    font-size: 11px;
+    color: var(--muted-2);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ===== Mobile ===== */
+  @media (max-width: 600px) {
+    .nav a { margin-left: 12px; font-size: 0.9rem; }
+    .page-header h1, .story-detail h1 { font-size: 26px; }
+    main { padding: 36px 0 60px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Top header — matches hub exactly -->
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="https://arunkumarpanchanana.github.io/" class="logo">Arunkumar Panchanana</a>
+    <nav class="nav">
+      <a href="https://arunkumarpanchanana.github.io/">Home</a>
+      <a href="https://arunkumarpanchanana.github.io/about.html">About</a>
+      <a href="https://arunkumarpanchanana.github.io/tools.html" class="active">Tools</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Tool identifier sub-bar -->
+<div class="tool-bar">
+  <div class="container tool-bar-inner">
+    <span class="tool-name">Prompt of the Day</span>
+    <span><a href="../index.html">← Back to today</a></span>
+  </div>
+</div>
+
+<main>
+  <div class="container">
+    
+<header class="page-header">
+  <div class="section-eyebrow">May 4, 2026 &middot; Productivity</div>
+  <h1>Personalized Productivity Planner</h1>
+  <p>Generates a prioritized task list and a detailed schedule for a specified period, considering user energy levels and fixed commitments.</p>
+</header>
+
+<div class="prompt-block">
+  <div class="prompt-block-header">
+    <span class="prompt-label">Prompt</span>
+    <button class="copy-btn" data-target="prompt-d0034105" type="button">Copy</button>
+  </div>
+  <pre id="prompt-d0034105" class="prompt-text">You are an expert Productivity Strategist and Time Management Consultant. Your goal is to help me effectively plan my [TIME PERIOD] by optimizing task prioritization and time allocation.
+
+I am currently focusing on a primary goal: [PRIMARY GOAL OR PROJECT].
+Here is a list of tasks and sub-projects related to this goal, along with other commitments I need to manage:
+[LIST OF RELATED TASKS/SUB-PROJECTS - e.g., &#39;Project A: complete report draft (deadline Friday), Project B: research new software (ongoing), Personal: gym 3x, Admin: clear inbox, Learning: 1hr online course&#39;]
+
+My typical peak energy hours are [YOUR TYPICAL PEAK ENERGY HOURS - e.g., &#39;9 AM - 1 PM and 4 PM - 6 PM&#39;].
+My typical low energy hours are [YOUR TYPICAL LOW ENERGY HOURS - e.g., &#39;2 PM - 3 PM and after 7 PM&#39;].
+I also have these fixed appointments or deadlines: [ANY FIXED APPOINTMENTS OR DEADLINES - e.g., &#39;Team meeting Tuesday 10 AM, Client call Wednesday 3 PM, Report due Friday 5 PM&#39;].
+
+Based on this information, please provide a structured plan for my [TIME PERIOD].
+Your output should include:
+1.  **Prioritized Task List:** A list of all tasks, ranked by urgency and importance, with a brief justification for each priority level.
+2.  **Suggested Schedule:** A detailed, hour-by-hour or block-by-block schedule for the [TIME PERIOD], allocating tasks to specific times, considering my energy levels and fixed commitments. Clearly indicate which tasks are best suited for peak vs. low energy periods.
+3.  **Key Focus Areas:** Identify 2-3 critical tasks that, if completed, would make the [TIME PERIOD] a significant success.
+
+Ensure the plan is realistic, actionable, and designed to maximize progress on my primary goal while managing other responsibilities efficiently. Do not just list tasks; explain the rationale behind the scheduling and prioritization.</pre>
+</div>
+<section class="why-section"><h3>How to use this</h3><p>This prompt is ideal when you have a clear goal, a list of tasks, and want a structured plan for your day or week. Substitute [TIME PERIOD] with &#39;tomorrow&#39; or &#39;next week&#39;. Provide a concise [PRIMARY GOAL] and a comprehensive [LIST OF RELATED TASKS]. Be specific about your [ENERGY HOURS] and [FIXED APPOINTMENTS]. Expect a detailed, actionable plan that optimizes your time.</p></section>
+<section class="example-section"><h3>Example</h3><p>TIME PERIOD: next week. PRIMARY GOAL: Launch new marketing campaign. TASKS: Draft email sequence, design social media graphics, finalize ad copy, schedule team review, analyze last month&#39;s data. PEAK ENERGY: 9 AM-1 PM. LOW ENERGY: 2-4 PM. FIXED: Team meeting Mon 10 AM, client demo Wed 2 PM.</p></section>
+<script>
+(function() {
+  document.querySelectorAll('.copy-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var target = document.getElementById(btn.getAttribute('data-target'));
+      if (!target) return;
+      var text = target.textContent;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function() { flash(btn); });
+      } else {
+        var range = document.createRange(); range.selectNode(target);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        try { document.execCommand('copy'); flash(btn); } catch (e) {}
+        window.getSelection().removeAllRanges();
+      }
+    });
+  });
+  function flash(btn) {
+    var orig = btn.textContent;
+    btn.textContent = 'Copied';
+    btn.classList.add('copied');
+    setTimeout(function() { btn.textContent = orig; btn.classList.remove('copied'); }, 1500);
+  }
+})();
+</script>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>Arunkumar Panchanana &middot; AI tools &middot; Automation &middot; IT Leadership</p>
+    <p>Email: <a href="mailto:arunkumar.panchanana@gmail.com">arunkumar.panchanana@gmail.com</a></p>
+    <div>Generated daily by AI.</div>
+    <div class="footer-meta">Updated <time datetime="2026-05-04T02:04:57Z">2026-05-04T02:04:57Z</time></div>
+  </div>
+</footer>
+
+</body>
+</html>
