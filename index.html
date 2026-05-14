@@ -123,41 +123,46 @@
 </header>
 
 <section>
-  <div class="section-eyebrow">May 13, 2026 &middot; Decision-making</div>
-  <h2 class="prompt-title">Strategic Tradeoff Analysis for Critical Decisions</h2>
-  <p class="prompt-subtitle">Leverage an AI as a Strategic Decision Analyst to systematically evaluate complex choices, weigh tradeoffs, and recommend optimal paths.</p>
+  <div class="section-eyebrow">May 14, 2026 &middot; Debugging</div>
+  <h2 class="prompt-title">Expert Debugger: Root Cause Analysis for [System Type] Failures</h2>
+  <p class="prompt-subtitle">Leverage an AI expert to meticulously diagnose system failures, identify root causes, and propose actionable solutions and diagnostic steps.</p>
   
 <div class="prompt-block">
   <div class="prompt-block-header">
     <span class="prompt-label">Prompt</span>
-    <button class="copy-btn" data-target="prompt-c38840b5" type="button">Copy</button>
+    <button class="copy-btn" data-target="prompt-f8497b0e" type="button">Copy</button>
   </div>
-  <pre id="prompt-c38840b5" class="prompt-text">You are a Strategic Decision Analyst specializing in complex choice architecture. My goal is to make a critical decision regarding [THE CORE DECISION/PROBLEM, e.g., &#39;launching a new product line&#39;, &#39;choosing a career path&#39;, &#39;investing in a specific technology&#39;]. I need your help to systematically evaluate the available options and identify the optimal path forward, considering various tradeoffs.
+  <pre id="prompt-f8497b0e" class="prompt-text">You are a highly experienced [SYSTEM TYPE] debugger and root cause analysis expert. Your task is to meticulously analyze a reported failure, identify its most probable root cause, and propose concrete steps for resolution and further diagnosis.
+
+I am experiencing an issue with my [SPECIFIC COMPONENT/SERVICE NAME] within our [OVERALL SYSTEM ARCHITECTURE].
 
 Here are the details:
-1.  Decision Context: [BRIEF DESCRIPTION OF THE SITUATION AND STAKEHOLDERS INVOLVED, e.g., &#39;Our company is facing declining market share and needs to innovate. We have limited R&amp;D budget.&#39;]
-2.  Decision Criteria: I want to evaluate options based on these [NUMBER, e.g., 3-5] key criteria:
-    *   [CRITERION 1, e.g., &#39;Financial ROI&#39;]
-    *   [CRITERION 2, e.g., &#39;Market Impact/Growth Potential&#39;]
-    *   [CRITERION 3, e.g., &#39;Resource Feasibility&#39;]
-    *   [CRITERION 4, e.g., &#39;Risk Profile&#39;]
-    *   [CRITERION 5, e.g., &#39;Alignment with Long-Term Vision&#39;]
-3.  Available Options: These are the [NUMBER, e.g., 2-4] distinct options I am considering:
-    *   [OPTION A, e.g., &#39;Develop a premium, niche product&#39;]
-    *   [OPTION B, e.g., &#39;Acquire a competitor with existing technology&#39;]
-    *   [OPTION C, e.g., &#39;Invest heavily in R&amp;D for a disruptive innovation&#39;]
-    *   [OPTION D, e.g., &#39;Maintain current product line with minor updates&#39;]
+- **Problem Description**: [DESCRIBE SYMPTOMS, OBSERVED BEHAVIOR, AND IMPACT.]
+- **Error Messages/Logs**: [PASTE RELEVANT ERROR MESSAGES, STACK TRACES, OR LOG SNIPPETS.]
+- **Expected vs. Actual Behavior**: [WHAT SHOULD BE HAPPENING? WHAT IS ACTUALLY HAPPENING?]
+- **Recent Changes**: [LIST ANY RECENT DEPLOYMENTS, CONFIGURATION CHANGES, OR CODE MODIFICATIONS.]
+- **Environment Details**: [SPECIFY OS, LANGUAGE/FRAMEWORK VERSIONS, DEPENDENCIES, DEPLOYMENT ENVIRONMENT.]
+- **Relevant Code Snippets (Optional)**: [PASTE SMALL, RELEVANT CODE BLOCKS.]
 
-Your task is to:
-a.  Analyze each option against each criterion. Provide a qualitative assessment (e.g., &#39;High&#39;, &#39;Medium&#39;, &#39;Low&#39;) and a brief justification for each intersection.
-b.  Identify the primary tradeoffs between the options, highlighting where one option excels at the expense of another criterion.
-c.  Recommend the most suitable option based on a holistic view, clearly stating your rationale and acknowledging its potential drawbacks.
-d.  Suggest key considerations or mitigation strategies for the recommended option.
+Based on this information, provide your analysis in the following structured format:
 
-Present your analysis in a clear, structured format, starting with a summary table, followed by detailed explanations for tradeoffs, your recommendation, and next steps.</pre>
+**1. Root Cause Hypotheses (Ranked by Probability):**
+   - **Hypothesis A**: [Brief, clear statement of the most probable root cause.]
+     - *Evidence*: [Point to specific details from the input that support this hypothesis.]
+   - **Hypothesis B**: [Second most probable root cause.]
+     - *Evidence*: [...]
+   - (Add more hypotheses if applicable, up to 3)
+
+**2. Proposed Solutions/Mitigations:**
+   - [For each primary hypothesis, suggest concrete, actionable steps to resolve or mitigate the issue. Include code changes, configuration adjustments, or operational procedures.]
+
+**3. Further Diagnostic Steps:**
+   - [Suggest specific commands, tests, data to collect, or areas to investigate next to confirm a hypothesis or narrow down the problem space.]
+
+Focus on providing practical, implementable advice. Avoid generic troubleshooting steps unless specifically tailored to the context.</pre>
 </div>
-<section class="why-section"><h3>How to use this</h3><p>Fill in the bracketed placeholders with your specific decision context, criteria, and options. The AI will then act as a structured decision-making consultant, providing a comparative analysis, identifying tradeoffs, and offering a justified recommendation. Use this for business, career, or personal dilemmas requiring a systematic approach.</p></section>
-<section class="example-section"><h3>Example</h3><p>Decision: Choosing a new CRM system. Context: Sales team needs better lead tracking. Criteria: Cost, Integration, Scalability, User Adoption. Options: Salesforce, HubSpot, Zoho CRM.</p></section>
+<section class="why-section"><h3>How to use this</h3><p>Copy-paste your system&#39;s failure details, including symptoms, logs, recent changes, and environment specifics into the prompt. The AI will act as a senior debugger, providing ranked root cause hypotheses, concrete solutions, and clear next steps for investigation. Fill in all bracketed placeholders for best results.</p></section>
+<section class="example-section"><h3>Example</h3><p>Problem: API returns 500 intermittently. Logs: &#39;DB connection timeout&#39;. Expected: 200 OK. Actual: 500. Changes: DB upgraded to v12. Environment: Node.js, PostgreSQL. Code: ORM query &#39;User.findAll()&#39;.</p></section>
 <script>
 (function() {
   document.querySelectorAll('.copy-btn').forEach(function(btn) {
@@ -185,7 +190,8 @@ Present your analysis in a clear, structured format, starting with a summary tab
 })();
 </script>
 </section>
-<section class="archive-section"><h2>Past prompts</h2><ul class="archive-list"><li><a href="prompts/2026-05-12.html">May 12, 2026</a></li>
+<section class="archive-section"><h2>Past prompts</h2><ul class="archive-list"><li><a href="prompts/2026-05-13.html">May 13, 2026</a></li>
+<li><a href="prompts/2026-05-12.html">May 12, 2026</a></li>
 <li><a href="prompts/2026-05-11.html">May 11, 2026</a></li>
 <li><a href="prompts/2026-05-10.html">May 10, 2026</a></li>
 <li><a href="prompts/2026-05-09.html">May 9, 2026</a></li>
@@ -208,7 +214,7 @@ Present your analysis in a clear, structured format, starting with a summary tab
     <p>Arunkumar Panchanana &middot; AI tools &middot; Automation &middot; IT Leadership</p>
     <p>Email: <a href="mailto:arunkumar.panchanana@gmail.com">arunkumar.panchanana@gmail.com</a></p>
     <div>Generated daily by AI.</div>
-    <div class="footer-meta">Updated <time datetime="2026-05-13T02:06:29Z">2026-05-13T02:06:29Z</time></div>
+    <div class="footer-meta">Updated <time datetime="2026-05-14T02:05:49Z">2026-05-14T02:05:49Z</time></div>
   </div>
 </footer>
 </body>
