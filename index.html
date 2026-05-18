@@ -123,35 +123,51 @@
 </header>
 
 <section>
-  <div class="section-eyebrow">May 17, 2026 &middot; Problem-solving</div>
-  <h2 class="prompt-title">Strategic Problem Deconstruction</h2>
-  <p class="prompt-subtitle">Get a structured approach and framework for your complex, open-ended problem, guided by an AI strategic consultant.</p>
+  <div class="section-eyebrow">May 18, 2026 &middot; Productivity</div>
+  <h2 class="prompt-title">Strategic Task Prioritization &amp; Time Blocking</h2>
+  <p class="prompt-subtitle">Transform your overwhelming to-do list into a clear, prioritized action plan with suggested time blocks, considering urgency, effort, and strategic impact.</p>
   
 <div class="prompt-block">
   <div class="prompt-block-header">
     <span class="prompt-label">Prompt</span>
-    <button class="copy-btn" data-target="prompt-7d8a4e1e" type="button">Copy</button>
+    <button class="copy-btn" data-target="prompt-31568fea" type="button">Copy</button>
   </div>
-  <pre id="prompt-7d8a4e1e" class="prompt-text">You are a &#39;Strategic Framework Architect&#39; specializing in breaking down ambiguous, open-ended challenges into actionable components. Your goal is to help me establish a clear, structured path forward for a complex problem.
+  <pre id="prompt-31568fea" class="prompt-text">You are an expert productivity consultant specializing in strategic task management and time optimization. Your goal is to help me transform a potentially overwhelming list of tasks into a clear, actionable plan for my upcoming [TIME_PERIOD, e.g., &#39;week&#39;, &#39;day&#39;, &#39;project phase&#39;].
 
-I will provide you with my problem, my desired immediate outcome, and any initial context.
+I will provide you with:
+1.  My top [NUMBER] overarching goals for this [TIME_PERIOD].
+2.  A list of individual tasks, each with these details:
+    *   **Task Name:** [e.g., &#39;Draft Q3 report&#39;]
+    *   **Estimated Effort:** [e.g., &#39;2 hours&#39;]
+    *   **Urgency/Deadline:** [e.g., &#39;Due Friday EOD&#39;]
+    *   **Strategic Impact:** [e.g., &#39;High (critical for goal 1)&#39;]
+    *   **Dependencies (Optional):** [e.g., &#39;Requires input from John&#39;]
 
-Your task is to:
-1.  **Analyze the Problem**: Briefly reframe my problem statement to ensure shared understanding.
-2.  **Propose Framework(s)**: Identify and describe 1-2 highly relevant problem-solving or strategic frameworks (e.g., Design Thinking stages, Root Cause Analysis, MECE principle, A3 Thinking, Cynefin for context, SCAMPER, SWOT, etc.) best suited to address my specific challenge and desired outcome.
-3.  **Justify Framework Choice**: Explain *why* these frameworks are particularly appropriate for my situation, highlighting their strengths.
-4.  **Outline Initial Steps**: Detail the first 2-3 actionable steps I should take to begin applying the chosen framework(s) to my problem.
-5.  **Ask Clarifying Questions**: Pose 3-5 incisive, open-ended questions designed to refine my understanding, uncover assumptions, or gather crucial information within the framework&#39;s context.
-6.  **Suggest Next Interaction**: Guide me on what information you expect in my next response to continue.
+Your output should be a structured, prioritized action plan, presented in two parts:
 
-My problem is: [THE COMPLEX, OPEN-ENDED PROBLEM]
-My desired immediate outcome is: [YOUR DESIRED IMMEDIATE OUTCOME (e.g., &quot;understand root causes,&quot; &quot;generate initial solutions,&quot; &quot;define scope,&quot; &quot;prioritize options&quot;)]
-Any relevant context or constraints I&#39;m aware of: [ANY RELEVANT CONTEXT OR CONSTRAINTS YOU&#39;RE AWARE OF (e.g., &quot;limited budget,&quot; &quot;tight deadline,&quot; &quot;team resistance,&quot; &quot;technical limitations&quot;)]</pre>
+**Part 1: Prioritized Task List (Table Format)**
+Create a table with the following columns:
+*   **Priority (1-5, 1=highest):**
+*   **Task Name:**
+*   **Estimated Effort:**
+*   **Urgency/Deadline:**
+*   **Strategic Impact:**
+*   **Justification:** Briefly explain *why* it received that priority, linking to goals, urgency, or dependencies.
+
+**Part 2: Suggested Time Blocking &amp; Notes**
+Based on the prioritized list, suggest high-level time blocks for the top [NUMBER_OF_TOP_TASKS_TO_BLOCK] tasks within the [TIME_PERIOD]. For each block, include:
+*   **Task Name:**
+*   **Suggested Time Slot:** [e.g., &#39;Monday 9 AM - 11 AM&#39;]
+*   **Key Action/Focus:** A single sentence on the immediate next step.
+*   **Notes:** Important considerations or reminders.
+
+Ensure the plan is realistic and immediately actionable.</pre>
 </div>
-<section class="why-section"><h3>How to use this</h3><p>Copy-paste this prompt and fill in the bracketed placeholders with details about your specific complex problem, what you hope to achieve immediately, and any known constraints. The AI will act as a strategic consultant, providing a structured approach, relevant frameworks, and guiding questions to help you navigate your challenge systematically.</p></section>
-<section class="example-section"><h3>Example</h3><p>My problem is: Our customer churn rate has been steadily increasing over the last quarter, and we don&#39;t know why.
-My desired immediate outcome is: Understand the primary drivers of increased churn.
-Any relevant context or constraints I&#39;m aware of: We recently updated our pricing model and introduced a new feature.</p></section>
+<section class="why-section"><h3>How to use this</h3><p>Fill in your overarching goals and a detailed list of tasks with their estimated effort, urgency, strategic impact, and any dependencies. The AI will act as a productivity consultant, generating a prioritized task list and suggesting specific time blocks to help you focus on what matters most. Use this plan to structure your [TIME_PERIOD] effectively.</p></section>
+<section class="example-section"><h3>Example</h3><p>Goals: 1. Launch new feature. 2. Improve team communication.
+Tasks:
+- Task Name: Code feature X; Effort: 8 hrs; Urgency: ASAP; Impact: High (goal 1)
+- Task Name: Plan team offsite; Effort: 2 hrs; Urgency: Next 2 weeks; Impact: Medium (goal 2)</p></section>
 <script>
 (function() {
   document.querySelectorAll('.copy-btn').forEach(function(btn) {
@@ -179,7 +195,8 @@ Any relevant context or constraints I&#39;m aware of: We recently updated our pr
 })();
 </script>
 </section>
-<section class="archive-section"><h2>Past prompts</h2><ul class="archive-list"><li><a href="prompts/2026-05-16.html">May 16, 2026</a></li>
+<section class="archive-section"><h2>Past prompts</h2><ul class="archive-list"><li><a href="prompts/2026-05-17.html">May 17, 2026</a></li>
+<li><a href="prompts/2026-05-16.html">May 16, 2026</a></li>
 <li><a href="prompts/2026-05-15.html">May 15, 2026</a></li>
 <li><a href="prompts/2026-05-14.html">May 14, 2026</a></li>
 <li><a href="prompts/2026-05-13.html">May 13, 2026</a></li>
@@ -206,7 +223,7 @@ Any relevant context or constraints I&#39;m aware of: We recently updated our pr
     <p>Arunkumar Panchanana &middot; AI tools &middot; Automation &middot; IT Leadership</p>
     <p>Email: <a href="mailto:arunkumar.panchanana@gmail.com">arunkumar.panchanana@gmail.com</a></p>
     <div>Generated daily by AI.</div>
-    <div class="footer-meta">Updated <time datetime="2026-05-17T02:05:12Z">2026-05-17T02:05:12Z</time></div>
+    <div class="footer-meta">Updated <time datetime="2026-05-18T02:04:54Z">2026-05-18T02:04:54Z</time></div>
   </div>
 </footer>
 </body>
