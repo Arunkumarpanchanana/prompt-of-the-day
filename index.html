@@ -123,39 +123,46 @@
 </header>
 
 <section>
-  <div class="section-eyebrow">May 20, 2026 &middot; Brainstorming</div>
-  <h2 class="prompt-title">Divergent Idea Generator</h2>
-  <p class="prompt-subtitle">Brainstorm a wide array of creative solutions for any challenge, categorized by perspective and rated for feasibility.</p>
+  <div class="section-eyebrow">May 21, 2026 &middot; Coding</div>
+  <h2 class="prompt-title">Architectural &amp; Code Review with Refactoring Plan</h2>
+  <p class="prompt-subtitle">Perform a deep architectural and code review, identify issues, and generate a detailed refactoring and improvement plan.</p>
   
 <div class="prompt-block">
   <div class="prompt-block-header">
     <span class="prompt-label">Prompt</span>
-    <button class="copy-btn" data-target="prompt-7c355114" type="button">Copy</button>
+    <button class="copy-btn" data-target="prompt-4ac47a61" type="button">Copy</button>
   </div>
-  <pre id="prompt-7c355114" class="prompt-text">You are a specialized innovation consultant, expert in divergent thinking and generating a broad spectrum of creative solutions. Your mission is to help me brainstorm novel approaches for [THE SPECIFIC PROBLEM OR CHALLENGE YOU NEED IDEAS FOR].
+  <pre id="prompt-4ac47a61" class="prompt-text">You are a highly experienced Senior Software Architect and Lead Code Reviewer, specializing in designing robust, scalable, and maintainable systems. Your task is to conduct a comprehensive architectural and code review of the provided code, focusing on its adherence to best practices, potential for refactoring, and alignment with the specified architectural goals.
 
-I require at least [MINIMUM NUMBER, e.g., 15] distinct ideas. To ensure a comprehensive exploration, please categorize these ideas under [LIST 3-5 DIVERSE PERSPECTIVE CATEGORIES, e.g., &#39;Technological Solutions&#39;, &#39;Behavioral Nudges&#39;, &#39;Policy &amp; Regulatory Changes&#39;, &#39;Community Initiatives&#39;, &#39;Design Innovations&#39;]. Feel free to introduce new, relevant categories if an idea doesn&#39;t fit neatly into the provided ones.
+Analyze the [CODE SNIPPET OR MODULE] within the context of the [CURRENT ARCHITECTURAL CONTEXT/DIAGRAM DESCRIPTION]. Your primary objective is to achieve [PRIMARY GOAL: e.g., improve scalability, reduce technical debt, enhance readability, prepare for new feature X]. Pay particular attention to [SPECIFIC AREAS OF CONCERN, if any: e.g., database interactions, API design, error handling, performance bottlenecks].
 
-When generating ideas, please adhere to these guidelines:
-1.  Embrace Novelty: Focus on unconventional, &#39;out-of-the-box&#39; concepts. Avoid generic or obvious suggestions.
-2.  Vary Feasibility: Include a healthy mix of immediately practical, implementable ideas alongside ambitious, long-term, or even &#39;moonshot&#39; concepts.
-3.  Ensure Actionability: Each idea should be a concrete concept, not a vague direction.
-4.  Consider [OPTIONAL KEY CONSTRAINT OR RESOURCE, e.g., &#39;low budget&#39;, &#39;high scalability&#39;, &#39;minimal infrastructure&#39;] (Remove if not applicable).
+Your review should cover:
+1.  **Architectural Soundness**: Evaluate design patterns, separation of concerns, module dependencies, and overall system structure. Identify any anti-patterns or potential bottlenecks.
+2.  **Refactoring Opportunities**: Suggest concrete, actionable refactoring steps to improve maintainability, performance, readability, and testability. Explain the &#39;why&#39; behind each suggestion.
+3.  **Code Quality**: Provide specific feedback on code clarity, error handling, resource management, security implications, and adherence to coding standards.
 
-Present your output as a structured list, grouped by the identified categories. For each idea, provide:
--   Idea Title: A concise, descriptive name.
--   Description: 1-2 sentences explaining the core concept.
--   Primary Benefit: A short note on the main advantage or problem it addresses.
--   Feasibility Score: (Low, Medium, High)
+Present your findings in the following structured format:
 
-The challenge I&#39;m facing is: [DESCRIBE YOUR PROBLEM IN DETAIL, PROVIDING CONTEXT, CURRENT PAIN POINTS, AND DESIRED OUTCOMES].</pre>
+**Overall Architectural Assessment:**
+[Summary of the current state and high-level observations.]
+
+**Key Issues &amp; Impact:**
+*   [Issue 1]: [Description and potential impact on goal/system.]
+*   [Issue 2]: ...
+
+**Refactoring &amp; Improvement Plan:**
+1.  [Step 1]: [Detailed action, e.g., &quot;Extract X into Y service to improve Z.&quot;]
+2.  [Step 2]: ...
+
+**Code Review Comments (Block/Line-Specific):**
+*   [File/Function/Line]: [Specific comment and suggested change.]
+*   [File/Function/Line]: ...
+
+**Alternative Architectural Considerations (Optional):**
+[Broader ideas for future evolution or significant redesign if current approach is fundamentally flawed.]</pre>
 </div>
-<section class="why-section"><h3>How to use this</h3><p>Fill in the bracketed placeholders with details about your specific problem, the number of ideas you need, and the desired categories. The AI will act as an innovation consultant, providing structured, diverse ideas. Use the optional constraint to guide the AI further, ensuring the generated ideas align with your practical needs.</p></section>
-<section class="example-section"><h3>Example</h3><p>**[THE SPECIFIC PROBLEM...]**: Reducing plastic waste in urban parks.
-**[MINIMUM NUMBER...]**: 20
-**[LIST 3-5 DIVERSE PERSPECTIVE CATEGORIES...]**: &#39;Behavioral Nudges&#39;, &#39;Smart Infrastructure&#39;, &#39;Community Engagement&#39;, &#39;Material Innovation&#39;
-**[OPTIONAL KEY CONSTRAINT...]**: &#39;must be cost-effective for city councils&#39;
-**[DESCRIBE YOUR PROBLEM IN DETAIL...]**: Our city parks are accumulating excessive plastic waste, impacting aesthetics and local wildlife. Current bins are often overflowing, and public awareness campaigns have had limited success. We need fresh, actionable ideas to significantly reduce plastic litter and encourage responsible disposal.</p></section>
+<section class="why-section"><h3>How to use this</h3><p>Provide your code snippet or module, describe its current architectural context, and state your primary goal (e.g., improve scalability). The AI will act as a senior architect, offering a structured review, identifying issues, and proposing concrete refactoring steps. Use the &#39;specific areas of concern&#39; field to guide the AI&#39;s focus.</p></section>
+<section class="example-section"><h3>Example</h3><p>CODE: [Python Flask API endpoint for user profile] CURRENT ARCHITECTURE: [Monolithic, no message queue] PRIMARY GOAL: [Improve responsiveness under load] CONCERNS: [Database locking, slow external API calls]</p></section>
 <script>
 (function() {
   document.querySelectorAll('.copy-btn').forEach(function(btn) {
@@ -183,7 +190,8 @@ The challenge I&#39;m facing is: [DESCRIBE YOUR PROBLEM IN DETAIL, PROVIDING CON
 })();
 </script>
 </section>
-<section class="archive-section"><h2>Past prompts</h2><ul class="archive-list"><li><a href="prompts/2026-05-19.html">May 19, 2026</a></li>
+<section class="archive-section"><h2>Past prompts</h2><ul class="archive-list"><li><a href="prompts/2026-05-20.html">May 20, 2026</a></li>
+<li><a href="prompts/2026-05-19.html">May 19, 2026</a></li>
 <li><a href="prompts/2026-05-18.html">May 18, 2026</a></li>
 <li><a href="prompts/2026-05-17.html">May 17, 2026</a></li>
 <li><a href="prompts/2026-05-16.html">May 16, 2026</a></li>
@@ -213,7 +221,7 @@ The challenge I&#39;m facing is: [DESCRIBE YOUR PROBLEM IN DETAIL, PROVIDING CON
     <p>Arunkumar Panchanana &middot; AI tools &middot; Automation &middot; IT Leadership</p>
     <p>Email: <a href="mailto:arunkumar.panchanana@gmail.com">arunkumar.panchanana@gmail.com</a></p>
     <div>Generated daily by AI.</div>
-    <div class="footer-meta">Updated <time datetime="2026-05-20T02:05:13Z">2026-05-20T02:05:13Z</time></div>
+    <div class="footer-meta">Updated <time datetime="2026-05-21T02:05:15Z">2026-05-21T02:05:15Z</time></div>
   </div>
 </footer>
 </body>
