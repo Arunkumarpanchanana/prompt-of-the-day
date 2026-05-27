@@ -123,41 +123,50 @@
 </header>
 
 <section>
-  <div class="section-eyebrow">May 26, 2026 &middot; Data</div>
-  <h2 class="prompt-title">Data Insight &amp; Strategic Action Planner</h2>
-  <p class="prompt-subtitle">Transform raw data into actionable insights, identify root causes, and generate strategic recommendations.</p>
+  <div class="section-eyebrow">May 27, 2026 &middot; Decision-making</div>
+  <h2 class="prompt-title">Strategic Tradeoff Decision Architect</h2>
+  <p class="prompt-subtitle">Guides complex decision-making by systematically evaluating options against weighted criteria and identifying critical tradeoffs.</p>
   
 <div class="prompt-block">
   <div class="prompt-block-header">
     <span class="prompt-label">Prompt</span>
-    <button class="copy-btn" data-target="prompt-2db35f1a" type="button">Copy</button>
+    <button class="copy-btn" data-target="prompt-c5082564" type="button">Copy</button>
   </div>
-  <pre id="prompt-2db35f1a" class="prompt-text">You are an expert Business Intelligence Analyst specializing in root cause analysis and strategic recommendations. Your task is to meticulously analyze a provided dataset, identify critical trends or anomalies, infer their most probable root causes, and then formulate concrete, actionable strategies to address these findings.
+  <pre id="prompt-c5082564" class="prompt-text">You are a Strategic Tradeoff Analyst, skilled in dissecting complex decisions and clarifying optimal paths. Your task is to help me make a critical choice by systematically evaluating multiple options against defined criteria, highlighting tradeoffs, and providing a data-driven recommendation.
 
-The dataset will be provided in [DATA FORMAT, e.g., CSV text, JSON array, bulleted list of key metrics] and pertains to [TYPE OF DATA, e.g., customer churn, sales performance, website analytics]. Your analysis should be geared towards achieving the specific business goal of [SPECIFIC BUSINESS GOAL, e.g., reducing customer churn by 15%, increasing Q3 sales by 10%].
+I need to decide on: [THE CORE DECISION, e.g., &#39;which marketing strategy to pursue for our new product launch&#39;, &#39;whether to invest in upgrading our legacy system or adopting a new SaaS platform&#39;].
 
-Focus on identifying the top 3-5 most significant and impactful insights. Avoid generic observations; instead, strive for deep, data-backed interpretations. Your recommendations should be practical, measurable, and consider potential resource implications.
+My primary options are:
+1. [OPTION 1 DESCRIPTION, e.g., &#39;Aggressive social media campaign with influencer partnerships&#39;]
+2. [OPTION 2 DESCRIPTION, e.g., &#39;Traditional PR and media outreach with targeted advertising&#39;]
+3. [OPTION 3 DESCRIPTION, e.g., &#39;Hybrid approach combining limited social media with industry event sponsorships&#39;]
+(Add more options as needed.)
 
-Present your analysis in the following structured format:
+The key criteria for evaluating these options are:
+- [CRITERION 1, e.g., &#39;Cost-effectiveness&#39;]
+- [CRITERION 2, e.g., &#39;Reach and audience engagement&#39;]
+- [CRITERION 3, e.g., &#39;Time to market/implementation speed&#39;]
+- [CRITERION 4, e.g., &#39;Long-term brand impact&#39;]
+- [CRITERION 5, e.g., &#39;Resource dependency (staff, tech)&#39;]
+(Add more criteria as needed.)
 
-1.  **Executive Summary**: A concise overview of the most critical findings and overarching recommendations.
-2.  **Key Trends &amp; Anomalies**:
-    *   Trend/Anomaly 1: [Description of finding] - [Key supporting data points/metrics]
-    *   Trend/Anomaly 2: ...
-3.  **Likely Root Causes**:
-    *   Cause for Trend/Anomaly 1: [Detailed explanation of the probable cause]
-    *   Cause for Trend/Anomaly 2: ...
-4.  **Actionable Recommendations**:
-    *   Recommendation 1: [Specific, measurable action] - [Expected impact] - [Estimated resources/effort]
-    *   Recommendation 2: ...
+Consider the following optional weightings for these criteria (if applicable, otherwise state &#39;equal&#39;): [E.g., &#39;Cost-effectiveness (40%), Reach (30%), Time to market (20%), Brand impact (10%)&#39;]
 
-[THE RAW DATASET]</pre>
+Also, consider the perspective of these stakeholders: [E.g., &#39;CEO (focused on ROI), Marketing Team (focused on brand visibility), Finance Department (focused on budget adherence)&#39;].
+
+Your output should be structured as follows:
+1.  **Decision Overview**: Briefly restate the decision and options.
+2.  **Criteria Breakdown**: A concise explanation of how each criterion will be applied.
+3.  **Comparative Analysis Table**: A table comparing each option against each criterion, with a qualitative score (e.g., Low, Medium, High, or 1-5) and a brief justification for the score.
+4.  **Tradeoff Analysis**: For each option, identify its primary strengths and weaknesses, and the key tradeoffs involved.
+5.  **Recommended Option**: State your recommended option based on the analysis and weighted criteria (if provided).
+6.  **Justification &amp; Risks**: Explain *why* this option is recommended, acknowledging its potential downsides and suggesting mitigation strategies.
+7.  **Next Steps/Considerations**: Any further data points or discussions that might refine the decision.
+
+Focus on providing actionable insights and a clear, defensible rationale for your recommendation.</pre>
 </div>
-<section class="why-section"><h3>How to use this</h3><p>Use this prompt when you have raw data and need more than just a summary – you need deep insights, root cause identification, and practical strategies. It&#39;s ideal for business decision-makers, product managers, or marketers looking to translate data into strategic action plans. Simply paste your data into the `[THE RAW DATASET]` placeholder after filling in the other details.</p></section>
-<section class="example-section"><h3>Example</h3><p>**[DATA FORMAT]**: CSV text
-**[TYPE OF DATA]**: E-commerce sales and customer review data
-**[SPECIFIC BUSINESS GOAL]**: Increase average order value by 15% and improve customer satisfaction scores.
-**[THE RAW DATASET]**: (Paste your CSV data here)</p></section>
+<section class="why-section"><h3>How to use this</h3><p>Fill in your core decision, specific options, and the criteria you&#39;ll use for evaluation. Optionally, assign weights to your criteria and mention key stakeholder perspectives. The AI will then act as a Strategic Tradeoff Analyst, providing a structured comparison, tradeoff analysis, and a justified recommendation to help you make an informed choice.</p></section>
+<section class="example-section"><h3>Example</h3><p>Core Decision: Choosing between two ERP systems. Options: &#39;SAP S/4HANA Cloud&#39; vs. &#39;Microsoft Dynamics 365&#39;. Criteria: Cost, Scalability, Integration Ease, User Adoption. Weighting: Cost (40%), Scalability (30%), Integration (20%), User Adoption (10%).</p></section>
 <script>
 (function() {
   document.querySelectorAll('.copy-btn').forEach(function(btn) {
@@ -185,7 +194,8 @@ Present your analysis in the following structured format:
 })();
 </script>
 </section>
-<section class="archive-section"><h2>Past prompts</h2><ul class="archive-list"><li><a href="prompts/2026-05-25.html">May 25, 2026</a></li>
+<section class="archive-section"><h2>Past prompts</h2><ul class="archive-list"><li><a href="prompts/2026-05-26.html">May 26, 2026</a></li>
+<li><a href="prompts/2026-05-25.html">May 25, 2026</a></li>
 <li><a href="prompts/2026-05-24.html">May 24, 2026</a></li>
 <li><a href="prompts/2026-05-23.html">May 23, 2026</a></li>
 <li><a href="prompts/2026-05-22.html">May 22, 2026</a></li>
@@ -221,7 +231,7 @@ Present your analysis in the following structured format:
     <p>Arunkumar Panchanana &middot; AI tools &middot; Automation &middot; IT Leadership</p>
     <p>Email: <a href="mailto:arunkumar.panchanana@gmail.com">arunkumar.panchanana@gmail.com</a></p>
     <div>Generated daily by AI.</div>
-    <div class="footer-meta">Updated <time datetime="2026-05-26T02:05:10Z">2026-05-26T02:05:10Z</time></div>
+    <div class="footer-meta">Updated <time datetime="2026-05-27T02:06:28Z">2026-05-27T02:06:28Z</time></div>
   </div>
 </footer>
 </body>
