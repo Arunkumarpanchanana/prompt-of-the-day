@@ -123,50 +123,38 @@
 </header>
 
 <section>
-  <div class="section-eyebrow">May 27, 2026 &middot; Decision-making</div>
-  <h2 class="prompt-title">Strategic Tradeoff Decision Architect</h2>
-  <p class="prompt-subtitle">Guides complex decision-making by systematically evaluating options against weighted criteria and identifying critical tradeoffs.</p>
+  <div class="section-eyebrow">May 28, 2026 &middot; Debugging</div>
+  <h2 class="prompt-title">Incident Commander: Root Cause Analysis</h2>
+  <p class="prompt-subtitle">Systematically diagnose critical issues, identify root causes, and outline resolution plans with expert guidance.</p>
   
 <div class="prompt-block">
   <div class="prompt-block-header">
     <span class="prompt-label">Prompt</span>
-    <button class="copy-btn" data-target="prompt-c5082564" type="button">Copy</button>
+    <button class="copy-btn" data-target="prompt-dd576f27" type="button">Copy</button>
   </div>
-  <pre id="prompt-c5082564" class="prompt-text">You are a Strategic Tradeoff Analyst, skilled in dissecting complex decisions and clarifying optimal paths. Your task is to help me make a critical choice by systematically evaluating multiple options against defined criteria, highlighting tradeoffs, and providing a data-driven recommendation.
+  <pre id="prompt-dd576f27" class="prompt-text">You are a seasoned Incident Commander and Senior Debugging Specialist. Your task is to systematically diagnose a critical issue affecting [SYSTEM/APPLICATION NAME] to pinpoint root cause(s) and outline a clear resolution path.
 
-I need to decide on: [THE CORE DECISION, e.g., &#39;which marketing strategy to pursue for our new product launch&#39;, &#39;whether to invest in upgrading our legacy system or adopting a new SaaS platform&#39;].
+First, I will provide initial observations. Based on this, you will:
 
-My primary options are:
-1. [OPTION 1 DESCRIPTION, e.g., &#39;Aggressive social media campaign with influencer partnerships&#39;]
-2. [OPTION 2 DESCRIPTION, e.g., &#39;Traditional PR and media outreach with targeted advertising&#39;]
-3. [OPTION 3 DESCRIPTION, e.g., &#39;Hybrid approach combining limited social media with industry event sponsorships&#39;]
-(Add more options as needed.)
+1.  **Clarifying Questions**: Propose up to 3 critical questions to gather essential information, narrowing the problem space.
+2.  **Initial Hypotheses**: Formulate 2-3 plausible hypotheses for the underlying cause, considering layers (e.g., application code, infrastructure, network, database, external service, recent changes).
+3.  **Diagnostic Plan**: Outline a step-by-step plan (3-5 steps) to test hypotheses and gather evidence. Prioritize non-disruptive checks.
+4.  **Potential Root Causes**: Based on *hypothesized* diagnostic outcomes, list the most likely root causes.
+5.  **Recommended Actions (Short-term)**: Suggest immediate mitigation or workarounds to restore service.
+6.  **Recommended Actions (Long-term)**: Propose permanent solutions or preventative measures to avoid recurrence.
 
-The key criteria for evaluating these options are:
-- [CRITERION 1, e.g., &#39;Cost-effectiveness&#39;]
-- [CRITERION 2, e.g., &#39;Reach and audience engagement&#39;]
-- [CRITERION 3, e.g., &#39;Time to market/implementation speed&#39;]
-- [CRITERION 4, e.g., &#39;Long-term brand impact&#39;]
-- [CRITERION 5, e.g., &#39;Resource dependency (staff, tech)&#39;]
-(Add more criteria as needed.)
+Here is the initial information:
+-   **System/Application**: [SYSTEM/APPLICATION NAME]
+-   **Symptoms Observed**: [DETAILED DESCRIPTION OF SYMPTOMS, e.g., &#39;Users report slow login times, then 500 errors on checkout.&#39;]
+-   **Error Messages/Log Snippets**: [RELEVANT ERROR MESSAGES, STACK TRACES, OR LOG ENTRIES. If none, state &#39;None available.&#39;]
+-   **Recent Changes/Deployments**: [ANY RECENT CODE DEPLOYMENTS, INFRASTRUCTURE CHANGES, CONFIG UPDATES, OR EXTERNAL SERVICE CHANGES. If none, state &#39;None known.&#39;]
+-   **Environment Details**: [E.g., &#39;Production EU-WEST-1&#39;, &#39;Staging environment&#39;, &#39;Local development machine&#39;.]
+-   **Expected Behavior**: [BRIEF DESCRIPTION OF HOW THE SYSTEM SHOULD NORMALLY BEHAVE.]
 
-Consider the following optional weightings for these criteria (if applicable, otherwise state &#39;equal&#39;): [E.g., &#39;Cost-effectiveness (40%), Reach (30%), Time to market (20%), Brand impact (10%)&#39;]
-
-Also, consider the perspective of these stakeholders: [E.g., &#39;CEO (focused on ROI), Marketing Team (focused on brand visibility), Finance Department (focused on budget adherence)&#39;].
-
-Your output should be structured as follows:
-1.  **Decision Overview**: Briefly restate the decision and options.
-2.  **Criteria Breakdown**: A concise explanation of how each criterion will be applied.
-3.  **Comparative Analysis Table**: A table comparing each option against each criterion, with a qualitative score (e.g., Low, Medium, High, or 1-5) and a brief justification for the score.
-4.  **Tradeoff Analysis**: For each option, identify its primary strengths and weaknesses, and the key tradeoffs involved.
-5.  **Recommended Option**: State your recommended option based on the analysis and weighted criteria (if provided).
-6.  **Justification &amp; Risks**: Explain *why* this option is recommended, acknowledging its potential downsides and suggesting mitigation strategies.
-7.  **Next Steps/Considerations**: Any further data points or discussions that might refine the decision.
-
-Focus on providing actionable insights and a clear, defensible rationale for your recommendation.</pre>
+Proceed with your analysis. If more information is needed after my initial input, ask your clarifying questions, and I will respond before you continue.</pre>
 </div>
-<section class="why-section"><h3>How to use this</h3><p>Fill in your core decision, specific options, and the criteria you&#39;ll use for evaluation. Optionally, assign weights to your criteria and mention key stakeholder perspectives. The AI will then act as a Strategic Tradeoff Analyst, providing a structured comparison, tradeoff analysis, and a justified recommendation to help you make an informed choice.</p></section>
-<section class="example-section"><h3>Example</h3><p>Core Decision: Choosing between two ERP systems. Options: &#39;SAP S/4HANA Cloud&#39; vs. &#39;Microsoft Dynamics 365&#39;. Criteria: Cost, Scalability, Integration Ease, User Adoption. Weighting: Cost (40%), Scalability (30%), Integration (20%), User Adoption (10%).</p></section>
+<section class="why-section"><h3>How to use this</h3><p>Use this prompt when facing a complex system failure or unexpected behavior. Provide as much detail as possible in the placeholders to get the most accurate and actionable diagnostic plan. The AI will act as a senior expert, guiding you through a structured debugging process from symptoms to long-term solutions.</p></section>
+<section class="example-section"><h3>Example</h3><p>SYSTEM/APPLICATION NAME: E-commerce Checkout Service, SYMPTOMS OBSERVED: Customers cannot complete purchases, transactions fail with &#39;Payment Gateway Error&#39;, ERROR MESSAGES: &#39;Stripe API connection timed out&#39;, RECENT CHANGES: New firewall rule applied yesterday.</p></section>
 <script>
 (function() {
   document.querySelectorAll('.copy-btn').forEach(function(btn) {
@@ -194,7 +182,8 @@ Focus on providing actionable insights and a clear, defensible rationale for you
 })();
 </script>
 </section>
-<section class="archive-section"><h2>Past prompts</h2><ul class="archive-list"><li><a href="prompts/2026-05-26.html">May 26, 2026</a></li>
+<section class="archive-section"><h2>Past prompts</h2><ul class="archive-list"><li><a href="prompts/2026-05-27.html">May 27, 2026</a></li>
+<li><a href="prompts/2026-05-26.html">May 26, 2026</a></li>
 <li><a href="prompts/2026-05-25.html">May 25, 2026</a></li>
 <li><a href="prompts/2026-05-24.html">May 24, 2026</a></li>
 <li><a href="prompts/2026-05-23.html">May 23, 2026</a></li>
@@ -231,7 +220,7 @@ Focus on providing actionable insights and a clear, defensible rationale for you
     <p>Arunkumar Panchanana &middot; AI tools &middot; Automation &middot; IT Leadership</p>
     <p>Email: <a href="mailto:arunkumar.panchanana@gmail.com">arunkumar.panchanana@gmail.com</a></p>
     <div>Generated daily by AI.</div>
-    <div class="footer-meta">Updated <time datetime="2026-05-27T02:06:28Z">2026-05-27T02:06:28Z</time></div>
+    <div class="footer-meta">Updated <time datetime="2026-05-28T02:05:10Z">2026-05-28T02:05:10Z</time></div>
   </div>
 </footer>
 </body>
