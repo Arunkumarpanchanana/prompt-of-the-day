@@ -123,27 +123,50 @@
 </header>
 
 <section>
-  <div class="section-eyebrow">June 9, 2026 &middot; Data</div>
-  <h2 class="prompt-title">Dataset Analysis &amp; Insight Generation</h2>
-  <p class="prompt-subtitle">Extract key insights, identify trends, and summarize a dataset based on specific analytical goals.</p>
+  <div class="section-eyebrow">June 10, 2026 &middot; Decision-making</div>
+  <h2 class="prompt-title">Strategic Decision Architect</h2>
+  <p class="prompt-subtitle">Helps users make complex decisions by structuring options, evaluating criteria, and highlighting tradeoffs.</p>
   
 <div class="prompt-block">
   <div class="prompt-block-header">
     <span class="prompt-label">Prompt</span>
-    <button class="copy-btn" data-target="prompt-f121a68b" type="button">Copy</button>
+    <button class="copy-btn" data-target="prompt-45a31cb2" type="button">Copy</button>
   </div>
-  <pre id="prompt-f121a68b" class="prompt-text">Act as a Senior Data Analyst. I have a dataset containing [describe the dataset, e.g., customer purchase history, website traffic logs, sensor readings]. The dataset has the following columns: [list column names and briefly describe their data type, e.g., &#39;user_id (integer)&#39;, &#39;purchase_date (datetime)&#39;, &#39;product_category (string)&#39;, &#39;price (float)&#39;]. My primary goal is to understand [state your main objective, e.g., &#39;which product categories are most popular among new customers&#39;, &#39;the impact of marketing campaigns on website traffic&#39;, &#39;anomalies in sensor readings during peak hours&#39;].
+  <pre id="prompt-45a31cb2" class="prompt-text">You are a &#39;Strategic Decision Architect&#39; specializing in multi-criteria analysis and tradeoff evaluation. Your goal is to help me make a complex decision by systematically breaking it down, evaluating options against defined criteria, and highlighting the inherent tradeoffs.
 
-Specifically, I need you to:
-1.  Perform exploratory data analysis (EDA) focusing on [mention specific areas for EDA, e.g., &#39;distribution of prices&#39;, &#39;frequency of purchases by category&#39;, &#39;average session duration&#39;].
-2.  Identify and quantify key trends or patterns related to my goal. Highlight any significant correlations or outliers.
-3.  Summarize your findings in a concise report, including actionable insights or recommendations based on the data.
-4.  Present the results using clear language, avoiding excessive jargon. If possible, suggest potential visualizations for key findings (e.g., &#39;a bar chart showing category popularity&#39;, &#39;a time-series plot of traffic&#39;).
+I need to make a decision regarding: [THE CORE DECISION, e.g., &#39;choosing between three potential software vendors for our new CRM system&#39;].
 
-Assume the data is provided in a tabular format. Please structure your output with sections for &#39;Exploratory Data Analysis&#39;, &#39;Key Findings &amp; Trends&#39;, and &#39;Actionable Insights/Recommendations&#39;.</pre>
+Here are the primary options I am considering:
+[OPTION 1, e.g., &#39;Vendor A (Cloud-based, high initial cost, extensive features)&#39;]
+[OPTION 2, e.g., &#39;Vendor B (On-premise, moderate cost, good customization)&#39;]
+[OPTION 3, e.g., &#39;Vendor C (Hybrid, subscription-based, strong support reputation)&#39;]
+[ADD MORE OPTIONS AS NEEDED]
+
+The key criteria I want to use for evaluation are:
+[CRITERION 1, e.g., &#39;Total Cost of Ownership (TCO)&#39;]
+[CRITERION 2, e.g., &#39;Scalability and Future-proofing&#39;]
+[CRITERION 3, e.g., &#39;Ease of Integration with Existing Systems&#39;]
+[CRITERION 4, e.g., &#39;User Adoption and Training Overhead&#39;]
+[CRITERION 5, e.g., &#39;Vendor Support and Reliability&#39;]
+[ADD MORE CRITERIA AS NEEDED]
+
+Optionally, you can suggest initial weights for these criteria based on common business priorities, or I can provide them later. For now, assume equal weighting unless I specify otherwise.
+
+Your output should be structured as follows:
+1.  **Decision Framing**: Briefly restate the decision and the goal.
+2.  **Comparative Analysis Table**: A table where rows are options and columns are criteria. Each cell should contain a concise assessment (e.g., &#39;High&#39;, &#39;Medium&#39;, &#39;Low&#39; or a brief pro/con) for that option against that criterion, explicitly noting tradeoffs where relevant.
+3.  **Tradeoff Summary by Option**: For each option, summarize its main strengths and weaknesses across all criteria, focusing on the key tradeoffs.
+4.  **Overall Recommendation/Guidance**: Based on the analysis, provide a nuanced recommendation or a structured set of considerations to guide my final choice, acknowledging the complexities and potential subjective factors. Emphasize the most impactful tradeoffs.
+
+Ensure your analysis is objective, detailed, and directly addresses the interplay between options and criteria.</pre>
 </div>
-<section class="why-section"><h3>How to use this</h3><p>Replace the bracketed placeholders with details about your dataset, your analytical objective, and specific areas you want the AI to focus on. The more specific you are, the more targeted and useful the AI&#39;s analysis will be.</p></section>
-<section class="example-section"><h3>Example</h3><p>Dataset: E-commerce sales data with columns: &#39;order_id&#39;, &#39;customer_id&#39;, &#39;order_date&#39;, &#39;product_name&#39;, &#39;category&#39;, &#39;quantity&#39;, &#39;price&#39;. Goal: Understand which product categories drive repeat purchases. EDA focus: Purchase frequency per category, average order value by category.</p></section>
+<section class="why-section"><h3>How to use this</h3><p>Provide your core decision, the options you&#39;re considering, and the criteria for evaluation. The AI will act as a strategic advisor, breaking down the problem, analyzing tradeoffs, and offering a structured recommendation. Use the placeholders to input your specific details.</p></section>
+<section class="example-section"><h3>Example</h3><p>THE CORE DECISION: Choosing a new project management software.
+OPTION 1: Asana (flexible, good for creative teams)
+OPTION 2: Jira (robust, good for dev teams)
+CRITERION 1: Cost
+CRITERION 2: Ease of use
+CRITERION 3: Integration with Slack</p></section>
 <script>
 (function() {
   document.querySelectorAll('.copy-btn').forEach(function(btn) {
@@ -171,7 +194,8 @@ Assume the data is provided in a tabular format. Please structure your output wi
 })();
 </script>
 </section>
-<section class="archive-section"><h2>Past prompts</h2><ul class="archive-list"><li><a href="prompts/2026-06-08.html">June 8, 2026</a></li>
+<section class="archive-section"><h2>Past prompts</h2><ul class="archive-list"><li><a href="prompts/2026-06-09.html">June 9, 2026</a></li>
+<li><a href="prompts/2026-06-08.html">June 8, 2026</a></li>
 <li><a href="prompts/2026-06-07.html">June 7, 2026</a></li>
 <li><a href="prompts/2026-06-06.html">June 6, 2026</a></li>
 <li><a href="prompts/2026-06-05.html">June 5, 2026</a></li>
@@ -221,7 +245,7 @@ Assume the data is provided in a tabular format. Please structure your output wi
     <p>Arunkumar Panchanana &middot; AI tools &middot; Automation &middot; IT Leadership</p>
     <p>Email: <a href="mailto:arunkumar.panchanana@gmail.com">arunkumar.panchanana@gmail.com</a></p>
     <div>Generated daily by AI.</div>
-    <div class="footer-meta">Updated <time datetime="2026-06-09T02:06:35Z">2026-06-09T02:06:35Z</time></div>
+    <div class="footer-meta">Updated <time datetime="2026-06-10T02:06:03Z">2026-06-10T02:06:03Z</time></div>
   </div>
 </footer>
 </body>
