@@ -123,50 +123,36 @@
 </header>
 
 <section>
-  <div class="section-eyebrow">June 10, 2026 &middot; Decision-making</div>
-  <h2 class="prompt-title">Strategic Decision Architect</h2>
-  <p class="prompt-subtitle">Helps users make complex decisions by structuring options, evaluating criteria, and highlighting tradeoffs.</p>
+  <div class="section-eyebrow">June 11, 2026 &middot; Debugging</div>
+  <h2 class="prompt-title">System Failure Root Cause Analysis</h2>
+  <p class="prompt-subtitle">A systematic approach to diagnose complex system failures, identify root causes, and outline actionable diagnostic steps.</p>
   
 <div class="prompt-block">
   <div class="prompt-block-header">
     <span class="prompt-label">Prompt</span>
-    <button class="copy-btn" data-target="prompt-45a31cb2" type="button">Copy</button>
+    <button class="copy-btn" data-target="prompt-03385ee6" type="button">Copy</button>
   </div>
-  <pre id="prompt-45a31cb2" class="prompt-text">You are a &#39;Strategic Decision Architect&#39; specializing in multi-criteria analysis and tradeoff evaluation. Your goal is to help me make a complex decision by systematically breaking it down, evaluating options against defined criteria, and highlighting the inherent tradeoffs.
+  <pre id="prompt-03385ee6" class="prompt-text">You are an expert Systems Debugger and Root Cause Analyst. Your task is to help me systematically diagnose a complex system failure or unexpected behavior. I will provide you with detailed information, and you must guide me through a structured diagnostic process.
 
-I need to make a decision regarding: [THE CORE DECISION, e.g., &#39;choosing between three potential software vendors for our new CRM system&#39;].
+Here is the information about the issue:
+- **System/Application:** [NAME OF SYSTEM, SERVICE, OR APPLICATION]
+- **Problem Description:** [DETAILED DESCRIPTION OF SYMPTOMS, ERROR MESSAGES, OBSERVED BEHAVIOR, AND WHEN IT STARTED]
+- **Expected Behavior:** [WHAT SHOULD BE HAPPENING INSTEAD?]
+- **Environment Details:** [E.G., OS, PROGRAMMING LANGUAGE, FRAMEWORK, DATABASE, CLOUD PROVIDER, RELEVANT VERSIONS, INFRASTRUCTURE TYPE]
+- **Recent Changes:** [ANY RECENT DEPLOYMENTS, CONFIGURATION CHANGES, OR INFRASTRUCTURE MODIFICATIONS?]
+- **Relevant Logs/Traces:** [PASTE KEY LOG SNIPPETS, STACK TRACES, OR METRICS ANOMALIES IF AVAILABLE]
+- **Steps Already Taken:** [DESCRIBE ANY TROUBLESHOOTING STEPS YOU&#39;VE ALREADY ATTEMPTED AND THEIR OUTCOMES]
 
-Here are the primary options I am considering:
-[OPTION 1, e.g., &#39;Vendor A (Cloud-based, high initial cost, extensive features)&#39;]
-[OPTION 2, e.g., &#39;Vendor B (On-premise, moderate cost, good customization)&#39;]
-[OPTION 3, e.g., &#39;Vendor C (Hybrid, subscription-based, strong support reputation)&#39;]
-[ADD MORE OPTIONS AS NEEDED]
+Based on this, provide your analysis in the following structured format:
 
-The key criteria I want to use for evaluation are:
-[CRITERION 1, e.g., &#39;Total Cost of Ownership (TCO)&#39;]
-[CRITERION 2, e.g., &#39;Scalability and Future-proofing&#39;]
-[CRITERION 3, e.g., &#39;Ease of Integration with Existing Systems&#39;]
-[CRITERION 4, e.g., &#39;User Adoption and Training Overhead&#39;]
-[CRITERION 5, e.g., &#39;Vendor Support and Reliability&#39;]
-[ADD MORE CRITERIA AS NEEDED]
-
-Optionally, you can suggest initial weights for these criteria based on common business priorities, or I can provide them later. For now, assume equal weighting unless I specify otherwise.
-
-Your output should be structured as follows:
-1.  **Decision Framing**: Briefly restate the decision and the goal.
-2.  **Comparative Analysis Table**: A table where rows are options and columns are criteria. Each cell should contain a concise assessment (e.g., &#39;High&#39;, &#39;Medium&#39;, &#39;Low&#39; or a brief pro/con) for that option against that criterion, explicitly noting tradeoffs where relevant.
-3.  **Tradeoff Summary by Option**: For each option, summarize its main strengths and weaknesses across all criteria, focusing on the key tradeoffs.
-4.  **Overall Recommendation/Guidance**: Based on the analysis, provide a nuanced recommendation or a structured set of considerations to guide my final choice, acknowledging the complexities and potential subjective factors. Emphasize the most impactful tradeoffs.
-
-Ensure your analysis is objective, detailed, and directly addresses the interplay between options and criteria.</pre>
+1.  **Problem Summary &amp; Clarification:** Rephrase the problem in your own words to confirm understanding. Identify any immediate ambiguities or ask 1-2 crucial clarifying questions.
+2.  **Potential Root Causes (Prioritized):** List 3-5 most likely root causes, ordered by probability. For each, briefly explain *why* it&#39;s a potential cause given the symptoms.
+3.  **Diagnostic Steps:** For each potential root cause, outline specific, actionable steps to verify or rule it out. Include commands, checks, data points to gather, or specific logs to inspect.
+4.  **Mitigation/Resolution Strategies:** For the top 1-2 most probable causes, suggest immediate workarounds or long-term resolution strategies.
+5.  **Further Information Needed:** What additional data or context would significantly aid your diagnosis if the initial steps don&#39;t yield a solution?</pre>
 </div>
-<section class="why-section"><h3>How to use this</h3><p>Provide your core decision, the options you&#39;re considering, and the criteria for evaluation. The AI will act as a strategic advisor, breaking down the problem, analyzing tradeoffs, and offering a structured recommendation. Use the placeholders to input your specific details.</p></section>
-<section class="example-section"><h3>Example</h3><p>THE CORE DECISION: Choosing a new project management software.
-OPTION 1: Asana (flexible, good for creative teams)
-OPTION 2: Jira (robust, good for dev teams)
-CRITERION 1: Cost
-CRITERION 2: Ease of use
-CRITERION 3: Integration with Slack</p></section>
+<section class="why-section"><h3>How to use this</h3><p>Provide comprehensive details about your system&#39;s problem, environment, and any steps you&#39;ve already taken. The AI will act as an expert debugger, offering prioritized potential causes, specific diagnostic steps, and resolution strategies. Use the output to guide your troubleshooting process and systematically narrow down the issue.</p></section>
+<section class="example-section"><h3>Example</h3><p>System/Application: E-commerce Checkout Service. Problem: Users report &#39;500 Internal Server Error&#39; intermittently during payment processing. Environment: Kubernetes, Node.js, PostgreSQL. Recent Changes: Deployed new payment gateway integration.</p></section>
 <script>
 (function() {
   document.querySelectorAll('.copy-btn').forEach(function(btn) {
@@ -194,7 +180,8 @@ CRITERION 3: Integration with Slack</p></section>
 })();
 </script>
 </section>
-<section class="archive-section"><h2>Past prompts</h2><ul class="archive-list"><li><a href="prompts/2026-06-09.html">June 9, 2026</a></li>
+<section class="archive-section"><h2>Past prompts</h2><ul class="archive-list"><li><a href="prompts/2026-06-10.html">June 10, 2026</a></li>
+<li><a href="prompts/2026-06-09.html">June 9, 2026</a></li>
 <li><a href="prompts/2026-06-08.html">June 8, 2026</a></li>
 <li><a href="prompts/2026-06-07.html">June 7, 2026</a></li>
 <li><a href="prompts/2026-06-06.html">June 6, 2026</a></li>
@@ -245,7 +232,7 @@ CRITERION 3: Integration with Slack</p></section>
     <p>Arunkumar Panchanana &middot; AI tools &middot; Automation &middot; IT Leadership</p>
     <p>Email: <a href="mailto:arunkumar.panchanana@gmail.com">arunkumar.panchanana@gmail.com</a></p>
     <div>Generated daily by AI.</div>
-    <div class="footer-meta">Updated <time datetime="2026-06-10T02:06:03Z">2026-06-10T02:06:03Z</time></div>
+    <div class="footer-meta">Updated <time datetime="2026-06-11T02:05:55Z">2026-06-11T02:05:55Z</time></div>
   </div>
 </footer>
 </body>
