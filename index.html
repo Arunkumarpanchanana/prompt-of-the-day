@@ -123,54 +123,34 @@
 </header>
 
 <section>
-  <div class="section-eyebrow">June 24, 2026 &middot; Decision-making</div>
-  <h2 class="prompt-title">Strategic Decision Architect</h2>
-  <p class="prompt-subtitle">Get a structured, objective analysis of your options, criteria, and tradeoffs to make informed decisions.</p>
+  <div class="section-eyebrow">June 25, 2026 &middot; Debugging</div>
+  <h2 class="prompt-title">Systematic Root Cause Analysis</h2>
+  <p class="prompt-subtitle">Guides users through a structured debugging process, from problem description to actionable diagnostic steps and hypotheses.</p>
   
 <div class="prompt-block">
   <div class="prompt-block-header">
     <span class="prompt-label">Prompt</span>
-    <button class="copy-btn" data-target="prompt-edf3c786" type="button">Copy</button>
+    <button class="copy-btn" data-target="prompt-5f808be3" type="button">Copy</button>
   </div>
-  <pre id="prompt-edf3c786" class="prompt-text">You are a neutral, highly analytical Strategic Decision Architect. Your task is to help me systematically evaluate a set of potential choices to achieve my primary goal, considering critical criteria and their relative importance.
+  <pre id="prompt-5f808be3" class="prompt-text">You are an expert systems diagnostician and root cause analyst. Your task is to help me systematically debug a problem I&#39;m encountering. I will provide you with a description of the issue, the observed symptoms, and any relevant context.
 
-I need to make a decision regarding: [PRIMARY DECISION/GOAL, e.g., &#39;choosing a new project management software&#39;].
-The options I am considering are: [LIST OF OPTIONS, e.g., &#39;Asana, Trello, Jira, Monday.com&#39;].
-The key criteria for evaluation are: [LIST OF KEY CRITERIA, e.g., &#39;Cost, Ease of Use, Integration Capabilities, Scalability, Support&#39;].
-The relative importance of these criteria is: [OPTIONAL: SPECIFY WEIGHTS/PRIORITIES, e.g., &#39;Ease of Use (High), Cost (Medium), Scalability (Very High)&#39;].
-Optionally, consider the perspectives of these stakeholders: [OPTIONAL: LIST STAKEHOLDER GROUPS, e.g., &#39;Engineering Team, Management, End-Users&#39;].
+Your process should be as follows:
+1.  **Acknowledge and Clarify**: First, confirm your understanding of the problem. Then, ask up to three highly targeted clarifying questions to gather crucial missing information or narrow down the scope. These questions should aim to identify potential areas of investigation.
+2.  **Formulate Hypotheses**: Based on the information provided and your clarifying questions, generate 2-4 plausible hypotheses for the root cause. Rank these hypotheses by their likelihood, explaining your reasoning briefly for each.
+3.  **Suggest Diagnostic Steps**: For each of the top 2-3 hypotheses, propose one specific, actionable diagnostic step or test that I can perform to either confirm or rule out that hypothesis. Describe what I should look for in the results of each step.
+4.  **Recommend Next Actions**: Based on the expected outcomes of the diagnostic steps, suggest what information I should gather next or what the subsequent debugging approach might be.
 
-Your analysis should:
-1.  Objectively assess each option against every criterion.
-2.  Identify and articulate core tradeoffs.
-3.  Synthesize alignment with the primary goal and stakeholder perspectives (if provided).
-4.  Avoid making the final decision; provide a clear, structured analysis to empower my choice.
+I need your response to be structured clearly under these headings.
 
-Present your output in the following format:
-
-**1. Decision Context Summary:**
-    *   Goal:
-    *   Options:
-    *   Criteria &amp; Importance:
-    *   Stakeholders (if applicable):
-
-**2. Detailed Option Analysis:**
-    *   **[Option 1 Name]:**
-        *   Pros (aligned with criteria):
-        *   Cons (against criteria):
-        *   Key Tradeoffs:
-        *   Stakeholder View (if applicable):
-    *   **(Repeat for all options)**
-
-**3. Comparative Tradeoff Matrix:**
-    *   A table summarizing each option&#39;s performance against each criterion (e.g., using qualitative ratings like &#39;High&#39;, &#39;Medium&#39;, &#39;Low&#39; or brief notes).
-
-**4. Strategic Insights &amp; Next Steps:**
-    *   Highlight significant tradeoffs and their implications.
-    *   Suggest critical questions or areas for further investigation.</pre>
+Here is the problem:
+**Problem Description:** [DESCRIBE THE PROBLEM IN DETAIL, INCLUDING WHAT IS FAILING AND WHEN]
+**Observed Symptoms:** [LIST ALL SYMPTOMS, ERROR MESSAGES, AND UNEXPECTED BEHAVIORS]
+**Relevant Context:** [PROVIDE SYSTEM SPECS, RECENT CHANGES, ENVIRONMENT DETAILS, OR ANY OTHER PERTINENT INFORMATION]</pre>
 </div>
-<section class="why-section"><h3>How to use this</h3><p>Fill in your decision goal, the options you&#39;re considering, and the key criteria for evaluation. You can also specify the relative importance of criteria and list relevant stakeholder perspectives for a more nuanced analysis. The AI will act as your neutral advisor, providing a detailed breakdown and comparative matrix to help you weigh your choices effectively.</p></section>
-<section class="example-section"><h3>Example</h3><p>PRIMARY DECISION/GOAL: Choosing a new CRM system. OPTIONS: Salesforce, HubSpot, Zoho CRM. KEY CRITERIA: Cost, Features, Ease of Integration, Customer Support. IMPORTANCE: Features (High), Cost (Medium). STAKEHOLDERS: Sales Team, IT Department.</p></section>
+<section class="why-section"><h3>How to use this</h3><p>This prompt is designed to help you methodically approach complex debugging challenges. Fill in the placeholders with as much detail as possible about your problem. The AI will act as a diagnostic expert, guiding you through clarifying questions, hypothesis generation, and specific tests to pinpoint the root cause.</p></section>
+<section class="example-section"><h3>Example</h3><p>Problem Description: Our web application&#39;s login page is intermittently returning a &#39;500 Internal Server Error&#39; for some users.
+Observed Symptoms: Users report getting a blank page with &#39;500&#39; error. No specific error logs appear in the application server, but the load balancer logs show 500s.
+Relevant Context: Recently deployed a new authentication microservice. Database connection pool was also slightly reconfigured last week.</p></section>
 <script>
 (function() {
   document.querySelectorAll('.copy-btn').forEach(function(btn) {
@@ -198,7 +178,8 @@ Present your output in the following format:
 })();
 </script>
 </section>
-<section class="archive-section"><h2>Past prompts</h2><ul class="archive-list"><li><a href="prompts/2026-06-22.html">June 22, 2026</a></li>
+<section class="archive-section"><h2>Past prompts</h2><ul class="archive-list"><li><a href="prompts/2026-06-24.html">June 24, 2026</a></li>
+<li><a href="prompts/2026-06-22.html">June 22, 2026</a></li>
 <li><a href="prompts/2026-06-21.html">June 21, 2026</a></li>
 <li><a href="prompts/2026-06-20.html">June 20, 2026</a></li>
 <li><a href="prompts/2026-06-19.html">June 19, 2026</a></li>
@@ -262,7 +243,7 @@ Present your output in the following format:
     <p>Arunkumar Panchanana &middot; AI tools &middot; Automation &middot; IT Leadership</p>
     <p>Email: <a href="mailto:arunkumar.panchanana@gmail.com">arunkumar.panchanana@gmail.com</a></p>
     <div>Generated daily by AI.</div>
-    <div class="footer-meta">Updated <time datetime="2026-06-24T02:05:21Z">2026-06-24T02:05:21Z</time></div>
+    <div class="footer-meta">Updated <time datetime="2026-06-25T02:05:11Z">2026-06-25T02:05:11Z</time></div>
   </div>
 </footer>
 </body>
