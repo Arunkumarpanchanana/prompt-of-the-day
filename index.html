@@ -123,31 +123,49 @@
 </header>
 
 <section>
-  <div class="section-eyebrow">July 1, 2026 &middot; Brainstorming</div>
-  <h2 class="prompt-title">Innovation Matrix Brainstormer</h2>
-  <p class="prompt-subtitle">Generate diverse, categorized solutions for a challenge, considering constraints and potential drawbacks.</p>
+  <div class="section-eyebrow">July 2, 2026 &middot; Coding</div>
+  <h2 class="prompt-title">Staff Engineer Code Review &amp; Refactoring</h2>
+  <p class="prompt-subtitle">Get a senior engineer&#39;s perspective on your code, identifying technical debt, performance issues, and architectural weaknesses with actionable refactoring plans.</p>
   
 <div class="prompt-block">
   <div class="prompt-block-header">
     <span class="prompt-label">Prompt</span>
-    <button class="copy-btn" data-target="prompt-a100a837" type="button">Copy</button>
+    <button class="copy-btn" data-target="prompt-d1200e88" type="button">Copy</button>
   </div>
-  <pre id="prompt-a100a837" class="prompt-text">You are an expert innovation consultant specializing in divergent thinking and problem-solving. Your task is to help me brainstorm a comprehensive range of solutions for a specific challenge or goal.
+  <pre id="prompt-d1200e88" class="prompt-text">Act as a Staff Software Engineer with deep expertise in [PROGRAMMING LANGUAGE] and [FRAMEWORK/LIBRARY], specializing in maintainability, performance, and scalable architecture. Your task is to conduct a thorough code review and propose actionable refactoring strategies for the provided code.
 
-I need you to generate at least [NUMBER] distinct categories of approaches, each offering a unique perspective or methodology for addressing the core issue. For each category, provide [NUMBER] concrete, actionable ideas.
+This code is from a [APPLICATION TYPE, e.g., high-traffic microservice] and its purpose is [BRIEF DESCRIPTION OF CODE&#39;S PURPOSE].
 
-The core challenge/goal is: [DESCRIBE THE CHALLENGE/GOAL IN DETAIL].
-My primary constraint or resource limitation is: [DESCRIBE KEY CONSTRAINT, e.g., &quot;budget under $1000&quot;, &quot;must be implemented within 2 weeks&quot;, &quot;requires no external software&quot;, &quot;focus on community engagement&quot;].
-The target audience or context is: [DESCRIBE TARGET AUDIENCE/CONTEXT, e.g., &quot;small business owners&quot;, &quot;high school students&quot;, &quot;remote teams&quot;, &quot;local government&quot;].
+Analyze the code for the following:
+1.  **Technical Debt**: Identify patterns increasing complexity, reducing readability, or hindering future development.
+2.  **Potential Bugs/Edge Cases**: Point out areas prone to errors or missing robust error handling.
+3.  **Performance Bottlenecks**: Suggest areas where execution could be optimized.
+4.  **Architectural Weaknesses**: Evaluate how the code integrates with the broader system and if it adheres to good design principles (e.g., separation of concerns, single responsibility).
+5.  **Testability**: Assess how easily the code can be tested and suggest improvements.
 
-For each idea generated, also briefly identify one potential drawback, risk, or implementation hurdle. This helps ensure a balanced and thorough brainstorming process.
+Prioritize recommendations by impact on [SPECIFIC GOAL, e.g., system stability, developer productivity, long-term scalability] vs. implementation effort.
 
-Structure your output clearly with headings for each category and bullet points for ideas and their associated drawbacks.
+Provide your analysis in this format:
 
-Example categories might include: &#39;Technological Solutions&#39;, &#39;Community-Based Initiatives&#39;, &#39;Process Re-engineering&#39;, &#39;Educational Campaigns&#39;, &#39;Partnership Models&#39;, &#39;Behavioral Nudges&#39;, &#39;Resource Optimization&#39;.</pre>
+**Overall Summary:**
+A concise overview of the code&#39;s current state and major findings.
+
+**Prioritized Refactoring Suggestions:**
+For each suggestion:
+*   **Problem:** [Clear description of the issue, referencing specific lines/sections if possible]
+*   **Proposed Solution:** [High-level refactoring approach, e.g., &quot;Extract method,&quot; &quot;Introduce a service layer,&quot; &quot;Implement caching&quot;]
+*   **Justification:** [Brief explanation of why this change is beneficial and its impact]
+*   **Impact:** [Low/Medium/High]
+*   **Effort:** [Low/Medium/High]
+
+**Optional: Code Example:**
+For one or two critical suggestions, provide a revised code snippet demonstrating the proposed change.
+
+Here is the code to review:
+```[CODE SNIPPET]```</pre>
 </div>
-<section class="why-section"><h3>How to use this</h3><p>This prompt helps you systematically explore a wide range of solutions for any problem or goal. Fill in your specific challenge, primary constraints, and target context. The AI will act as an innovation consultant, providing structured ideas across different categories, along with a critical assessment of each, fostering truly divergent thinking.</p></section>
-<section class="example-section"><h3>Example</h3><p>Challenge: Increase local park usage. Constraint: No budget for new infrastructure. Target: Families with young children. I need 4 categories, 3 ideas each.</p></section>
+<section class="why-section"><h3>How to use this</h3><p>Provide your code snippet, specifying the language, framework, application type, and the code&#39;s purpose. The AI will act as a Staff Engineer, offering a detailed review and prioritized refactoring suggestions to improve your code&#39;s health and scalability. Use this to get expert feedback on critical sections of your codebase.</p></section>
+<section class="example-section"><h3>Example</h3><p>PROGRAMMING LANGUAGE: Python, FRAMEWORK/LIBRARY: FastAPI, APPLICATION TYPE: high-traffic microservice, CODE&#39;S PURPOSE: User authentication and session management, SPECIFIC GOAL: system stability.</p></section>
 <script>
 (function() {
   document.querySelectorAll('.copy-btn').forEach(function(btn) {
@@ -175,7 +193,8 @@ Example categories might include: &#39;Technological Solutions&#39;, &#39;Commun
 })();
 </script>
 </section>
-<section class="archive-section"><h2>Past prompts</h2><ul class="archive-list"><li><a href="prompts/2026-06-30.html">June 30, 2026</a></li>
+<section class="archive-section"><h2>Past prompts</h2><ul class="archive-list"><li><a href="prompts/2026-07-01.html">July 1, 2026</a></li>
+<li><a href="prompts/2026-06-30.html">June 30, 2026</a></li>
 <li><a href="prompts/2026-06-29.html">June 29, 2026</a></li>
 <li><a href="prompts/2026-06-28.html">June 28, 2026</a></li>
 <li><a href="prompts/2026-06-27.html">June 27, 2026</a></li>
@@ -246,7 +265,7 @@ Example categories might include: &#39;Technological Solutions&#39;, &#39;Commun
     <p>Arunkumar Panchanana &middot; AI tools &middot; Automation &middot; IT Leadership</p>
     <p>Email: <a href="mailto:arunkumar.panchanana@gmail.com">arunkumar.panchanana@gmail.com</a></p>
     <div>Generated daily by AI.</div>
-    <div class="footer-meta">Updated <time datetime="2026-07-01T02:05:16Z">2026-07-01T02:05:16Z</time></div>
+    <div class="footer-meta">Updated <time datetime="2026-07-02T02:05:16Z">2026-07-02T02:05:16Z</time></div>
   </div>
 </footer>
 </body>
