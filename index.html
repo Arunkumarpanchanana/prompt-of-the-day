@@ -95,6 +95,18 @@
     .page-header h1, .story-detail h1 { font-size: 26px; }
     main { padding: 36px 0 60px; }
   }
+
+  .prompt-list { list-style: none; padding: 0; margin: 0; }
+  .prompt-list li { padding: 0; border-bottom: 1px solid var(--border); }
+  .prompt-list li:last-child { border-bottom: 0; }
+  .prompt-list a { display: flex; align-items: center; gap: 16px; padding: 14px 16px; text-decoration: none; color: var(--text-2); transition: all 0.12s; border-radius: 6px; }
+  .prompt-list a:hover { background: rgba(37,99,235,0.06); color: var(--white); }
+  .prompt-date { font-size: 12px; color: var(--muted-2); white-space: nowrap; font-variant-numeric: tabular-nums; min-width: 85px; }
+  .prompt-title { font-size: 15px; font-weight: 500; }
+  .prompt-list a:hover .prompt-title { color: var(--accent-hover); }
+  @media (max-width: 600px) {
+    .prompt-list a { flex-direction: column; align-items: flex-start; gap: 4px; padding: 12px 8px; }
+  }
 </style>
 </head>
 <body>
@@ -189,73 +201,149 @@ DESIRED LENGTH: 1000 words</p></section>
 })();
 </script>
 </section>
-<section class="archive-section"><h2>Past prompts</h2><ul class="archive-list"><li><a href="prompts/2026-07-04.html">July 4, 2026</a></li>
-<li><a href="prompts/2026-07-03.html">July 3, 2026</a></li>
-<li><a href="prompts/2026-07-02.html">July 2, 2026</a></li>
-<li><a href="prompts/2026-07-01.html">July 1, 2026</a></li>
-<li><a href="prompts/2026-06-30.html">June 30, 2026</a></li>
-<li><a href="prompts/2026-06-29.html">June 29, 2026</a></li>
-<li><a href="prompts/2026-06-28.html">June 28, 2026</a></li>
-<li><a href="prompts/2026-06-27.html">June 27, 2026</a></li>
-<li><a href="prompts/2026-06-26.html">June 26, 2026</a></li>
-<li><a href="prompts/2026-06-25.html">June 25, 2026</a></li>
-<li><a href="prompts/2026-06-24.html">June 24, 2026</a></li>
-<li><a href="prompts/2026-06-22.html">June 22, 2026</a></li>
-<li><a href="prompts/2026-06-21.html">June 21, 2026</a></li>
-<li><a href="prompts/2026-06-20.html">June 20, 2026</a></li>
-<li><a href="prompts/2026-06-19.html">June 19, 2026</a></li>
-<li><a href="prompts/2026-06-18.html">June 18, 2026</a></li>
-<li><a href="prompts/2026-06-17.html">June 17, 2026</a></li>
-<li><a href="prompts/2026-06-16.html">June 16, 2026</a></li>
-<li><a href="prompts/2026-06-15.html">June 15, 2026</a></li>
-<li><a href="prompts/2026-06-14.html">June 14, 2026</a></li>
-<li><a href="prompts/2026-06-13.html">June 13, 2026</a></li>
-<li><a href="prompts/2026-06-12.html">June 12, 2026</a></li>
-<li><a href="prompts/2026-06-11.html">June 11, 2026</a></li>
-<li><a href="prompts/2026-06-10.html">June 10, 2026</a></li>
-<li><a href="prompts/2026-06-09.html">June 9, 2026</a></li>
-<li><a href="prompts/2026-06-08.html">June 8, 2026</a></li>
-<li><a href="prompts/2026-06-07.html">June 7, 2026</a></li>
-<li><a href="prompts/2026-06-06.html">June 6, 2026</a></li>
-<li><a href="prompts/2026-06-05.html">June 5, 2026</a></li>
-<li><a href="prompts/2026-06-04.html">June 4, 2026</a></li>
-<li><a href="prompts/2026-06-03.html">June 3, 2026</a></li>
-<li><a href="prompts/2026-06-02.html">June 2, 2026</a></li>
-<li><a href="prompts/2026-06-01.html">June 1, 2026</a></li>
-<li><a href="prompts/2026-05-31.html">May 31, 2026</a></li>
-<li><a href="prompts/2026-05-30.html">May 30, 2026</a></li>
-<li><a href="prompts/2026-05-29.html">May 29, 2026</a></li>
-<li><a href="prompts/2026-05-28.html">May 28, 2026</a></li>
-<li><a href="prompts/2026-05-27.html">May 27, 2026</a></li>
-<li><a href="prompts/2026-05-26.html">May 26, 2026</a></li>
-<li><a href="prompts/2026-05-25.html">May 25, 2026</a></li>
-<li><a href="prompts/2026-05-24.html">May 24, 2026</a></li>
-<li><a href="prompts/2026-05-23.html">May 23, 2026</a></li>
-<li><a href="prompts/2026-05-22.html">May 22, 2026</a></li>
-<li><a href="prompts/2026-05-21.html">May 21, 2026</a></li>
-<li><a href="prompts/2026-05-20.html">May 20, 2026</a></li>
-<li><a href="prompts/2026-05-19.html">May 19, 2026</a></li>
-<li><a href="prompts/2026-05-18.html">May 18, 2026</a></li>
-<li><a href="prompts/2026-05-17.html">May 17, 2026</a></li>
-<li><a href="prompts/2026-05-16.html">May 16, 2026</a></li>
-<li><a href="prompts/2026-05-15.html">May 15, 2026</a></li>
-<li><a href="prompts/2026-05-14.html">May 14, 2026</a></li>
-<li><a href="prompts/2026-05-13.html">May 13, 2026</a></li>
-<li><a href="prompts/2026-05-12.html">May 12, 2026</a></li>
-<li><a href="prompts/2026-05-11.html">May 11, 2026</a></li>
-<li><a href="prompts/2026-05-10.html">May 10, 2026</a></li>
-<li><a href="prompts/2026-05-09.html">May 9, 2026</a></li>
-<li><a href="prompts/2026-05-08.html">May 8, 2026</a></li>
-<li><a href="prompts/2026-05-07.html">May 7, 2026</a></li>
-<li><a href="prompts/2026-05-06.html">May 6, 2026</a></li>
-<li><a href="prompts/2026-05-05.html">May 5, 2026</a></li>
-<li><a href="prompts/2026-05-04.html">May 4, 2026</a></li>
-<li><a href="prompts/2026-05-03.html">May 3, 2026</a></li>
-<li><a href="prompts/2026-05-02.html">May 2, 2026</a></li>
-<li><a href="prompts/2026-05-01.html">May 1, 2026</a></li>
-<li><a href="prompts/2026-04-30.html">April 30, 2026</a></li>
-<li><a href="prompts/2026-04-29.html">April 29, 2026</a></li>
-<li><a href="prompts/2026-04-28.html">April 28, 2026</a></li></ul></section>
+<section class="archive-section">
+  <h2 style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin:0 0 8px">All prompts by category</h2>
+  <nav class="category-nav"><a href="#cat-coding">Coding <span class="cat-count">5</span></a><a href="#cat-writing">Writing <span class="cat-count">5</span></a><a href="#cat-analysis">Analysis <span class="cat-count">5</span></a><a href="#cat-research">Research <span class="cat-count">5</span></a><a href="#cat-creative">Creative <span class="cat-count">4</span></a><a href="#cat-data">Data <span class="cat-count">4</span></a><a href="#cat-decision">Decision-making <span class="cat-count">5</span></a><a href="#cat-debugging">Debugging <span class="cat-count">5</span></a><a href="#cat-learning">Learning <span class="cat-count">5</span></a><a href="#cat-communication">Communication <span class="cat-count">5</span></a><a href="#cat-problem">Problem-solving <span class="cat-count">5</span></a><a href="#cat-productivity">Productivity <span class="cat-count">5</span></a><a href="#cat-study">Study <span class="cat-count">5</span></a><a href="#cat-brainstorming">Brainstorming <span class="cat-count">5</span></a></nav>
+<section class="category-section" id="cat-coding">
+  <h2 class="category-heading" style="border-bottom-color: #10B981">Coding <span class="cat-count">5</span></h2>
+  <ul class="prompt-list">
+    <li><a href="prompts/2026-07-02.html"><span class="prompt-date">Jul 2, 2026</span><span class="prompt-title">Staff Engineer Code Review &amp; Refactoring</span></a></li>
+    <li><a href="prompts/2026-06-18.html"><span class="prompt-date">Jun 18, 2026</span><span class="prompt-title">Comprehensive Architectural Code Review</span></a></li>
+    <li><a href="prompts/2026-06-04.html"><span class="prompt-date">Jun 4, 2026</span><span class="prompt-title">Architectural &amp; Code Quality Review</span></a></li>
+    <li><a href="prompts/2026-05-21.html"><span class="prompt-date">May 21, 2026</span><span class="prompt-title">Architectural &amp; Code Review with Refactoring Plan</span></a></li>
+    <li><a href="prompts/2026-05-07.html"><span class="prompt-date">May 7, 2026</span><span class="prompt-title">Senior Architect's Code &amp; Architecture Review</span></a></li>
+  </ul>
+</section>
+<section class="category-section" id="cat-writing">
+  <h2 class="category-heading" style="border-bottom-color: #8B5CF6">Writing <span class="cat-count">5</span></h2>
+  <ul class="prompt-list">
+    <li><a href="prompts/2026-07-03.html"><span class="prompt-date">Jul 3, 2026</span><span class="prompt-title">Content Refinement &amp; Tone Adjustment</span></a></li>
+    <li><a href="prompts/2026-06-19.html"><span class="prompt-date">Jun 19, 2026</span><span class="prompt-title">Strategic Writing Refinement</span></a></li>
+    <li><a href="prompts/2026-06-05.html"><span class="prompt-date">Jun 5, 2026</span><span class="prompt-title">Content Refinement Specialist</span></a></li>
+    <li><a href="prompts/2026-05-22.html"><span class="prompt-date">May 22, 2026</span><span class="prompt-title">Rhetorical Architect: Tone &amp; Structure Refinement</span></a></li>
+    <li><a href="prompts/2026-05-08.html"><span class="prompt-date">May 8, 2026</span><span class="prompt-title">Editorial Refinement &amp; Tone Shift</span></a></li>
+  </ul>
+</section>
+<section class="category-section" id="cat-analysis">
+  <h2 class="category-heading" style="border-bottom-color: #F59E0B">Analysis <span class="cat-count">5</span></h2>
+  <ul class="prompt-list">
+    <li><a href="prompts/2026-07-04.html"><span class="prompt-date">Jul 4, 2026</span><span class="prompt-title">Strategic Situation Deconstruction</span></a></li>
+    <li><a href="prompts/2026-06-20.html"><span class="prompt-date">Jun 20, 2026</span><span class="prompt-title">Complex System Deconstruction &amp; Pattern Analysis</span></a></li>
+    <li><a href="prompts/2026-06-06.html"><span class="prompt-date">Jun 6, 2026</span><span class="prompt-title">Strategic Pattern Analysis</span></a></li>
+    <li><a href="prompts/2026-05-23.html"><span class="prompt-date">May 23, 2026</span><span class="prompt-title">Strategic Challenge Deconstruction</span></a></li>
+    <li><a href="prompts/2026-05-09.html"><span class="prompt-date">May 9, 2026</span><span class="prompt-title">Systemic Problem Analysis</span></a></li>
+  </ul>
+</section>
+<section class="category-section" id="cat-research">
+  <h2 class="category-heading" style="border-bottom-color: #3B82F6">Research <span class="cat-count">5</span></h2>
+  <ul class="prompt-list">
+    <li><a href="prompts/2026-07-05.html"><span class="prompt-date">Jul 5, 2026</span><span class="prompt-title">Interdisciplinary Research Synthesis Analyst</span></a></li>
+    <li><a href="prompts/2026-06-21.html"><span class="prompt-date">Jun 21, 2026</span><span class="prompt-title">Multi-Source Synthesis &amp; Critical Research Guide</span></a></li>
+    <li><a href="prompts/2026-06-07.html"><span class="prompt-date">Jun 7, 2026</span><span class="prompt-title">Critical Source Synthesis &amp; Gap Analysis</span></a></li>
+    <li><a href="prompts/2026-05-24.html"><span class="prompt-date">May 24, 2026</span><span class="prompt-title">Multi-Source Research Synthesizer &amp; Gap Identifier</span></a></li>
+    <li><a href="prompts/2026-05-10.html"><span class="prompt-date">May 10, 2026</span><span class="prompt-title">Multi-Source Research Synthesis &amp; Gap Analysis</span></a></li>
+  </ul>
+</section>
+<section class="category-section" id="cat-creative">
+  <h2 class="category-heading" style="border-bottom-color: #EC4899">Creative <span class="cat-count">4</span></h2>
+  <ul class="prompt-list">
+    <li><a href="prompts/2026-06-22.html"><span class="prompt-date">Jun 22, 2026</span><span class="prompt-title">Lateral Concept Forge</span></a></li>
+    <li><a href="prompts/2026-06-08.html"><span class="prompt-date">Jun 8, 2026</span><span class="prompt-title">The Alchemist's Object: Narrative Catalyst</span></a></li>
+    <li><a href="prompts/2026-05-25.html"><span class="prompt-date">May 25, 2026</span><span class="prompt-title">Lateral Narrative Weaver</span></a></li>
+    <li><a href="prompts/2026-05-11.html"><span class="prompt-date">May 11, 2026</span><span class="prompt-title">Lateral Concept Architect</span></a></li>
+  </ul>
+</section>
+<section class="category-section" id="cat-data">
+  <h2 class="category-heading" style="border-bottom-color: #06B6D4">Data <span class="cat-count">4</span></h2>
+  <ul class="prompt-list">
+    <li><a href="prompts/2026-06-09.html"><span class="prompt-date">Jun 9, 2026</span><span class="prompt-title">Dataset Analysis &amp; Insight Generation</span></a></li>
+    <li><a href="prompts/2026-05-26.html"><span class="prompt-date">May 26, 2026</span><span class="prompt-title">Data Insight &amp; Strategic Action Planner</span></a></li>
+    <li><a href="prompts/2026-05-12.html"><span class="prompt-date">May 12, 2026</span><span class="prompt-title">Data Insight Navigator</span></a></li>
+    <li><a href="prompts/2026-04-28.html"><span class="prompt-date">Apr 28, 2026</span><span class="prompt-title">Dataset Explorer &amp; Interpreter</span></a></li>
+  </ul>
+</section>
+<section class="category-section" id="cat-decision">
+  <h2 class="category-heading" style="border-bottom-color: #F97316">Decision-making <span class="cat-count">5</span></h2>
+  <ul class="prompt-list">
+    <li><a href="prompts/2026-06-24.html"><span class="prompt-date">Jun 24, 2026</span><span class="prompt-title">Strategic Decision Architect</span></a></li>
+    <li><a href="prompts/2026-06-10.html"><span class="prompt-date">Jun 10, 2026</span><span class="prompt-title">Strategic Decision Architect</span></a></li>
+    <li><a href="prompts/2026-05-27.html"><span class="prompt-date">May 27, 2026</span><span class="prompt-title">Strategic Tradeoff Decision Architect</span></a></li>
+    <li><a href="prompts/2026-05-13.html"><span class="prompt-date">May 13, 2026</span><span class="prompt-title">Strategic Tradeoff Analysis for Critical Decisions</span></a></li>
+    <li><a href="prompts/2026-04-29.html"><span class="prompt-date">Apr 29, 2026</span><span class="prompt-title">Structured Decision Tradeoff Analysis</span></a></li>
+  </ul>
+</section>
+<section class="category-section" id="cat-debugging">
+  <h2 class="category-heading" style="border-bottom-color: #EF4444">Debugging <span class="cat-count">5</span></h2>
+  <ul class="prompt-list">
+    <li><a href="prompts/2026-06-25.html"><span class="prompt-date">Jun 25, 2026</span><span class="prompt-title">Systematic Root Cause Analysis</span></a></li>
+    <li><a href="prompts/2026-06-11.html"><span class="prompt-date">Jun 11, 2026</span><span class="prompt-title">System Failure Root Cause Analysis</span></a></li>
+    <li><a href="prompts/2026-05-28.html"><span class="prompt-date">May 28, 2026</span><span class="prompt-title">Incident Commander: Root Cause Analysis</span></a></li>
+    <li><a href="prompts/2026-05-14.html"><span class="prompt-date">May 14, 2026</span><span class="prompt-title">Expert Debugger: Root Cause Analysis for [System Type] Failures</span></a></li>
+    <li><a href="prompts/2026-04-30.html"><span class="prompt-date">Apr 30, 2026</span><span class="prompt-title">Root Cause Analysis &amp; Troubleshooting</span></a></li>
+  </ul>
+</section>
+<section class="category-section" id="cat-learning">
+  <h2 class="category-heading" style="border-bottom-color: #14B8A6">Learning <span class="cat-count">5</span></h2>
+  <ul class="prompt-list">
+    <li><a href="prompts/2026-06-26.html"><span class="prompt-date">Jun 26, 2026</span><span class="prompt-title">Concept Deconstructor &amp; Tutor</span></a></li>
+    <li><a href="prompts/2026-06-12.html"><span class="prompt-date">Jun 12, 2026</span><span class="prompt-title">Concept Clarifier &amp; Study Companion</span></a></li>
+    <li><a href="prompts/2026-05-29.html"><span class="prompt-date">May 29, 2026</span><span class="prompt-title">Concept Explainer &amp; Study Guide Creator</span></a></li>
+    <li><a href="prompts/2026-05-15.html"><span class="prompt-date">May 15, 2026</span><span class="prompt-title">Concept Clarity Navigator</span></a></li>
+    <li><a href="prompts/2026-05-01.html"><span class="prompt-date">May 1, 2026</span><span class="prompt-title">Personalized Concept Explainer &amp; Study Aid Generator</span></a></li>
+  </ul>
+</section>
+<section class="category-section" id="cat-communication">
+  <h2 class="category-heading" style="border-bottom-color: #A855F7">Communication <span class="cat-count">5</span></h2>
+  <ul class="prompt-list">
+    <li><a href="prompts/2026-06-27.html"><span class="prompt-date">Jun 27, 2026</span><span class="prompt-title">Strategic Sensitive Communication Draft</span></a></li>
+    <li><a href="prompts/2026-06-13.html"><span class="prompt-date">Jun 13, 2026</span><span class="prompt-title">Difficult Conversation Architect</span></a></li>
+    <li><a href="prompts/2026-05-30.html"><span class="prompt-date">May 30, 2026</span><span class="prompt-title">Crafting Sensitive Messages for Difficult Conversations</span></a></li>
+    <li><a href="prompts/2026-05-16.html"><span class="prompt-date">May 16, 2026</span><span class="prompt-title">Crafting Sensitive Communications</span></a></li>
+    <li><a href="prompts/2026-05-02.html"><span class="prompt-date">May 2, 2026</span><span class="prompt-title">Difficult Conversation Prep Coach</span></a></li>
+  </ul>
+</section>
+<section class="category-section" id="cat-problem">
+  <h2 class="category-heading" style="border-bottom-color: #EAB308">Problem-solving <span class="cat-count">5</span></h2>
+  <ul class="prompt-list">
+    <li><a href="prompts/2026-06-28.html"><span class="prompt-date">Jun 28, 2026</span><span class="prompt-title">Strategic Problem Deconstruction &amp; Framework Design</span></a></li>
+    <li><a href="prompts/2026-06-14.html"><span class="prompt-date">Jun 14, 2026</span><span class="prompt-title">Strategic Problem Dissection &amp; Framework Application</span></a></li>
+    <li><a href="prompts/2026-05-31.html"><span class="prompt-date">May 31, 2026</span><span class="prompt-title">Strategic Problem Decomposition &amp; Solution Framework</span></a></li>
+    <li><a href="prompts/2026-05-17.html"><span class="prompt-date">May 17, 2026</span><span class="prompt-title">Strategic Problem Deconstruction</span></a></li>
+    <li><a href="prompts/2026-05-03.html"><span class="prompt-date">May 3, 2026</span><span class="prompt-title">Strategic Problem Deconstruction &amp; Framework Architect</span></a></li>
+  </ul>
+</section>
+<section class="category-section" id="cat-productivity">
+  <h2 class="category-heading" style="border-bottom-color: #22C55E">Productivity <span class="cat-count">5</span></h2>
+  <ul class="prompt-list">
+    <li><a href="prompts/2026-06-29.html"><span class="prompt-date">Jun 29, 2026</span><span class="prompt-title">Strategic Work Block Planner</span></a></li>
+    <li><a href="prompts/2026-06-15.html"><span class="prompt-date">Jun 15, 2026</span><span class="prompt-title">Strategic Productivity Blueprint</span></a></li>
+    <li><a href="prompts/2026-06-01.html"><span class="prompt-date">Jun 1, 2026</span><span class="prompt-title">Strategic Project Breakdown &amp; Prioritization</span></a></li>
+    <li><a href="prompts/2026-05-18.html"><span class="prompt-date">May 18, 2026</span><span class="prompt-title">Strategic Task Prioritization &amp; Time Blocking</span></a></li>
+    <li><a href="prompts/2026-05-04.html"><span class="prompt-date">May 4, 2026</span><span class="prompt-title">Personalized Productivity Planner</span></a></li>
+  </ul>
+</section>
+<section class="category-section" id="cat-study">
+  <h2 class="category-heading" style="border-bottom-color: #6366F1">Study <span class="cat-count">5</span></h2>
+  <ul class="prompt-list">
+    <li><a href="prompts/2026-06-30.html"><span class="prompt-date">Jun 30, 2026</span><span class="prompt-title">Active Recall Study Session Generator</span></a></li>
+    <li><a href="prompts/2026-06-16.html"><span class="prompt-date">Jun 16, 2026</span><span class="prompt-title">Active Recall Study Coach</span></a></li>
+    <li><a href="prompts/2026-06-02.html"><span class="prompt-date">Jun 2, 2026</span><span class="prompt-title">Active Recall &amp; Comprehension Architect</span></a></li>
+    <li><a href="prompts/2026-05-19.html"><span class="prompt-date">May 19, 2026</span><span class="prompt-title">Active Recall Study Partner</span></a></li>
+    <li><a href="prompts/2026-05-05.html"><span class="prompt-date">May 5, 2026</span><span class="prompt-title">Socratic Recall Tutor</span></a></li>
+  </ul>
+</section>
+<section class="category-section" id="cat-brainstorming">
+  <h2 class="category-heading" style="border-bottom-color: #D946EF">Brainstorming <span class="cat-count">5</span></h2>
+  <ul class="prompt-list">
+    <li><a href="prompts/2026-07-01.html"><span class="prompt-date">Jul 1, 2026</span><span class="prompt-title">Innovation Matrix Brainstormer</span></a></li>
+    <li><a href="prompts/2026-06-17.html"><span class="prompt-date">Jun 17, 2026</span><span class="prompt-title">Radical Divergent Brainstorming Catalyst</span></a></li>
+    <li><a href="prompts/2026-06-03.html"><span class="prompt-date">Jun 3, 2026</span><span class="prompt-title">Analogy-Driven Innovation Catalyst</span></a></li>
+    <li><a href="prompts/2026-05-20.html"><span class="prompt-date">May 20, 2026</span><span class="prompt-title">Divergent Idea Generator</span></a></li>
+    <li><a href="prompts/2026-05-06.html"><span class="prompt-date">May 6, 2026</span><span class="prompt-title">Brainstorming: Novel Solutions for [Specific Problem]</span></a></li>
+  </ul>
+</section>
+
+</section>
 
   </div>
 </main>
