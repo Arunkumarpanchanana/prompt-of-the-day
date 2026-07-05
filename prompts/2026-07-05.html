@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Interdisciplinary Research Synthesis Analyst · Prompt of the Day</title>
+<title>Multi-Source Synthesis &amp; Gap Analysis · Prompt of the Day</title>
 <style>
   :root {
     --bg: #0B1F3A; --surface: #111827; --surface-2: #0F1F36;
@@ -78,6 +78,17 @@
   .example-section { margin: 24px 0; padding: 14px 20px; border-left: 3px solid var(--accent); background: var(--surface); border-radius: 0 8px 8px 0; }
   .example-section h3 { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin: 0 0 6px; }
   .example-section p { margin: 0; color: var(--text-2); font-size: 14px; font-style: italic; }
+  .prompt-list { list-style: none; padding: 0; margin: 0; }
+  .prompt-list li { padding: 0; border-bottom: 1px solid var(--border); }
+  .prompt-list li:last-child { border-bottom: 0; }
+  .prompt-list a { display: flex; align-items: center; gap: 16px; padding: 14px 16px; text-decoration: none; color: var(--text-2); transition: all 0.12s; border-radius: 6px; }
+  .prompt-list a:hover { background: rgba(37,99,235,0.06); color: var(--white); }
+  .prompt-date { font-size: 12px; color: var(--muted-2); white-space: nowrap; font-variant-numeric: tabular-nums; min-width: 85px; }
+  .prompt-title { font-size: 15px; font-weight: 500; }
+  .prompt-list a:hover .prompt-title { color: var(--accent-hover); }
+  @media (max-width: 600px) {
+    .prompt-list a { flex-direction: column; align-items: flex-start; gap: 4px; padding: 12px 8px; }
+  }
   .archive-section { margin-top: 64px; padding-top: 32px; border-top: 1px solid var(--border); }
   .archive-section h2 { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0 0 16px; }
   .archive-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; }
@@ -119,45 +130,19 @@
     
 <header class="page-header">
   <div class="section-eyebrow">July 5, 2026 &middot; Research</div>
-  <h1>Interdisciplinary Research Synthesis Analyst</h1>
-  <p>Synthesize complex topics from multiple sources, identifying themes, consensus, conflicts, and research gaps.</p>
+  <h1>Multi-Source Synthesis &amp; Gap Analysis</h1>
+  <p>Synthesize diverse sources to identify convergent themes, divergent perspectives, and critical knowledge gaps on a specified topic.</p>
 </header>
 
 <div class="prompt-block">
   <div class="prompt-block-header">
     <span class="prompt-label">Prompt</span>
-    <button class="copy-btn" data-target="prompt-390f4ed7" type="button">Copy</button>
+    <button class="copy-btn" data-target="prompt-29943ade" type="button">Copy</button>
   </div>
-  <pre id="prompt-390f4ed7" class="prompt-text">You are an expert interdisciplinary research analyst tasked with synthesizing diverse perspectives on a complex subject. Your objective is to move beyond simple summarization and provide a comprehensive, analytical synthesis that highlights key themes, identifies areas of consensus and conflict, and uncovers potential gaps or novel insights across multiple sources.
-
-I will provide you with several sources, each detailing aspects of [THE COMPLEX TOPIC]. For each source, I will include its [SOURCE TITLE/DESCRIPTION] and its [KEY ARGUMENTS OR RELEVANT CONTENT].
-
-Your synthesis should address the following [KEY QUESTIONS OR ANALYTICAL LENSES, e.g., &quot;What are the primary drivers of X?&quot;, &quot;How do different methodologies impact findings?&quot;, &quot;What are the ethical implications?&quot;]
-
-Structure your output as a [DESIRED OUTPUT FORMAT, e.g., &quot;structured analytical report,&quot; &quot;comparative literature review,&quot; &quot;executive briefing&quot;] that includes:
-
-1.  Introduction: Briefly set the stage for [THE COMPLEX TOPIC] and the scope of this synthesis.
-2.  Source Overviews: A concise summary of the main points and unique contributions of each provided source.
-3.  Thematic Analysis &amp; Synthesis:
-    *   Identify and elaborate on [NUMBER] overarching themes or recurring concepts present across the sources.
-    *   Pinpoint areas where sources demonstrate clear consensus or reinforce each other&#39;s findings.
-    *   Highlight specific points of divergence, contradiction, or debate between sources, explaining the nature of the disagreement.
-4.  Gaps &amp; Future Directions: Based on your analysis, identify any significant gaps in the current research or unanswered questions. Suggest potential avenues for future investigation or implications for [TARGET AUDIENCE/APPLICATION].
-5.  Conclusion: A brief summary of the most critical insights derived from the synthesis.
-
-Ensure your analysis maintains an objective, critical tone and is approximately [DESIRED LENGTH, e.g., &quot;800-1200 words,&quot; &quot;3-5 paragraphs per section&quot;].</pre>
+  <pre id="prompt-29943ade" class="prompt-text">You are a critical research analyst specializing in interdisciplinary studies. Your task is to synthesize information from a collection of provided source excerpts on the topic of `[TOPIC]` to address the specific research question: `[RESEARCH QUESTION]`. Your synthesis must go beyond mere summarization. Focus on identifying and articulating: 1. Convergent Themes: What are the recurring ideas, arguments, or findings that appear across multiple sources? 2. Divergent Perspectives: Where do the sources present conflicting data, differing interpretations, or outright disagreements? 3. Identified Knowledge Gaps: What critical information is missing, what questions remain unanswered, or what new avenues for research emerge from the collective insights? Present your findings in a structured report with the following sections, ensuring each point is directly supported by the provided source material (refer to sources by their assigned letter, e.g., &#39;Source A&#39;, &#39;Source B&#39;): * Introduction: Briefly state the research question and the scope of the synthesis. * Convergent Themes Analysis: Detailed discussion of shared ideas, arguments, or findings. * Divergent Perspectives Analysis: Detailed discussion of contradictions or differing viewpoints. * Identified Knowledge Gaps &amp; Future Research Directions: Outline specific areas where more research is needed or new questions arise. * Conclusion: A concise summary of the key insights derived. The synthesis should be approximately `[DESIRED WORD COUNT RANGE, e.g., 800-1200 words]`. Provide the source excerpts labeled A, B, C, etc., along with your request.</pre>
 </div>
-<section class="why-section"><h3>How to use this</h3><p>This prompt is ideal for researchers, students, or professionals needing to understand a complex topic by integrating information from various perspectives. Provide summaries or key excerpts from your sources, and the AI will act as an analyst to synthesize them into a structured report, saving significant time in literature review and critical analysis.</p></section>
-<section class="example-section"><h3>Example</h3><p>THE COMPLEX TOPIC: The impact of remote work on employee well-being and productivity.
-KEY QUESTIONS OR ANALYTICAL LENSES: How does remote work affect mental health, social connection, and work-life balance? What are the perceived productivity changes?
-SOURCE 1 TITLE/DESCRIPTION: &#39;Journal of Applied Psychology, 2023: A study on remote work and burnout rates.&#39;
-SOURCE 1 CONTENT/SUMMARY: Found increased burnout due to blurred boundaries, but higher autonomy.
-SOURCE 2 TITLE/DESCRIPTION: &#39;Harvard Business Review article, 2022: The productivity paradox of hybrid work.&#39;
-SOURCE 2 CONTENT/SUMMARY: Suggests initial productivity boost, but long-term decline due to communication friction.
-DESIRED OUTPUT FORMAT: structured analytical report
-NUMBER: 3
-TARGET AUDIENCE/APPLICATION: HR departments
-DESIRED LENGTH: 1000 words</p></section>
+<section class="why-section"><h3>How to use this</h3><p>Provide the AI with several raw text excerpts (or summaries) from your research, clearly labeled (e.g., Source A, Source B). Specify your topic and a precise research question. The AI will then analyze and synthesize these sources, highlighting commonalities, conflicts, and areas for further investigation, delivering a structured report.</p></section>
+<section class="example-section"><h3>Example</h3><p>TOPIC: Impact of AI on Creative Industries. RESEARCH QUESTION: How do recent studies describe the challenges and opportunities for human artists collaborating with AI? SOURCE A: [Text] SOURCE B: [Text] SOURCE C: [Text]</p></section>
 <script>
 (function() {
   document.querySelectorAll('.copy-btn').forEach(function(btn) {
@@ -191,7 +176,7 @@ DESIRED LENGTH: 1000 words</p></section>
     <p>Arunkumar Panchanana &middot; AI tools &middot; Automation &middot; IT Leadership</p>
     <p>Email: <a href="mailto:arunkumar.panchanana@gmail.com">arunkumar.panchanana@gmail.com</a></p>
     <div>Generated daily by AI.</div>
-    <div class="footer-meta">Updated <time datetime="2026-07-05T02:05:02Z">2026-07-05T02:05:02Z</time></div>
+    <div class="footer-meta">Updated <time datetime="2026-07-05T19:14:11Z">2026-07-05T19:14:11Z</time></div>
   </div>
 </footer>
 </body>
