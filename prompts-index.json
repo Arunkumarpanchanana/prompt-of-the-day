@@ -412,5 +412,11 @@
     "theme": "Creative",
     "themeId": "creative",
     "path": "prompts/2026-07-06.html"
+  },
+  "2026-07-07": {
+    "title": "Data-Driven Business Insight Generator",
+    "theme": "Data",
+    "themeId": "data",
+    "path": "prompts/2026-07-07.html"
   }
 }
