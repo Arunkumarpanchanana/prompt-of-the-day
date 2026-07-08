@@ -418,5 +418,11 @@
     "theme": "Data",
     "themeId": "data",
     "path": "prompts/2026-07-07.html"
+  },
+  "2026-07-08": {
+    "title": "Prioritized Decision Architect",
+    "theme": "Decision-making",
+    "themeId": "decision",
+    "path": "prompts/2026-07-08.html"
   }
 }
