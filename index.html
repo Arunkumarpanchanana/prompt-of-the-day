@@ -134,35 +134,41 @@
 </header>
 
 <section>
-  <div class="section-eyebrow">July 7, 2026 &middot; Data</div>
-  <h2 class="prompt-title">Data-Driven Business Insight Generator</h2>
-  <p class="prompt-subtitle">Leverage AI as your expert data analyst to transform raw data descriptions into actionable business insights and strategic recommendations.</p>
+  <div class="section-eyebrow">July 8, 2026 &middot; Decision-making</div>
+  <h2 class="prompt-title">Prioritized Decision Architect</h2>
+  <p class="prompt-subtitle">Get a structured analysis of your options, weighing criteria and priorities to reveal optimal choices and inherent tradeoffs.</p>
   
 <div class="prompt-block">
   <div class="prompt-block-header">
     <span class="prompt-label">Prompt</span>
-    <button class="copy-btn" data-target="prompt-abcaa3ae" type="button">Copy</button>
+    <button class="copy-btn" data-target="prompt-2bdce48d" type="button">Copy</button>
   </div>
-  <pre id="prompt-abcaa3ae" class="prompt-text">You are an expert Data Analyst and Business Intelligence Specialist. Your task is to meticulously analyze a provided dataset description and a specific business problem to extract actionable insights and recommendations.
+  <pre id="prompt-2bdce48d" class="prompt-text">You are a neutral Decision Architect specializing in structured choice analysis. My goal is to make an informed decision regarding [THE CORE DECISION YOU NEED TO MAKE]. I have [NUMBER] distinct options to consider.
 
 I will provide you with:
-1.  [DATASET DESCRIPTION]: A high-level overview of the dataset, including key columns, data types, and its source.
-2.  [BUSINESS PROBLEM/QUESTION]: The specific challenge or question we need to address using this data.
-3.  [DESIRED OUTCOME/GOAL]: What we hope to achieve by solving this problem (e.g., increase customer retention, optimize marketing spend).
+1.  **The Decision Context:** A brief description of the situation.
+2.  **The Options:** A list of [NUMBER] specific choices I am evaluating.
+3.  **Key Evaluation Criteria:** A list of [NUMBER] criteria (e.g., Cost, Time, Impact, Risk, Effort, Alignment with [Specific Goal]) by which these options should be judged.
+4.  **My Prioritization Scale:** For each criterion, indicate its relative importance (e.g., &quot;Critical,&quot; &quot;High,&quot; &quot;Medium,&quot; &quot;Low&quot;). If applicable, specify any hard constraints (e.g., &quot;Must be under $X&quot;).
 
-Your analysis should include:
-*   Problem Understanding: Reiterate the business problem and its context.
-*   Key Metrics &amp; Dimensions: Identify the most relevant metrics and dimensions from the dataset that can shed light on the problem. Suggest how these might be queried or aggregated.
-*   Hypotheses &amp; Potential Trends: Formulate 2-3 data-driven hypotheses related to the problem and describe what trends or patterns you would look for to validate or invalidate them.
-*   Actionable Insights &amp; Recommendations: Based on your hypothetical analysis, provide 2-3 concrete, data-backed recommendations that directly address the business problem and contribute to the desired outcome. Explain the &#39;why&#39; behind each.
-*   Data Limitations &amp; Next Steps: Point out any potential limitations of the described dataset for this analysis and suggest what additional data or analysis might be beneficial.
+Your task is to conduct a comparative analysis, highlighting the strengths and weaknesses of each option against the specified criteria and my stated priorities. Do not make the final decision for me, but illuminate the optimal path based on the data provided.
 
-Present your output as a structured report, clearly separating each section. Focus on clarity, conciseness, and practical applicability. Do not generate actual code or data visualizations, but describe the analytical steps and expected findings.</pre>
+Output your analysis in the following sections:
+
+**1. Option Summary Table:**
+A table with options as rows and criteria as columns, providing a concise assessment (e.g., &#39;High&#39;, &#39;Medium&#39;, &#39;Low&#39;, or specific values if provided) for each intersection.
+
+**2. Tradeoff Analysis:**
+A paragraph or two identifying the most significant tradeoffs between options, especially where high priority criteria conflict. Explain which options best balance these tradeoffs according to my prioritization.
+
+**3. Prioritized Recommendation Rationale:**
+Based *solely* on my stated priorities and criteria, explain which option emerges as the strongest candidate and why, acknowledging any significant drawbacks it still possesses.
+
+**4. Unconsidered Factors &amp; Next Steps:**
+Suggest any potential blind spots, unstated assumptions, or additional data points I might want to consider before making a final choice, and propose concrete next steps for deeper investigation.</pre>
 </div>
-<section class="why-section"><h3>How to use this</h3><p>Provide a high-level description of your dataset and a specific business challenge. The AI will act as your data analyst, outlining a strategic approach to uncover insights and provide actionable recommendations, even without direct access to the data itself. This is ideal for initial scoping or brainstorming data projects.</p></section>
-<section class="example-section"><h3>Example</h3><p>[DATASET DESCRIPTION]: Customer transaction data: customer_id, purchase_date, product_category, price, payment_method, loyalty_status.
-[BUSINESS PROBLEM/QUESTION]: Why are our premium customers churning at a higher rate than expected?
-[DESIRED OUTCOME/GOAL]: Reduce premium customer churn by 15% in the next quarter.</p></section>
+<section class="why-section"><h3>How to use this</h3><p>Provide your core decision, a list of options, the criteria for evaluation, and your prioritization for each criterion. The AI will generate a structured analysis, helping you understand the tradeoffs and identify the best fit for your stated priorities. Use this to clarify your thinking and prepare for a final decision.</p></section>
+<section class="example-section"><h3>Example</h3><p>Decision: Choosing a new project management tool. Options: Asana, Trello, Jira. Criteria: Cost, Ease of Use, Integration, Reporting. Priorities: Ease of Use (Critical), Cost (High), Reporting (Medium), Integration (Low).</p></section>
 <script>
 (function() {
   document.querySelectorAll('.copy-btn').forEach(function(btn) {
@@ -192,7 +198,7 @@ Present your output as a structured report, clearly separating each section. Foc
 </section>
 <section class="archive-section">
   <h2 style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin:0 0 8px">All prompts by category</h2>
-  <nav class="category-nav"><a href="#cat-coding">Coding <span class="cat-count">5</span></a><a href="#cat-writing">Writing <span class="cat-count">5</span></a><a href="#cat-analysis">Analysis <span class="cat-count">5</span></a><a href="#cat-research">Research <span class="cat-count">5</span></a><a href="#cat-creative">Creative <span class="cat-count">5</span></a><a href="#cat-data">Data <span class="cat-count">4</span></a><a href="#cat-decision">Decision-making <span class="cat-count">5</span></a><a href="#cat-debugging">Debugging <span class="cat-count">5</span></a><a href="#cat-learning">Learning <span class="cat-count">5</span></a><a href="#cat-communication">Communication <span class="cat-count">5</span></a><a href="#cat-problem">Problem-solving <span class="cat-count">5</span></a><a href="#cat-productivity">Productivity <span class="cat-count">5</span></a><a href="#cat-study">Study <span class="cat-count">5</span></a><a href="#cat-brainstorming">Brainstorming <span class="cat-count">5</span></a></nav>
+  <nav class="category-nav"><a href="#cat-coding">Coding <span class="cat-count">5</span></a><a href="#cat-writing">Writing <span class="cat-count">5</span></a><a href="#cat-analysis">Analysis <span class="cat-count">5</span></a><a href="#cat-research">Research <span class="cat-count">5</span></a><a href="#cat-creative">Creative <span class="cat-count">5</span></a><a href="#cat-data">Data <span class="cat-count">5</span></a><a href="#cat-decision">Decision-making <span class="cat-count">5</span></a><a href="#cat-debugging">Debugging <span class="cat-count">5</span></a><a href="#cat-learning">Learning <span class="cat-count">5</span></a><a href="#cat-communication">Communication <span class="cat-count">5</span></a><a href="#cat-problem">Problem-solving <span class="cat-count">5</span></a><a href="#cat-productivity">Productivity <span class="cat-count">5</span></a><a href="#cat-study">Study <span class="cat-count">5</span></a><a href="#cat-brainstorming">Brainstorming <span class="cat-count">5</span></a></nav>
 <section class="category-section" id="cat-coding">
   <h2 class="category-heading" style="border-bottom-color:#10B981">Coding <span class="cat-count">5</span></h2>
   <ul class="prompt-list">
@@ -244,12 +250,13 @@ Present your output as a structured report, clearly separating each section. Foc
   </ul>
 </section>
 <section class="category-section" id="cat-data">
-  <h2 class="category-heading" style="border-bottom-color:#06B6D4">Data <span class="cat-count">4</span></h2>
+  <h2 class="category-heading" style="border-bottom-color:#06B6D4">Data <span class="cat-count">5</span></h2>
   <ul class="prompt-list">
     <li><a href="prompts/2026-04-28.html"><span class="prompt-date">April 28, 2026</span><span class="prompt-title">Dataset Explorer &amp; Interpreter</span></a></li>
     <li><a href="prompts/2026-05-12.html"><span class="prompt-date">May 12, 2026</span><span class="prompt-title">Data Insight Navigator</span></a></li>
     <li><a href="prompts/2026-05-26.html"><span class="prompt-date">May 26, 2026</span><span class="prompt-title">Data Insight &amp; Strategic Action Planner</span></a></li>
     <li><a href="prompts/2026-06-09.html"><span class="prompt-date">June 9, 2026</span><span class="prompt-title">Dataset Analysis &amp; Insight Generation</span></a></li>
+    <li><a href="prompts/2026-07-07.html"><span class="prompt-date">July 7, 2026</span><span class="prompt-title">Data-Driven Business Insight Generator</span></a></li>
   </ul>
 </section>
 <section class="category-section" id="cat-decision">
@@ -340,7 +347,7 @@ Present your output as a structured report, clearly separating each section. Foc
     <p>Arunkumar Panchanana &middot; AI tools &middot; Automation &middot; IT Leadership</p>
     <p>Email: <a href="mailto:arunkumar.panchanana@gmail.com">arunkumar.panchanana@gmail.com</a></p>
     <div>Generated daily by AI.</div>
-    <div class="footer-meta">Updated <time datetime="2026-07-07T02:06:32Z">2026-07-07T02:06:32Z</time></div>
+    <div class="footer-meta">Updated <time datetime="2026-07-08T02:06:09Z">2026-07-08T02:06:09Z</time></div>
   </div>
 </footer>
 </body>
