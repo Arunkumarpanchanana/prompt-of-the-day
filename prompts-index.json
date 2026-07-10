@@ -424,5 +424,11 @@
     "theme": "Decision-making",
     "themeId": "decision",
     "path": "prompts/2026-07-08.html"
+  },
+  "2026-07-10": {
+    "title": "Concept Deconstructor & Memory Anchor",
+    "theme": "Learning",
+    "themeId": "learning",
+    "path": "prompts/2026-07-10.html"
   }
 }
