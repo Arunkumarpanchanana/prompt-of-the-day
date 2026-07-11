@@ -430,5 +430,11 @@
     "theme": "Learning",
     "themeId": "learning",
     "path": "prompts/2026-07-10.html"
+  },
+  "2026-07-11": {
+    "title": "Diplomatic Message Crafter",
+    "theme": "Communication",
+    "themeId": "communication",
+    "path": "prompts/2026-07-11.html"
   }
 }
