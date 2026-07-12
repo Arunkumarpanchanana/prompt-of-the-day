@@ -436,5 +436,11 @@
     "theme": "Communication",
     "themeId": "communication",
     "path": "prompts/2026-07-11.html"
+  },
+  "2026-07-12": {
+    "title": "Strategic Problem Deconstruction & Solution Architect",
+    "theme": "Problem-solving",
+    "themeId": "problem",
+    "path": "prompts/2026-07-12.html"
   }
 }
