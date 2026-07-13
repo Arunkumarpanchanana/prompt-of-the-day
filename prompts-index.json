@@ -442,5 +442,11 @@
     "theme": "Problem-solving",
     "themeId": "problem",
     "path": "prompts/2026-07-12.html"
+  },
+  "2026-07-13": {
+    "title": "Agile Project Planner & Time Blocker",
+    "theme": "Productivity",
+    "themeId": "productivity",
+    "path": "prompts/2026-07-13.html"
   }
 }
