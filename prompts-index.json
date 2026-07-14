@@ -448,5 +448,11 @@
     "theme": "Productivity",
     "themeId": "productivity",
     "path": "prompts/2026-07-13.html"
+  },
+  "2026-07-14": {
+    "title": "Active Recall & Gap Analysis Study Aid",
+    "theme": "Study",
+    "themeId": "study",
+    "path": "prompts/2026-07-14.html"
   }
 }
