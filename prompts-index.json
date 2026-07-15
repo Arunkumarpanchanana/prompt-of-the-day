@@ -454,5 +454,11 @@
     "theme": "Study",
     "themeId": "study",
     "path": "prompts/2026-07-14.html"
+  },
+  "2026-07-15": {
+    "title": "Idea Catalyst: Strategic Brainstorming Lenses",
+    "theme": "Brainstorming",
+    "themeId": "brainstorming",
+    "path": "prompts/2026-07-15.html"
   }
 }
