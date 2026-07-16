@@ -460,5 +460,11 @@
     "theme": "Brainstorming",
     "themeId": "brainstorming",
     "path": "prompts/2026-07-15.html"
+  },
+  "2026-07-16": {
+    "title": "Senior Architect Code Review & Refactor",
+    "theme": "Coding",
+    "themeId": "coding",
+    "path": "prompts/2026-07-16.html"
   }
 }
