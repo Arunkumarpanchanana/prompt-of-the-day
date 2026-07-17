@@ -466,5 +466,11 @@
     "theme": "Coding",
     "themeId": "coding",
     "path": "prompts/2026-07-16.html"
+  },
+  "2026-07-17": {
+    "title": "Editorial Refinement & Strategic Feedback for Impactful Writing",
+    "theme": "Writing",
+    "themeId": "writing",
+    "path": "prompts/2026-07-17.html"
   }
 }
