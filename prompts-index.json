@@ -472,5 +472,11 @@
     "theme": "Writing",
     "themeId": "writing",
     "path": "prompts/2026-07-17.html"
+  },
+  "2026-07-18": {
+    "title": "Strategic Problem Decomposition & Solution Framework",
+    "theme": "Analysis",
+    "themeId": "analysis",
+    "path": "prompts/2026-07-18.html"
   }
 }
