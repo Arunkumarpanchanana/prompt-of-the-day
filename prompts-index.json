@@ -478,5 +478,11 @@
     "theme": "Analysis",
     "themeId": "analysis",
     "path": "prompts/2026-07-18.html"
+  },
+  "2026-07-19": {
+    "title": "Research Synthesis & Gap Identification",
+    "theme": "Research",
+    "themeId": "research",
+    "path": "prompts/2026-07-19.html"
   }
 }
