@@ -484,5 +484,11 @@
     "theme": "Research",
     "themeId": "research",
     "path": "prompts/2026-07-19.html"
+  },
+  "2026-07-20": {
+    "title": "Impossible World Architect",
+    "theme": "Creative",
+    "themeId": "creative",
+    "path": "prompts/2026-07-20.html"
   }
 }
