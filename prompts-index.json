@@ -490,5 +490,11 @@
     "theme": "Creative",
     "themeId": "creative",
     "path": "prompts/2026-07-20.html"
+  },
+  "2026-07-22": {
+    "title": "Strategic Decision Architect",
+    "theme": "Decision-making",
+    "themeId": "decision",
+    "path": "prompts/2026-07-22.html"
   }
 }
