@@ -134,48 +134,43 @@
 </header>
 
 <section>
-  <div class="section-eyebrow">July 22, 2026 &middot; Decision-making</div>
-  <h2 class="prompt-title">Strategic Decision Architect</h2>
-  <p class="prompt-subtitle">Systematically weigh options against criteria to make a well-justified choice, identifying key tradeoffs.</p>
+  <div class="section-eyebrow">July 23, 2026 &middot; Debugging</div>
+  <h2 class="prompt-title">Root Cause Analysis &amp; Debugging Plan</h2>
+  <p class="prompt-subtitle">Diagnose complex system failures by identifying root causes and outlining a structured plan for investigation and resolution.</p>
   
 <div class="prompt-block">
   <div class="prompt-block-header">
     <span class="prompt-label">Prompt</span>
-    <button class="copy-btn" data-target="prompt-ce1ff1ff" type="button">Copy</button>
+    <button class="copy-btn" data-target="prompt-173a27ac" type="button">Copy</button>
   </div>
-  <pre id="prompt-ce1ff1ff" class="prompt-text">You are a Strategic Decision Analyst specializing in multi-criteria evaluation and tradeoff analysis. Your task is to help me make a well-reasoned choice by systematically breaking down a complex decision.
+  <pre id="prompt-173a27ac" class="prompt-text">You are a highly experienced Senior Debugging Specialist and Root Cause Analyst. Your task is to meticulously diagnose a critical issue I&#39;m facing with my [SYSTEM/APPLICATION NAME]. I need you to go beyond surface-level symptoms and help me uncover the true underlying causes, providing a structured plan for resolution.
 
-I need to decide on [CORE DECISION, e.g., &#39;which marketing strategy to pursue for Q3&#39;, &#39;which CRM software to adopt&#39;, &#39;where to relocate my family&#39;].
+Here&#39;s the situation:
+*   **System/Application**: [SYSTEM/APPLICATION NAME, e.g., &#39;our microservice API gateway&#39;]
+*   **Problem Description**: [BRIEF, CONCISE DESCRIPTION OF THE PROBLEM/SYMPTOMS, e.g., &#39;API requests are intermittently timing out&#39;, &#39;database queries are slow&#39;]
+*   **Error Messages/Logs**: [PASTE RELEVANT ERROR MESSAGES, STACK TRACES, OR LOG SNIPPETS. If none, state &#39;N/A&#39;.]
+*   **Recent Changes/Context**: [DESCRIBE ANY RECENT DEPLOYMENTS, CONFIGURATION CHANGES, TRAFFIC SPIKES, OR OTHER RELEVANT CONTEXT. e.g., &#39;deployed new version 2.1.0 yesterday&#39;, &#39;increased user load by 50%&#39;]
+*   **Expected Behavior**: [WHAT SHOULD BE HAPPENING NORMALLY?]
+*   **Observed Behavior**: [WHAT IS ACTUALLY HAPPENING?]
+*   **Troubleshooting Steps Taken**: [LIST ALL STEPS YOU&#39;VE ALREADY ATTEMPTED TO DIAGNOSE OR RESOLVE THE ISSUE, AND THEIR OUTCOMES. e.g., &#39;restarted the service (no change)&#39;, &#39;checked CPU usage (normal)&#39;]
+*   **Technology Stack/Environment**: [SPECIFY KEY TECHNOLOGIES AND ENVIRONMENT. e.g., &#39;Python 3.9, Flask, PostgreSQL 14, Docker, AWS ECS&#39;, &#39;Node.js, MongoDB, Kubernetes, Azure Functions&#39;.]
 
-Here are the distinct options:
-[OPTION 1: brief description]
-[OPTION 2: brief description]
-[OPTION 3: brief description]
-[Add more options as needed]
+Based on this information, please provide your analysis in the following structured format:
 
-Here are the critical evaluation criteria, ideally listed by importance (most important first):
-[CRITERION 1: e.g., &#39;Cost-effectiveness&#39;, &#39;Scalability&#39;, &#39;Ease of implementation&#39;, &#39;Impact on team morale&#39;]
-[CRITERION 2]
-[CRITERION 3]
-[Add more criteria as needed]
+**1. Problem Summary &amp; Reconfirmation**: [Your understanding of the core problem.]
 
-I also have these specific constraints or priorities:
-[CONSTRAINT/PRIORITY 1: e.g., &#39;Must be operational within 2 months&#39;, &#39;Budget cap of $X&#39;, &#39;Needs to integrate with existing system Y&#39;]
-[CONSTRAINT/PRIORITY 2]
+**2. Initial Hypotheses (Prioritized)**: [List 3-5 most probable root causes, ordered by likelihood. Explain why each is a candidate.]
 
-Your analysis should:
-1. Create a comparative table: options vs. criteria, noting performance.
-2. For each option, summarize its top 2-3 pros and cons based on criteria/constraints.
-3. Provide a concise recommendation for the most suitable option, justifying it by referencing criteria and tradeoffs.
-4. Identify the key tradeoffs inherent in the decision.
+**3. Diagnostic &amp; Investigation Plan**: [For each hypothesis, outline specific, actionable steps to confirm or deny it. Include commands, logs to check, metrics to monitor, or data to gather.]
 
-Focus on objective analysis and clear presentation. Do not make assumptions beyond the information provided.</pre>
+**4. Immediate Mitigation Suggestions**: [Propose temporary measures to reduce the impact of the problem while a permanent fix is being developed.]
+
+**5. Long-Term Solutions &amp; Preventative Measures**: [Suggest permanent fixes, architectural changes, or process improvements to prevent recurrence.]
+
+**6. Further Information Needed**: [What additional data or context would significantly aid your diagnosis?]</pre>
 </div>
-<section class="why-section"><h3>How to use this</h3><p>Provide your core decision, distinct options, and critical evaluation criteria. The AI will act as a Strategic Decision Analyst, generating a comparative table, outlining pros and cons for each option, and offering a justified recommendation. Use the optional constraints field for &#39;must-haves&#39; or budget limits.</p></section>
-<section class="example-section"><h3>Example</h3><p>CORE DECISION: Choosing a new project management tool.
-OPTIONS: Asana, Trello, Jira.
-CRITERIA: Ease of use, Integration with Slack, Cost, Reporting capabilities.
-CONSTRAINTS: Must support agile sprints, Budget under $50/user/month.</p></section>
+<section class="why-section"><h3>How to use this</h3><p>Copy-paste this prompt and fill in the bracketed placeholders with details about your specific system issue. Be as thorough as possible with error messages, logs, and context. The AI will act as a senior debugging specialist, providing a detailed breakdown to guide your troubleshooting efforts.</p></section>
+<section class="example-section"><h3>Example</h3><p>For [SYSTEM/APPLICATION NAME], I&#39;d put &#39;our user authentication service&#39;. For [PROBLEM DESCRIPTION], &#39;Users are intermittently unable to log in, receiving a 500 error&#39;. For [ERROR MESSAGES/LOG SNIPPETS], I&#39;d paste a relevant stack trace from the server logs.</p></section>
 <script>
 (function() {
   document.querySelectorAll('.copy-btn').forEach(function(btn) {
@@ -205,7 +200,7 @@ CONSTRAINTS: Must support agile sprints, Budget under $50/user/month.</p></secti
 </section>
 <section class="archive-section">
   <h2 style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin:0 0 8px">All prompts by category</h2>
-  <nav class="category-nav"><a href="#cat-coding">Coding <span class="cat-count">6</span></a><a href="#cat-writing">Writing <span class="cat-count">6</span></a><a href="#cat-analysis">Analysis <span class="cat-count">6</span></a><a href="#cat-research">Research <span class="cat-count">6</span></a><a href="#cat-creative">Creative <span class="cat-count">6</span></a><a href="#cat-data">Data <span class="cat-count">5</span></a><a href="#cat-decision">Decision-making <span class="cat-count">6</span></a><a href="#cat-debugging">Debugging <span class="cat-count">5</span></a><a href="#cat-learning">Learning <span class="cat-count">6</span></a><a href="#cat-communication">Communication <span class="cat-count">6</span></a><a href="#cat-problem">Problem-solving <span class="cat-count">6</span></a><a href="#cat-productivity">Productivity <span class="cat-count">6</span></a><a href="#cat-study">Study <span class="cat-count">6</span></a><a href="#cat-brainstorming">Brainstorming <span class="cat-count">6</span></a></nav>
+  <nav class="category-nav"><a href="#cat-coding">Coding <span class="cat-count">6</span></a><a href="#cat-writing">Writing <span class="cat-count">6</span></a><a href="#cat-analysis">Analysis <span class="cat-count">6</span></a><a href="#cat-research">Research <span class="cat-count">6</span></a><a href="#cat-creative">Creative <span class="cat-count">6</span></a><a href="#cat-data">Data <span class="cat-count">5</span></a><a href="#cat-decision">Decision-making <span class="cat-count">7</span></a><a href="#cat-debugging">Debugging <span class="cat-count">5</span></a><a href="#cat-learning">Learning <span class="cat-count">6</span></a><a href="#cat-communication">Communication <span class="cat-count">6</span></a><a href="#cat-problem">Problem-solving <span class="cat-count">6</span></a><a href="#cat-productivity">Productivity <span class="cat-count">6</span></a><a href="#cat-study">Study <span class="cat-count">6</span></a><a href="#cat-brainstorming">Brainstorming <span class="cat-count">6</span></a></nav>
 <section class="category-section" id="cat-coding">
   <h2 class="category-heading" style="border-bottom-color:#10B981">Coding <span class="cat-count">6</span></h2>
   <ul class="prompt-list">
@@ -272,7 +267,7 @@ CONSTRAINTS: Must support agile sprints, Budget under $50/user/month.</p></secti
   </ul>
 </section>
 <section class="category-section" id="cat-decision">
-  <h2 class="category-heading" style="border-bottom-color:#F97316">Decision-making <span class="cat-count">6</span></h2>
+  <h2 class="category-heading" style="border-bottom-color:#F97316">Decision-making <span class="cat-count">7</span></h2>
   <ul class="prompt-list">
     <li><a href="prompts/2026-04-29.html"><span class="prompt-date">April 29, 2026</span><span class="prompt-title">Structured Decision Tradeoff Analysis</span></a></li>
     <li><a href="prompts/2026-05-13.html"><span class="prompt-date">May 13, 2026</span><span class="prompt-title">Strategic Tradeoff Analysis for Critical Decisions</span></a></li>
@@ -280,6 +275,7 @@ CONSTRAINTS: Must support agile sprints, Budget under $50/user/month.</p></secti
     <li><a href="prompts/2026-06-10.html"><span class="prompt-date">June 10, 2026</span><span class="prompt-title">Strategic Decision Architect</span></a></li>
     <li><a href="prompts/2026-06-24.html"><span class="prompt-date">June 24, 2026</span><span class="prompt-title">Strategic Decision Architect</span></a></li>
     <li><a href="prompts/2026-07-08.html"><span class="prompt-date">July 8, 2026</span><span class="prompt-title">Prioritized Decision Architect</span></a></li>
+    <li><a href="prompts/2026-07-22.html"><span class="prompt-date">July 22, 2026</span><span class="prompt-title">Strategic Decision Architect</span></a></li>
   </ul>
 </section>
 <section class="category-section" id="cat-debugging">
@@ -366,7 +362,7 @@ CONSTRAINTS: Must support agile sprints, Budget under $50/user/month.</p></secti
     <p>Arunkumar Panchanana &middot; AI tools &middot; Automation &middot; IT Leadership</p>
     <p>Email: <a href="mailto:arunkumar.panchanana@gmail.com">arunkumar.panchanana@gmail.com</a></p>
     <div>Generated daily by AI.</div>
-    <div class="footer-meta">Updated <time datetime="2026-07-22T02:05:29Z">2026-07-22T02:05:29Z</time></div>
+    <div class="footer-meta">Updated <time datetime="2026-07-23T02:05:57Z">2026-07-23T02:05:57Z</time></div>
   </div>
 </footer>
 </body>
