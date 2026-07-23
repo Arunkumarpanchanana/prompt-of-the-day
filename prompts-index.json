@@ -496,5 +496,11 @@
     "theme": "Decision-making",
     "themeId": "decision",
     "path": "prompts/2026-07-22.html"
+  },
+  "2026-07-23": {
+    "title": "Root Cause Analysis & Debugging Plan",
+    "theme": "Debugging",
+    "themeId": "debugging",
+    "path": "prompts/2026-07-23.html"
   }
 }
