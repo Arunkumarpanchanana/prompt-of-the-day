@@ -134,43 +134,38 @@
 </header>
 
 <section>
-  <div class="section-eyebrow">July 23, 2026 &middot; Debugging</div>
-  <h2 class="prompt-title">Root Cause Analysis &amp; Debugging Plan</h2>
-  <p class="prompt-subtitle">Diagnose complex system failures by identifying root causes and outlining a structured plan for investigation and resolution.</p>
+  <div class="section-eyebrow">July 24, 2026 &middot; Learning</div>
+  <h2 class="prompt-title">Personalized Concept Explainer &amp; Study Guide</h2>
+  <p class="prompt-subtitle">Break down any complex topic, test your understanding, and get tailored next steps for mastery, all in one comprehensive AI-guided session.</p>
   
 <div class="prompt-block">
   <div class="prompt-block-header">
     <span class="prompt-label">Prompt</span>
-    <button class="copy-btn" data-target="prompt-173a27ac" type="button">Copy</button>
+    <button class="copy-btn" data-target="prompt-7ae22499" type="button">Copy</button>
   </div>
-  <pre id="prompt-173a27ac" class="prompt-text">You are a highly experienced Senior Debugging Specialist and Root Cause Analyst. Your task is to meticulously diagnose a critical issue I&#39;m facing with my [SYSTEM/APPLICATION NAME]. I need you to go beyond surface-level symptoms and help me uncover the true underlying causes, providing a structured plan for resolution.
+  <pre id="prompt-7ae22499" class="prompt-text">You are an expert pedagogical assistant specializing in breaking down complex topics and guiding learners. Your goal is to help me deeply understand a specific concept, identify any misunderstandings, and chart a clear path for further mastery.
 
-Here&#39;s the situation:
-*   **System/Application**: [SYSTEM/APPLICATION NAME, e.g., &#39;our microservice API gateway&#39;]
-*   **Problem Description**: [BRIEF, CONCISE DESCRIPTION OF THE PROBLEM/SYMPTOMS, e.g., &#39;API requests are intermittently timing out&#39;, &#39;database queries are slow&#39;]
-*   **Error Messages/Logs**: [PASTE RELEVANT ERROR MESSAGES, STACK TRACES, OR LOG SNIPPETS. If none, state &#39;N/A&#39;.]
-*   **Recent Changes/Context**: [DESCRIBE ANY RECENT DEPLOYMENTS, CONFIGURATION CHANGES, TRAFFIC SPIKES, OR OTHER RELEVANT CONTEXT. e.g., &#39;deployed new version 2.1.0 yesterday&#39;, &#39;increased user load by 50%&#39;]
-*   **Expected Behavior**: [WHAT SHOULD BE HAPPENING NORMALLY?]
-*   **Observed Behavior**: [WHAT IS ACTUALLY HAPPENING?]
-*   **Troubleshooting Steps Taken**: [LIST ALL STEPS YOU&#39;VE ALREADY ATTEMPTED TO DIAGNOSE OR RESOLVE THE ISSUE, AND THEIR OUTCOMES. e.g., &#39;restarted the service (no change)&#39;, &#39;checked CPU usage (normal)&#39;]
-*   **Technology Stack/Environment**: [SPECIFY KEY TECHNOLOGIES AND ENVIRONMENT. e.g., &#39;Python 3.9, Flask, PostgreSQL 14, Docker, AWS ECS&#39;, &#39;Node.js, MongoDB, Kubernetes, Azure Functions&#39;.]
+**1. Explain:** First, provide a clear, concise, and engaging explanation of &#39;[CONCEPT]&#39; tailored for a &#39;[TARGET AUDIENCE/PRIOR KNOWLEDGE LEVEL]&#39; using &#39;[PREFERRED EXPLANATION STYLE, e.g., analogies, step-by-step, real-world examples]&#39;. Focus on &#39;[KEY ASPECTS/SUB-TOPICS TO COVER]&#39;. Keep the initial explanation to approximately [WORD COUNT/PARAGRAPH LIMIT].
 
-Based on this information, please provide your analysis in the following structured format:
+**2. Assess:** Next, generate [NUMBER] multiple-choice or short-answer questions to test my understanding of the explanation. Include the correct answers and brief explanations for each.
 
-**1. Problem Summary &amp; Reconfirmation**: [Your understanding of the core problem.]
+**3. Identify Gaps &amp; Recommend:** Based on common pitfalls or advanced aspects related to &#39;[CONCEPT]&#39;, identify potential areas where I might still have gaps or could deepen my understanding. Then, suggest [NUMBER] concrete next steps or resources (e.g., specific exercises, articles, related concepts to explore) to further solidify my knowledge.
 
-**2. Initial Hypotheses (Prioritized)**: [List 3-5 most probable root causes, ordered by likelihood. Explain why each is a candidate.]
+**Output Format:**
+Present your response in three distinct sections:
 
-**3. Diagnostic &amp; Investigation Plan**: [For each hypothesis, outline specific, actionable steps to confirm or deny it. Include commands, logs to check, metrics to monitor, or data to gather.]
+**1. Explanation:**
+[Your detailed explanation]
 
-**4. Immediate Mitigation Suggestions**: [Propose temporary measures to reduce the impact of the problem while a permanent fix is being developed.]
+**2. Understanding Check:**
+[Numbered questions with options/space for answers]
+[Correct answers and explanations]
 
-**5. Long-Term Solutions &amp; Preventative Measures**: [Suggest permanent fixes, architectural changes, or process improvements to prevent recurrence.]
-
-**6. Further Information Needed**: [What additional data or context would significantly aid your diagnosis?]</pre>
+**3. Next Steps &amp; Resources:**
+[Identified gaps and recommendations]</pre>
 </div>
-<section class="why-section"><h3>How to use this</h3><p>Copy-paste this prompt and fill in the bracketed placeholders with details about your specific system issue. Be as thorough as possible with error messages, logs, and context. The AI will act as a senior debugging specialist, providing a detailed breakdown to guide your troubleshooting efforts.</p></section>
-<section class="example-section"><h3>Example</h3><p>For [SYSTEM/APPLICATION NAME], I&#39;d put &#39;our user authentication service&#39;. For [PROBLEM DESCRIPTION], &#39;Users are intermittently unable to log in, receiving a 500 error&#39;. For [ERROR MESSAGES/LOG SNIPPETS], I&#39;d paste a relevant stack trace from the server logs.</p></section>
+<section class="why-section"><h3>How to use this</h3><p>Input a concept, define your learning level, and specify how you best learn. The AI will explain the topic, quiz you, and then provide personalized recommendations to deepen your knowledge. It&#39;s ideal for tackling new subjects or reinforcing existing learning.</p></section>
+<section class="example-section"><h3>Example</h3><p>CONCEPT: Quantum Entanglement, TARGET AUDIENCE: High school student with basic physics, PREFERRED EXPLANATION STYLE: Simple analogies and visualizable examples, KEY ASPECTS: Spooky action at a distance, measurement problem, NUMBER (questions): 3, NUMBER (steps): 2</p></section>
 <script>
 (function() {
   document.querySelectorAll('.copy-btn').forEach(function(btn) {
@@ -200,7 +195,7 @@ Based on this information, please provide your analysis in the following structu
 </section>
 <section class="archive-section">
   <h2 style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin:0 0 8px">All prompts by category</h2>
-  <nav class="category-nav"><a href="#cat-coding">Coding <span class="cat-count">6</span></a><a href="#cat-writing">Writing <span class="cat-count">6</span></a><a href="#cat-analysis">Analysis <span class="cat-count">6</span></a><a href="#cat-research">Research <span class="cat-count">6</span></a><a href="#cat-creative">Creative <span class="cat-count">6</span></a><a href="#cat-data">Data <span class="cat-count">5</span></a><a href="#cat-decision">Decision-making <span class="cat-count">7</span></a><a href="#cat-debugging">Debugging <span class="cat-count">5</span></a><a href="#cat-learning">Learning <span class="cat-count">6</span></a><a href="#cat-communication">Communication <span class="cat-count">6</span></a><a href="#cat-problem">Problem-solving <span class="cat-count">6</span></a><a href="#cat-productivity">Productivity <span class="cat-count">6</span></a><a href="#cat-study">Study <span class="cat-count">6</span></a><a href="#cat-brainstorming">Brainstorming <span class="cat-count">6</span></a></nav>
+  <nav class="category-nav"><a href="#cat-coding">Coding <span class="cat-count">6</span></a><a href="#cat-writing">Writing <span class="cat-count">6</span></a><a href="#cat-analysis">Analysis <span class="cat-count">6</span></a><a href="#cat-research">Research <span class="cat-count">6</span></a><a href="#cat-creative">Creative <span class="cat-count">6</span></a><a href="#cat-data">Data <span class="cat-count">5</span></a><a href="#cat-decision">Decision-making <span class="cat-count">7</span></a><a href="#cat-debugging">Debugging <span class="cat-count">6</span></a><a href="#cat-learning">Learning <span class="cat-count">6</span></a><a href="#cat-communication">Communication <span class="cat-count">6</span></a><a href="#cat-problem">Problem-solving <span class="cat-count">6</span></a><a href="#cat-productivity">Productivity <span class="cat-count">6</span></a><a href="#cat-study">Study <span class="cat-count">6</span></a><a href="#cat-brainstorming">Brainstorming <span class="cat-count">6</span></a></nav>
 <section class="category-section" id="cat-coding">
   <h2 class="category-heading" style="border-bottom-color:#10B981">Coding <span class="cat-count">6</span></h2>
   <ul class="prompt-list">
@@ -279,13 +274,14 @@ Based on this information, please provide your analysis in the following structu
   </ul>
 </section>
 <section class="category-section" id="cat-debugging">
-  <h2 class="category-heading" style="border-bottom-color:#EF4444">Debugging <span class="cat-count">5</span></h2>
+  <h2 class="category-heading" style="border-bottom-color:#EF4444">Debugging <span class="cat-count">6</span></h2>
   <ul class="prompt-list">
     <li><a href="prompts/2026-04-30.html"><span class="prompt-date">April 30, 2026</span><span class="prompt-title">Root Cause Analysis &amp; Troubleshooting</span></a></li>
     <li><a href="prompts/2026-05-14.html"><span class="prompt-date">May 14, 2026</span><span class="prompt-title">Expert Debugger: Root Cause Analysis for [System Type] Failures</span></a></li>
     <li><a href="prompts/2026-05-28.html"><span class="prompt-date">May 28, 2026</span><span class="prompt-title">Incident Commander: Root Cause Analysis</span></a></li>
     <li><a href="prompts/2026-06-11.html"><span class="prompt-date">June 11, 2026</span><span class="prompt-title">System Failure Root Cause Analysis</span></a></li>
     <li><a href="prompts/2026-06-25.html"><span class="prompt-date">June 25, 2026</span><span class="prompt-title">Systematic Root Cause Analysis</span></a></li>
+    <li><a href="prompts/2026-07-23.html"><span class="prompt-date">July 23, 2026</span><span class="prompt-title">Root Cause Analysis &amp; Debugging Plan</span></a></li>
   </ul>
 </section>
 <section class="category-section" id="cat-learning">
@@ -362,7 +358,7 @@ Based on this information, please provide your analysis in the following structu
     <p>Arunkumar Panchanana &middot; AI tools &middot; Automation &middot; IT Leadership</p>
     <p>Email: <a href="mailto:arunkumar.panchanana@gmail.com">arunkumar.panchanana@gmail.com</a></p>
     <div>Generated daily by AI.</div>
-    <div class="footer-meta">Updated <time datetime="2026-07-23T02:05:57Z">2026-07-23T02:05:57Z</time></div>
+    <div class="footer-meta">Updated <time datetime="2026-07-24T02:06:17Z">2026-07-24T02:06:17Z</time></div>
   </div>
 </footer>
 </body>
