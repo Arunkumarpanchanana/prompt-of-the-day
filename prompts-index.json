@@ -502,5 +502,11 @@
     "theme": "Debugging",
     "themeId": "debugging",
     "path": "prompts/2026-07-23.html"
+  },
+  "2026-07-24": {
+    "title": "Personalized Concept Explainer & Study Guide",
+    "theme": "Learning",
+    "themeId": "learning",
+    "path": "prompts/2026-07-24.html"
   }
 }
