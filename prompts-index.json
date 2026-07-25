@@ -508,5 +508,11 @@
     "theme": "Learning",
     "themeId": "learning",
     "path": "prompts/2026-07-24.html"
+  },
+  "2026-07-25": {
+    "title": "Sensitive Message Draft & Tone Analysis",
+    "theme": "Communication",
+    "themeId": "communication",
+    "path": "prompts/2026-07-25.html"
   }
 }
