@@ -514,5 +514,11 @@
     "theme": "Communication",
     "themeId": "communication",
     "path": "prompts/2026-07-25.html"
+  },
+  "2026-07-26": {
+    "title": "Strategic Project Unblocker",
+    "theme": "Problem-solving",
+    "themeId": "problem",
+    "path": "prompts/2026-07-26.html"
   }
 }
