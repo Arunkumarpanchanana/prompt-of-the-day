@@ -520,5 +520,11 @@
     "theme": "Problem-solving",
     "themeId": "problem",
     "path": "prompts/2026-07-26.html"
+  },
+  "2026-07-27": {
+    "title": "Strategic Weekly Productivity Planner",
+    "theme": "Productivity",
+    "themeId": "productivity",
+    "path": "prompts/2026-07-27.html"
   }
 }
