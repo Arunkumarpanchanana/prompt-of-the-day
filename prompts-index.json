@@ -526,5 +526,11 @@
     "theme": "Productivity",
     "themeId": "productivity",
     "path": "prompts/2026-07-27.html"
+  },
+  "2026-07-28": {
+    "title": "Adaptive Recall & Concept Clarifier",
+    "theme": "Study",
+    "themeId": "study",
+    "path": "prompts/2026-07-28.html"
   }
 }
