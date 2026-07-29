@@ -532,5 +532,11 @@
     "theme": "Study",
     "themeId": "study",
     "path": "prompts/2026-07-28.html"
+  },
+  "2026-07-29": {
+    "title": "Divergent Solutions Brainstormer",
+    "theme": "Brainstorming",
+    "themeId": "brainstorming",
+    "path": "prompts/2026-07-29.html"
   }
 }
