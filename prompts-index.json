@@ -538,5 +538,11 @@
     "theme": "Brainstorming",
     "themeId": "brainstorming",
     "path": "prompts/2026-07-29.html"
+  },
+  "2026-07-30": {
+    "title": "Architectural Refactor for Scalability & Maintainability",
+    "theme": "Coding",
+    "themeId": "coding",
+    "path": "prompts/2026-07-30.html"
   }
 }
