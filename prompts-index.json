@@ -544,5 +544,11 @@
     "theme": "Coding",
     "themeId": "coding",
     "path": "prompts/2026-07-30.html"
+  },
+  "2026-07-31": {
+    "title": "Editorial Consultant for Impactful Writing",
+    "theme": "Writing",
+    "themeId": "writing",
+    "path": "prompts/2026-07-31.html"
   }
 }
