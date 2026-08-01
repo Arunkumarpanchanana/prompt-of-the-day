@@ -550,5 +550,11 @@
     "theme": "Writing",
     "themeId": "writing",
     "path": "prompts/2026-07-31.html"
+  },
+  "2026-08-01": {
+    "title": "Strategic Driver Analysis",
+    "theme": "Analysis",
+    "themeId": "analysis",
+    "path": "prompts/2026-08-01.html"
   }
 }
