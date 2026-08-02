@@ -556,5 +556,11 @@
     "theme": "Analysis",
     "themeId": "analysis",
     "path": "prompts/2026-08-01.html"
+  },
+  "2026-08-02": {
+    "title": "Multi-Source Research Synthesizer",
+    "theme": "Research",
+    "themeId": "research",
+    "path": "prompts/2026-08-02.html"
   }
 }
