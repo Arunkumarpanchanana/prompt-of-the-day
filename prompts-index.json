@@ -568,5 +568,11 @@
     "theme": "Creative",
     "themeId": "creative",
     "path": "prompts/2026-08-03.html"
+  },
+  "2026-08-04": {
+    "title": "Data Transformation & Insight Generation Blueprint",
+    "theme": "Data",
+    "themeId": "data",
+    "path": "prompts/2026-08-04.html"
   }
 }
