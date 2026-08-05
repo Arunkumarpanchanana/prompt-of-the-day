@@ -134,46 +134,34 @@
 </header>
 
 <section>
-  <div class="section-eyebrow">August 4, 2026 &middot; Data</div>
-  <h2 class="prompt-title">Data Transformation &amp; Insight Generation Blueprint</h2>
-  <p class="prompt-subtitle">Get a step-by-step plan to clean, transform, query, and interpret your dataset for a specific analytical goal.</p>
+  <div class="section-eyebrow">August 5, 2026 &middot; Decision-making</div>
+  <h2 class="prompt-title">Strategic Decision Architect</h2>
+  <p class="prompt-subtitle">Systematically evaluate complex choices by weighing options against criteria and identifying tradeoffs.</p>
   
 <div class="prompt-block">
   <div class="prompt-block-header">
     <span class="prompt-label">Prompt</span>
-    <button class="copy-btn" data-target="prompt-fa2e6462" type="button">Copy</button>
+    <button class="copy-btn" data-target="prompt-e362de78" type="button">Copy</button>
   </div>
-  <pre id="prompt-fa2e6462" class="prompt-text">You are a highly skilled Data Engineer and Analyst. Your task is to guide me through the process of preparing, transforming, and initially interpreting a dataset to achieve a specific analytical objective.
+  <pre id="prompt-e362de78" class="prompt-text">You are a Strategic Decision Architect. Your task is to help me systematically evaluate a critical choice I need to make, considering multiple options and various influencing factors. I need a clear, structured analysis that highlights tradeoffs and guides me toward an informed decision.
 
-I will provide you with:
-1.  [RAW DATA DESCRIPTION]: A brief overview of my raw dataset, including its source, approximate size, key columns, and any known data quality issues (e.g., missing values, inconsistent formats, duplicates).
-2.  [ANALYTICAL OBJECTIVE]: The specific question I&#39;m trying to answer or the insight I&#39;m trying to gain from this data.
-3.  [DESIRED OUTPUT FORMAT (e.g., aggregated table, specific metric, trend analysis)]: The ultimate form of the data I need for my analysis.
+Here&#39;s the decision context:
+**The Decision:** [THE DECISION YOU NEED TO MAKE, e.g., &quot;Choosing between three different software vendors for our CRM system&quot;]
+**Available Options:** [LIST OF OPTIONS, e.g., &quot;Vendor X, Vendor Y, Vendor Z&quot;]
+**Key Evaluation Criteria:** [LIST OF KEY CRITERIA, e.g., &quot;Initial Cost, Implementation Time, Scalability, User-friendliness, Customer Support, Data Security, Integration Capabilities&quot;]
+**My Specific Concerns/Priorities:** [ANY SPECIFIC CONCERNS OR PRIORITIES YOU HAVE, e.g., &quot;Minimizing upfront cost is crucial, but long-term scalability is also very important. We also have limited internal resources for implementation.&quot;]
 
-Based on this information, please provide a comprehensive plan structured as follows:
+Your analysis should:
+1.  **Summarize each option** briefly in relation to the decision.
+2.  **Evaluate each option against ALL specified criteria**, providing a brief rationale for its performance on each criterion.
+3.  **Identify the primary tradeoffs** between the options, explaining what is gained and lost with each choice.
+4.  **Highlight potential risks and opportunities** associated with each option.
+5.  **Provide a concluding synthesis** that doesn&#39;t necessarily make the choice for me, but clearly outlines the strongest contenders based on my stated priorities and the identified tradeoffs, offering a structured path forward for my final decision.
 
-**1. Data Cleaning &amp; Pre-processing Strategy:**
-    *   Identify potential data quality issues based on my description.
-    *   Propose concrete steps (e.g., handling missing values, data type conversions, duplicate removal) with pseudocode (SQL or Python Pandas).
-
-**2. Data Transformation Plan:**
-    *   Outline the necessary transformations (e.g., pivoting, joining with other hypothetical tables, feature engineering) to align the data with the [ANALYTICAL OBJECTIVE].
-    *   Provide pseudocode examples for these transformations.
-
-**3. Key Querying &amp; Aggregation Steps:**
-    *   Suggest specific queries or data manipulations to extract the core information needed for the [ANALYTICAL OBJECTIVE] in the [DESIRED OUTPUT FORMAT].
-    *   Include pseudocode for these queries, assuming a relational database or Pandas DataFrame.
-
-**4. Initial Interpretation &amp; Next Steps:**
-    *   Based on the hypothetical results of your proposed queries, provide an example of what initial insights could be drawn.
-    *   Suggest potential follow-up questions or further analyses to deepen understanding.
-
-Ensure your response is practical, actionable, and uses clear, concise language. Focus on efficiency and best practices for data handling.</pre>
+Present your output in a clear, easy-to-read format, using bullet points and headings for each section.</pre>
 </div>
-<section class="why-section"><h3>How to use this</h3><p>Provide details about your raw data, the specific question you want to answer, and the format you need the final data in. The AI will act as your data consultant, outlining practical steps with pseudocode to guide your data preparation and initial analysis. This prompt is ideal for structuring complex data tasks.</p></section>
-<section class="example-section"><h3>Example</h3><p>[RAW DATA DESCRIPTION]: CSV of customer transactions, columns: transaction_id, customer_id, product_category, amount, timestamp. ~1M rows. Missing product_category sometimes.
-[ANALYTICAL OBJECTIVE]: Identify top 5 product categories by total revenue per month.
-[DESIRED OUTPUT FORMAT]: Monthly aggregated table with &#39;month&#39;, &#39;product_category&#39;, &#39;total_revenue&#39;.</p></section>
+<section class="why-section"><h3>How to use this</h3><p>Fill in the placeholders with your specific decision, the options you&#39;re considering, and the criteria you&#39;ll use for evaluation. The AI will act as a strategic advisor, providing a structured breakdown to help you understand the implications of each choice and make an informed decision. Be as detailed as possible in your inputs for the best results.</p></section>
+<section class="example-section"><h3>Example</h3><p>Decision: &#39;Which marketing channel to focus on for Q3 product launch.&#39; Options: &#39;Social Media Ads, Influencer Marketing, Email Campaigns.&#39; Criteria: &#39;ROI, Reach, Cost, Time-to-impact.&#39; Concerns: &#39;Limited budget, need quick results.&#39;</p></section>
 <script>
 (function() {
   document.querySelectorAll('.copy-btn').forEach(function(btn) {
@@ -203,7 +191,7 @@ Ensure your response is practical, actionable, and uses clear, concise language.
 </section>
 <section class="archive-section">
   <h2 style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin:0 0 8px">All prompts by category</h2>
-  <nav class="category-nav"><a href="#cat-coding">Coding <span class="cat-count">7</span></a><a href="#cat-writing">Writing <span class="cat-count">7</span></a><a href="#cat-analysis">Analysis <span class="cat-count">7</span></a><a href="#cat-research">Research <span class="cat-count">7</span></a><a href="#cat-creative">Creative <span class="cat-count">7</span></a><a href="#cat-data">Data <span class="cat-count">5</span></a><a href="#cat-decision">Decision-making <span class="cat-count">7</span></a><a href="#cat-debugging">Debugging <span class="cat-count">6</span></a><a href="#cat-learning">Learning <span class="cat-count">7</span></a><a href="#cat-communication">Communication <span class="cat-count">7</span></a><a href="#cat-problem">Problem-solving <span class="cat-count">7</span></a><a href="#cat-productivity">Productivity <span class="cat-count">7</span></a><a href="#cat-study">Study <span class="cat-count">7</span></a><a href="#cat-brainstorming">Brainstorming <span class="cat-count">7</span></a></nav>
+  <nav class="category-nav"><a href="#cat-coding">Coding <span class="cat-count">7</span></a><a href="#cat-writing">Writing <span class="cat-count">7</span></a><a href="#cat-analysis">Analysis <span class="cat-count">7</span></a><a href="#cat-research">Research <span class="cat-count">7</span></a><a href="#cat-creative">Creative <span class="cat-count">7</span></a><a href="#cat-data">Data <span class="cat-count">6</span></a><a href="#cat-decision">Decision-making <span class="cat-count">7</span></a><a href="#cat-debugging">Debugging <span class="cat-count">6</span></a><a href="#cat-learning">Learning <span class="cat-count">7</span></a><a href="#cat-communication">Communication <span class="cat-count">7</span></a><a href="#cat-problem">Problem-solving <span class="cat-count">7</span></a><a href="#cat-productivity">Productivity <span class="cat-count">7</span></a><a href="#cat-study">Study <span class="cat-count">7</span></a><a href="#cat-brainstorming">Brainstorming <span class="cat-count">7</span></a></nav>
 <section class="category-section" id="cat-coding">
   <h2 class="category-heading" style="border-bottom-color:#10B981">Coding <span class="cat-count">7</span></h2>
   <ul class="prompt-list">
@@ -265,13 +253,14 @@ Ensure your response is practical, actionable, and uses clear, concise language.
   </ul>
 </section>
 <section class="category-section" id="cat-data">
-  <h2 class="category-heading" style="border-bottom-color:#06B6D4">Data <span class="cat-count">5</span></h2>
+  <h2 class="category-heading" style="border-bottom-color:#06B6D4">Data <span class="cat-count">6</span></h2>
   <ul class="prompt-list">
     <li><a href="prompts/2026-04-28.html"><span class="prompt-date">April 28, 2026</span><span class="prompt-title">Dataset Explorer &amp; Interpreter</span></a></li>
     <li><a href="prompts/2026-05-12.html"><span class="prompt-date">May 12, 2026</span><span class="prompt-title">Data Insight Navigator</span></a></li>
     <li><a href="prompts/2026-05-26.html"><span class="prompt-date">May 26, 2026</span><span class="prompt-title">Data Insight &amp; Strategic Action Planner</span></a></li>
     <li><a href="prompts/2026-06-09.html"><span class="prompt-date">June 9, 2026</span><span class="prompt-title">Dataset Analysis &amp; Insight Generation</span></a></li>
     <li><a href="prompts/2026-07-07.html"><span class="prompt-date">July 7, 2026</span><span class="prompt-title">Data-Driven Business Insight Generator</span></a></li>
+    <li><a href="prompts/2026-08-04.html"><span class="prompt-date">August 4, 2026</span><span class="prompt-title">Data Transformation &amp; Insight Generation Blueprint</span></a></li>
   </ul>
 </section>
 <section class="category-section" id="cat-decision">
@@ -377,7 +366,7 @@ Ensure your response is practical, actionable, and uses clear, concise language.
     <p>Arunkumar Panchanana &middot; AI tools &middot; Automation &middot; IT Leadership</p>
     <p>Email: <a href="mailto:arunkumar.panchanana@gmail.com">arunkumar.panchanana@gmail.com</a></p>
     <div>Generated daily by AI.</div>
-    <div class="footer-meta">Updated <time datetime="2026-08-04T02:05:11Z">2026-08-04T02:05:11Z</time></div>
+    <div class="footer-meta">Updated <time datetime="2026-08-05T02:04:21Z">2026-08-05T02:04:21Z</time></div>
   </div>
 </footer>
 </body>
