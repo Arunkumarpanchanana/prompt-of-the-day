@@ -574,5 +574,11 @@
     "theme": "Data",
     "themeId": "data",
     "path": "prompts/2026-08-04.html"
+  },
+  "2026-08-05": {
+    "title": "Strategic Decision Architect",
+    "theme": "Decision-making",
+    "themeId": "decision",
+    "path": "prompts/2026-08-05.html"
   }
 }
