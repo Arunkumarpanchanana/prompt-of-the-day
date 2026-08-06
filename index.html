@@ -134,34 +134,51 @@
 </header>
 
 <section>
-  <div class="section-eyebrow">August 5, 2026 &middot; Decision-making</div>
-  <h2 class="prompt-title">Strategic Decision Architect</h2>
-  <p class="prompt-subtitle">Systematically evaluate complex choices by weighing options against criteria and identifying tradeoffs.</p>
+  <div class="section-eyebrow">August 6, 2026 &middot; Debugging</div>
+  <h2 class="prompt-title">Structured Debugging Assistant</h2>
+  <p class="prompt-subtitle">Guides you through a structured root cause analysis by generating hypotheses, diagnostic steps, and clarifying questions based on your problem description.</p>
   
 <div class="prompt-block">
   <div class="prompt-block-header">
     <span class="prompt-label">Prompt</span>
-    <button class="copy-btn" data-target="prompt-e362de78" type="button">Copy</button>
+    <button class="copy-btn" data-target="prompt-6c65c0a7" type="button">Copy</button>
   </div>
-  <pre id="prompt-e362de78" class="prompt-text">You are a Strategic Decision Architect. Your task is to help me systematically evaluate a critical choice I need to make, considering multiple options and various influencing factors. I need a clear, structured analysis that highlights tradeoffs and guides me toward an informed decision.
+  <pre id="prompt-6c65c0a7" class="prompt-text">You are a seasoned Senior Debugging Specialist with expertise across software, hardware, and system-level issues. Your task is to help me diagnose a complex failure. I will provide you with a problem description, observed symptoms, and any recent changes. Your goal is to act as an investigative partner, guiding me through a structured root cause analysis.
 
-Here&#39;s the decision context:
-**The Decision:** [THE DECISION YOU NEED TO MAKE, e.g., &quot;Choosing between three different software vendors for our CRM system&quot;]
-**Available Options:** [LIST OF OPTIONS, e.g., &quot;Vendor X, Vendor Y, Vendor Z&quot;]
-**Key Evaluation Criteria:** [LIST OF KEY CRITERIA, e.g., &quot;Initial Cost, Implementation Time, Scalability, User-friendliness, Customer Support, Data Security, Integration Capabilities&quot;]
-**My Specific Concerns/Priorities:** [ANY SPECIFIC CONCERNS OR PRIORITIES YOU HAVE, e.g., &quot;Minimizing upfront cost is crucial, but long-term scalability is also very important. We also have limited internal resources for implementation.&quot;]
+First, identify and list at least three distinct, plausible hypotheses for the underlying cause of the failure. For each hypothesis, explain *why* it&#39;s plausible given the symptoms.
 
-Your analysis should:
-1.  **Summarize each option** briefly in relation to the decision.
-2.  **Evaluate each option against ALL specified criteria**, providing a brief rationale for its performance on each criterion.
-3.  **Identify the primary tradeoffs** between the options, explaining what is gained and lost with each choice.
-4.  **Highlight potential risks and opportunities** associated with each option.
-5.  **Provide a concluding synthesis** that doesn&#39;t necessarily make the choice for me, but clearly outlines the strongest contenders based on my stated priorities and the identified tradeoffs, offering a structured path forward for my final decision.
+Second, for each hypothesis, propose a specific, actionable diagnostic step or test that would help confirm or rule out that hypothesis. These steps should be practical and aim to gather more specific data.
 
-Present your output in a clear, easy-to-read format, using bullet points and headings for each section.</pre>
+Third, based on the information provided and your initial hypotheses, generate a list of 3-5 critical clarifying questions you need answered to refine your understanding and narrow down the potential causes.
+
+I need your output structured clearly.
+
+**Problem Description:** [DESCRIBE THE SYSTEM, APPLICATION, OR COMPONENT FAILING]
+**Observed Symptoms:** [LIST ALL OBSERVED SYMPTOMS, ERROR MESSAGES, AND BEHAVIORS]
+**Recent Changes (if any):** [DESCRIBE ANY RECENT DEPLOYMENTS, CONFIGURATION CHANGES, CODE MODIFICATIONS, OR ENVIRONMENTAL SHIFTS]
+
+---
+**Output Format:**
+
+### Hypotheses &amp; Rationale:
+1.  **[Hypothesis 1]:** [Rationale based on symptoms]
+    *   **Diagnostic Step:** [Specific test or action]
+2.  **[Hypothesis 2]:** [Rationale based on symptoms]
+    *   **Diagnostic Step:** [Specific test or action]
+3.  **[Hypothesis 3]:** [Rationale based on symptoms]
+    *   **Diagnostic Step:** [Specific test or action]
+
+### Clarifying Questions:
+1.  [Question 1]
+2.  [Question 2]
+3.  [Question 3]
+4.  [Question 4] (Optional)
+5.  [Question 5] (Optional)</pre>
 </div>
-<section class="why-section"><h3>How to use this</h3><p>Fill in the placeholders with your specific decision, the options you&#39;re considering, and the criteria you&#39;ll use for evaluation. The AI will act as a strategic advisor, providing a structured breakdown to help you understand the implications of each choice and make an informed decision. Be as detailed as possible in your inputs for the best results.</p></section>
-<section class="example-section"><h3>Example</h3><p>Decision: &#39;Which marketing channel to focus on for Q3 product launch.&#39; Options: &#39;Social Media Ads, Influencer Marketing, Email Campaigns.&#39; Criteria: &#39;ROI, Reach, Cost, Time-to-impact.&#39; Concerns: &#39;Limited budget, need quick results.&#39;</p></section>
+<section class="why-section"><h3>How to use this</h3><p>Provide a detailed description of your failing system, observed symptoms, and any recent changes. The AI will act as a debugging partner, offering structured hypotheses and practical steps to narrow down the problem, along with key questions to gather more data.</p></section>
+<section class="example-section"><h3>Example</h3><p>**Problem Description:** Web service `api.example.com` is returning 500 errors intermittently.
+**Observed Symptoms:** Errors occur roughly every 10-15 minutes, logs show &#39;Database connection timed out&#39; but database metrics look fine.
+**Recent Changes:** Deployed a new version of the API service yesterday with minor dependency updates.</p></section>
 <script>
 (function() {
   document.querySelectorAll('.copy-btn').forEach(function(btn) {
@@ -191,7 +208,7 @@ Present your output in a clear, easy-to-read format, using bullet points and hea
 </section>
 <section class="archive-section">
   <h2 style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin:0 0 8px">All prompts by category</h2>
-  <nav class="category-nav"><a href="#cat-coding">Coding <span class="cat-count">7</span></a><a href="#cat-writing">Writing <span class="cat-count">7</span></a><a href="#cat-analysis">Analysis <span class="cat-count">7</span></a><a href="#cat-research">Research <span class="cat-count">7</span></a><a href="#cat-creative">Creative <span class="cat-count">7</span></a><a href="#cat-data">Data <span class="cat-count">6</span></a><a href="#cat-decision">Decision-making <span class="cat-count">7</span></a><a href="#cat-debugging">Debugging <span class="cat-count">6</span></a><a href="#cat-learning">Learning <span class="cat-count">7</span></a><a href="#cat-communication">Communication <span class="cat-count">7</span></a><a href="#cat-problem">Problem-solving <span class="cat-count">7</span></a><a href="#cat-productivity">Productivity <span class="cat-count">7</span></a><a href="#cat-study">Study <span class="cat-count">7</span></a><a href="#cat-brainstorming">Brainstorming <span class="cat-count">7</span></a></nav>
+  <nav class="category-nav"><a href="#cat-coding">Coding <span class="cat-count">7</span></a><a href="#cat-writing">Writing <span class="cat-count">7</span></a><a href="#cat-analysis">Analysis <span class="cat-count">7</span></a><a href="#cat-research">Research <span class="cat-count">7</span></a><a href="#cat-creative">Creative <span class="cat-count">7</span></a><a href="#cat-data">Data <span class="cat-count">6</span></a><a href="#cat-decision">Decision-making <span class="cat-count">8</span></a><a href="#cat-debugging">Debugging <span class="cat-count">6</span></a><a href="#cat-learning">Learning <span class="cat-count">7</span></a><a href="#cat-communication">Communication <span class="cat-count">7</span></a><a href="#cat-problem">Problem-solving <span class="cat-count">7</span></a><a href="#cat-productivity">Productivity <span class="cat-count">7</span></a><a href="#cat-study">Study <span class="cat-count">7</span></a><a href="#cat-brainstorming">Brainstorming <span class="cat-count">7</span></a></nav>
 <section class="category-section" id="cat-coding">
   <h2 class="category-heading" style="border-bottom-color:#10B981">Coding <span class="cat-count">7</span></h2>
   <ul class="prompt-list">
@@ -264,7 +281,7 @@ Present your output in a clear, easy-to-read format, using bullet points and hea
   </ul>
 </section>
 <section class="category-section" id="cat-decision">
-  <h2 class="category-heading" style="border-bottom-color:#F97316">Decision-making <span class="cat-count">7</span></h2>
+  <h2 class="category-heading" style="border-bottom-color:#F97316">Decision-making <span class="cat-count">8</span></h2>
   <ul class="prompt-list">
     <li><a href="prompts/2026-04-29.html"><span class="prompt-date">April 29, 2026</span><span class="prompt-title">Structured Decision Tradeoff Analysis</span></a></li>
     <li><a href="prompts/2026-05-13.html"><span class="prompt-date">May 13, 2026</span><span class="prompt-title">Strategic Tradeoff Analysis for Critical Decisions</span></a></li>
@@ -273,6 +290,7 @@ Present your output in a clear, easy-to-read format, using bullet points and hea
     <li><a href="prompts/2026-06-24.html"><span class="prompt-date">June 24, 2026</span><span class="prompt-title">Strategic Decision Architect</span></a></li>
     <li><a href="prompts/2026-07-08.html"><span class="prompt-date">July 8, 2026</span><span class="prompt-title">Prioritized Decision Architect</span></a></li>
     <li><a href="prompts/2026-07-22.html"><span class="prompt-date">July 22, 2026</span><span class="prompt-title">Strategic Decision Architect</span></a></li>
+    <li><a href="prompts/2026-08-05.html"><span class="prompt-date">August 5, 2026</span><span class="prompt-title">Strategic Decision Architect</span></a></li>
   </ul>
 </section>
 <section class="category-section" id="cat-debugging">
@@ -366,7 +384,7 @@ Present your output in a clear, easy-to-read format, using bullet points and hea
     <p>Arunkumar Panchanana &middot; AI tools &middot; Automation &middot; IT Leadership</p>
     <p>Email: <a href="mailto:arunkumar.panchanana@gmail.com">arunkumar.panchanana@gmail.com</a></p>
     <div>Generated daily by AI.</div>
-    <div class="footer-meta">Updated <time datetime="2026-08-05T02:04:21Z">2026-08-05T02:04:21Z</time></div>
+    <div class="footer-meta">Updated <time datetime="2026-08-06T02:06:04Z">2026-08-06T02:06:04Z</time></div>
   </div>
 </footer>
 </body>
