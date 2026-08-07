@@ -586,5 +586,11 @@
     "theme": "Debugging",
     "themeId": "debugging",
     "path": "prompts/2026-08-06.html"
+  },
+  "2026-08-07": {
+    "title": "Progressive Concept Explainer & Coach",
+    "theme": "Learning",
+    "themeId": "learning",
+    "path": "prompts/2026-08-07.html"
   }
 }
