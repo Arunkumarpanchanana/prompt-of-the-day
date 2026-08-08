@@ -592,5 +592,11 @@
     "theme": "Learning",
     "themeId": "learning",
     "path": "prompts/2026-08-07.html"
+  },
+  "2026-08-08": {
+    "title": "Crafting Sensitive Communication",
+    "theme": "Communication",
+    "themeId": "communication",
+    "path": "prompts/2026-08-08.html"
   }
 }
