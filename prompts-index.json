@@ -604,5 +604,11 @@
     "theme": "Problem-solving",
     "themeId": "problem",
     "path": "prompts/2026-08-09.html"
+  },
+  "2026-08-10": {
+    "title": "Strategic Outcome Planner",
+    "theme": "Productivity",
+    "themeId": "productivity",
+    "path": "prompts/2026-08-10.html"
   }
 }
