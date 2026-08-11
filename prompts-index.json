@@ -610,5 +610,11 @@
     "theme": "Productivity",
     "themeId": "productivity",
     "path": "prompts/2026-08-10.html"
+  },
+  "2026-08-11": {
+    "title": "Cognitive Study Partner: Deep Dive & Recall",
+    "theme": "Study",
+    "themeId": "study",
+    "path": "prompts/2026-08-11.html"
   }
 }
