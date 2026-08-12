@@ -616,5 +616,11 @@
     "theme": "Study",
     "themeId": "study",
     "path": "prompts/2026-08-11.html"
+  },
+  "2026-08-12": {
+    "title": "Lateral Thinking Brainstorm for Unconventional Solutions",
+    "theme": "Brainstorming",
+    "themeId": "brainstorming",
+    "path": "prompts/2026-08-12.html"
   }
 }
