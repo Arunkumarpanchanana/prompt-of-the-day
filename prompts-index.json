@@ -622,5 +622,11 @@
     "theme": "Brainstorming",
     "themeId": "brainstorming",
     "path": "prompts/2026-08-12.html"
+  },
+  "2026-08-13": {
+    "title": "Architectural Code Review & Refactoring Strategy",
+    "theme": "Coding",
+    "themeId": "coding",
+    "path": "prompts/2026-08-13.html"
   }
 }
