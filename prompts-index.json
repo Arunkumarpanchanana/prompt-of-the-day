@@ -634,5 +634,11 @@
     "theme": "Writing",
     "themeId": "writing",
     "path": "prompts/2026-08-14.html"
+  },
+  "2026-08-15": {
+    "title": "Systemic Problem Deconstruction",
+    "theme": "Analysis",
+    "themeId": "analysis",
+    "path": "prompts/2026-08-15.html"
   }
 }
