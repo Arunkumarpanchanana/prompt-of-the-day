@@ -640,5 +640,11 @@
     "theme": "Analysis",
     "themeId": "analysis",
     "path": "prompts/2026-08-15.html"
+  },
+  "2026-08-16": {
+    "title": "Multi-Source Synthesis & Critical Analysis",
+    "theme": "Research",
+    "themeId": "research",
+    "path": "prompts/2026-08-16.html"
   }
 }
