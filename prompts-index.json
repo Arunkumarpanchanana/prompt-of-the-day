@@ -652,5 +652,11 @@
     "theme": "Creative",
     "themeId": "creative",
     "path": "prompts/2026-08-17.html"
+  },
+  "2026-08-18": {
+    "title": "Data-Driven Narrative Generator",
+    "theme": "Data",
+    "themeId": "data",
+    "path": "prompts/2026-08-18.html"
   }
 }
