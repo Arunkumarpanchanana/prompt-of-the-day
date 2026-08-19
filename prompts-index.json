@@ -658,5 +658,11 @@
     "theme": "Data",
     "themeId": "data",
     "path": "prompts/2026-08-18.html"
+  },
+  "2026-08-19": {
+    "title": "Structured Decision Framework",
+    "theme": "Decision-making",
+    "themeId": "decision",
+    "path": "prompts/2026-08-19.html"
   }
 }
