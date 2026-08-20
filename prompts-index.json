@@ -664,5 +664,11 @@
     "theme": "Decision-making",
     "themeId": "decision",
     "path": "prompts/2026-08-19.html"
+  },
+  "2026-08-20": {
+    "title": "System Failure Root Cause Analysis",
+    "theme": "Debugging",
+    "themeId": "debugging",
+    "path": "prompts/2026-08-20.html"
   }
 }
