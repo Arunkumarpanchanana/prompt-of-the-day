@@ -134,32 +134,40 @@
 </header>
 
 <section>
-  <div class="section-eyebrow">August 19, 2026 &middot; Decision-making</div>
-  <h2 class="prompt-title">Structured Decision Framework</h2>
-  <p class="prompt-subtitle">Guides users through complex choices by systematically evaluating options against criteria and clarifying tradeoffs.</p>
+  <div class="section-eyebrow">August 20, 2026 &middot; Debugging</div>
+  <h2 class="prompt-title">System Failure Root Cause Analysis</h2>
+  <p class="prompt-subtitle">Diagnose system failures, identify root causes, and propose solutions with an expert AI debugger.</p>
   
 <div class="prompt-block">
   <div class="prompt-block-header">
     <span class="prompt-label">Prompt</span>
-    <button class="copy-btn" data-target="prompt-3198a7ca" type="button">Copy</button>
+    <button class="copy-btn" data-target="prompt-2fd4c622" type="button">Copy</button>
   </div>
-  <pre id="prompt-3198a7ca" class="prompt-text">You are a Strategic Decision Architect, skilled in breaking down complex choices into actionable insights. Your goal is to guide me through a critical decision by systematically evaluating potential paths and clarifying the tradeoffs involved. I need to decide on [DECISION SCENARIO] with the primary objective of [KEY OBJECTIVE].
+  <pre id="prompt-2fd4c622" class="prompt-text">You are an expert software debugger and root cause analyst. Your task is to meticulously analyze a reported system failure, identify its true root cause, and propose actionable solutions.
 
-Present a structured analysis that includes:
-1.  **Defined Options:** Based on the [PRIMARY OPTIONS] I provide (or suggest up to 3 if I only give a general direction).
-2.  **Evaluation Criteria:** Identify and define 3-5 [CRITICAL CRITERIA] that are most relevant to achieving [KEY OBJECTIVE].
-3.  **Option Assessment:** For each option, assess its performance against each criterion. Use a qualitative scale (e.g., &quot;High,&quot; &quot;Medium,&quot; &quot;Low&quot; impact/alignment) and provide a brief justification.
-4.  **Tradeoff Analysis:** Clearly articulate the major pros and cons of each option, highlighting the inherent tradeoffs between them, especially concerning [RISK TOLERANCE/PRIORITIES].
-5.  **Recommendation (Optional but Justified):** If a clear frontrunner emerges based on the analysis and my stated [RISK TOLERANCE/PRIORITIES], provide a preliminary recommendation with a strong justification, acknowledging any remaining uncertainties.
+I am experiencing a failure in my [SYSTEM/COMPONENT NAME].
 
-Present this analysis in a clear, easy-to-read format, perhaps a comparative table followed by a narrative summary of tradeoffs and the optional recommendation.</pre>
+**Issue Details:**
+*   **Symptoms &amp; Errors**: [DESCRIBE SYMPTOMS, INCLUDE EXACT ERROR MESSAGES, STACK TRACES, OR UNEXPECTED BEHAVIOR]
+*   **Expected Behavior**: [DESCRIBE WHAT SHOULD BE HAPPENING NORMALLY]
+*   **Recent Changes**: [LIST ANY RECENT CODE, CONFIGURATION, OR INFRASTRUCTURE CHANGES. STATE &#39;NONE&#39; IF APPLICABLE.]
+*   **Context**: [PASTE PERTINENT CODE, LOGS, CONFIGS, AND ENVIRONMENT DETAILS (OS, language, frameworks, dependencies). INDICATE SOURCE.]
+*   **Prior Troubleshooting**: [DESCRIBE ANY STEPS YOU&#39;VE ALREADY TRIED AND THEIR OUTCOMES.]
+
+Please provide your analysis in the following structured format:
+
+**1. Problem Summary**: Concise restatement.
+**2. Hypothesized Root Causes**: List 3-5 most probable causes, ordered by likelihood. Explain *why* each is potential.
+**3. Diagnostic Steps**: For each hypothesis, outline specific, executable steps (e.g., commands, log checks, code inspections) to confirm or rule out.
+**4. Proposed Solutions**: Suggest concrete solutions or immediate mitigations.
+**5. Preventative Measures**: Recommend steps to prevent recurrence (e.g., improved testing, monitoring, code reviews).</pre>
 </div>
-<section class="why-section"><h3>How to use this</h3><p>Fill in the bracketed placeholders with details about your specific decision, objectives, potential options, and priorities. The AI will then provide a structured analysis to aid your decision-making process, highlighting key considerations and tradeoffs.</p></section>
-<section class="example-section"><h3>Example</h3><p>[DECISION SCENARIO]: Choosing a new project management software
-[KEY OBJECTIVE]: Maximize team efficiency and reduce overhead
-[PRIMARY OPTIONS]: Asana, Trello, Jira
-[CRITICAL CRITERIA]: Ease of use, Integration capabilities, Cost, Scalability
-[RISK TOLERANCE/PRIORITIES]: Prioritize ease of adoption over advanced features; budget is moderate.</p></section>
+<section class="why-section"><h3>How to use this</h3><p>Copy and paste this prompt, filling in the bracketed placeholders with details about your system&#39;s failure. Provide as much information as possible, including error messages, logs, recent changes, and environment specifics, to enable the AI to perform a thorough analysis and suggest targeted solutions. The more context you provide, the more accurate the diagnosis will be.</p></section>
+<section class="example-section"><h3>Example</h3><p>My [SYSTEM/COMPONENT NAME] is &#39;Payment Processing Service&#39;.
+[Symptoms &amp; Errors] &#39;Transaction failed: Timeout&#39; on 10% of requests, no specific errors in service logs.
+[Recent Changes] Increased database connection pool size last week.
+[Context] Java 11, Spring Boot, PostgreSQL, Kubernetes. (Paste relevant code/logs).
+[Prior Troubleshooting] Restarted pods, checked DB CPU/memory (normal).</p></section>
 <script>
 (function() {
   document.querySelectorAll('.copy-btn').forEach(function(btn) {
@@ -189,7 +197,7 @@ Present this analysis in a clear, easy-to-read format, perhaps a comparative tab
 </section>
 <section class="archive-section">
   <h2 style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin:0 0 8px">All prompts by category</h2>
-  <nav class="category-nav"><a href="#cat-coding">Coding <span class="cat-count">8</span></a><a href="#cat-writing">Writing <span class="cat-count">8</span></a><a href="#cat-analysis">Analysis <span class="cat-count">8</span></a><a href="#cat-research">Research <span class="cat-count">8</span></a><a href="#cat-creative">Creative <span class="cat-count">8</span></a><a href="#cat-data">Data <span class="cat-count">7</span></a><a href="#cat-decision">Decision-making <span class="cat-count">8</span></a><a href="#cat-debugging">Debugging <span class="cat-count">7</span></a><a href="#cat-learning">Learning <span class="cat-count">8</span></a><a href="#cat-communication">Communication <span class="cat-count">8</span></a><a href="#cat-problem">Problem-solving <span class="cat-count">8</span></a><a href="#cat-productivity">Productivity <span class="cat-count">8</span></a><a href="#cat-study">Study <span class="cat-count">8</span></a><a href="#cat-brainstorming">Brainstorming <span class="cat-count">8</span></a></nav>
+  <nav class="category-nav"><a href="#cat-coding">Coding <span class="cat-count">8</span></a><a href="#cat-writing">Writing <span class="cat-count">8</span></a><a href="#cat-analysis">Analysis <span class="cat-count">8</span></a><a href="#cat-research">Research <span class="cat-count">8</span></a><a href="#cat-creative">Creative <span class="cat-count">8</span></a><a href="#cat-data">Data <span class="cat-count">7</span></a><a href="#cat-decision">Decision-making <span class="cat-count">9</span></a><a href="#cat-debugging">Debugging <span class="cat-count">7</span></a><a href="#cat-learning">Learning <span class="cat-count">8</span></a><a href="#cat-communication">Communication <span class="cat-count">8</span></a><a href="#cat-problem">Problem-solving <span class="cat-count">8</span></a><a href="#cat-productivity">Productivity <span class="cat-count">8</span></a><a href="#cat-study">Study <span class="cat-count">8</span></a><a href="#cat-brainstorming">Brainstorming <span class="cat-count">8</span></a></nav>
 <section class="category-section" id="cat-coding">
   <h2 class="category-heading" style="border-bottom-color:#10B981">Coding <span class="cat-count">8</span></h2>
   <ul class="prompt-list">
@@ -268,7 +276,7 @@ Present this analysis in a clear, easy-to-read format, perhaps a comparative tab
   </ul>
 </section>
 <section class="category-section" id="cat-decision">
-  <h2 class="category-heading" style="border-bottom-color:#F97316">Decision-making <span class="cat-count">8</span></h2>
+  <h2 class="category-heading" style="border-bottom-color:#F97316">Decision-making <span class="cat-count">9</span></h2>
   <ul class="prompt-list">
     <li><a href="prompts/2026-04-29.html"><span class="prompt-date">April 29, 2026</span><span class="prompt-title">Structured Decision Tradeoff Analysis</span></a></li>
     <li><a href="prompts/2026-05-13.html"><span class="prompt-date">May 13, 2026</span><span class="prompt-title">Strategic Tradeoff Analysis for Critical Decisions</span></a></li>
@@ -278,6 +286,7 @@ Present this analysis in a clear, easy-to-read format, perhaps a comparative tab
     <li><a href="prompts/2026-07-08.html"><span class="prompt-date">July 8, 2026</span><span class="prompt-title">Prioritized Decision Architect</span></a></li>
     <li><a href="prompts/2026-07-22.html"><span class="prompt-date">July 22, 2026</span><span class="prompt-title">Strategic Decision Architect</span></a></li>
     <li><a href="prompts/2026-08-05.html"><span class="prompt-date">August 5, 2026</span><span class="prompt-title">Strategic Decision Architect</span></a></li>
+    <li><a href="prompts/2026-08-19.html"><span class="prompt-date">August 19, 2026</span><span class="prompt-title">Structured Decision Framework</span></a></li>
   </ul>
 </section>
 <section class="category-section" id="cat-debugging">
@@ -378,7 +387,7 @@ Present this analysis in a clear, easy-to-read format, perhaps a comparative tab
     <p>Arunkumar Panchanana &middot; AI tools &middot; Automation &middot; IT Leadership</p>
     <p>Email: <a href="mailto:arunkumar.panchanana@gmail.com">arunkumar.panchanana@gmail.com</a></p>
     <div>Generated daily by AI.</div>
-    <div class="footer-meta">Updated <time datetime="2026-08-19T02:07:10Z">2026-08-19T02:07:10Z</time></div>
+    <div class="footer-meta">Updated <time datetime="2026-08-20T02:05:28Z">2026-08-20T02:05:28Z</time></div>
   </div>
 </footer>
 </body>
