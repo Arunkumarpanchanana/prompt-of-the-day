@@ -682,5 +682,11 @@
     "theme": "Communication",
     "themeId": "communication",
     "path": "prompts/2026-08-22.html"
+  },
+  "2026-08-23": {
+    "title": "Strategic Problem Dissection & Framework Selection",
+    "theme": "Problem-solving",
+    "themeId": "problem",
+    "path": "prompts/2026-08-23.html"
   }
 }
