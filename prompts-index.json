@@ -688,5 +688,11 @@
     "theme": "Problem-solving",
     "themeId": "problem",
     "path": "prompts/2026-08-23.html"
+  },
+  "2026-08-24": {
+    "title": "Dynamic Energy-Aligned Productivity Plan",
+    "theme": "Productivity",
+    "themeId": "productivity",
+    "path": "prompts/2026-08-24.html"
   }
 }
