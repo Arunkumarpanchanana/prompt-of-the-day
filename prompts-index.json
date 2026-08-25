@@ -694,5 +694,11 @@
     "theme": "Productivity",
     "themeId": "productivity",
     "path": "prompts/2026-08-24.html"
+  },
+  "2026-08-25": {
+    "title": "Active Recall Study Session & Feedback",
+    "theme": "Study",
+    "themeId": "study",
+    "path": "prompts/2026-08-25.html"
   }
 }
