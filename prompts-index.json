@@ -700,5 +700,11 @@
     "theme": "Study",
     "themeId": "study",
     "path": "prompts/2026-08-25.html"
+  },
+  "2026-08-26": {
+    "title": "Innovation Architect: Divergent Solution Brainstorm",
+    "theme": "Brainstorming",
+    "themeId": "brainstorming",
+    "path": "prompts/2026-08-26.html"
   }
 }
