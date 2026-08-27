@@ -134,40 +134,40 @@
 </header>
 
 <section>
-  <div class="section-eyebrow">August 26, 2026 &middot; Brainstorming</div>
-  <h2 class="prompt-title">Innovation Architect: Divergent Solution Brainstorm</h2>
-  <p class="prompt-subtitle">Generate a diverse set of unconventional and actionable approaches to a specific challenge, categorized by their nature and feasibility.</p>
+  <div class="section-eyebrow">August 27, 2026 &middot; Coding</div>
+  <h2 class="prompt-title">Senior Architect&#39;s Code &amp; Architecture Review</h2>
+  <p class="prompt-subtitle">Get a deep, actionable code and architectural review from an AI acting as a senior expert.</p>
   
 <div class="prompt-block">
   <div class="prompt-block-header">
     <span class="prompt-label">Prompt</span>
-    <button class="copy-btn" data-target="prompt-f2f5032c" type="button">Copy</button>
+    <button class="copy-btn" data-target="prompt-8b924ffa" type="button">Copy</button>
   </div>
-  <pre id="prompt-f2f5032c" class="prompt-text">You are an Innovation Architect specializing in divergent thinking and generating novel solutions. Your task is to help me brainstorm a comprehensive range of [NUMBER] distinct and unconventional approaches to the core challenge of &#39;[THE CORE CHALLENGE OR PROBLEM STATEMENT]&#39;.
+  <pre id="prompt-8b924ffa" class="prompt-text">You are an experienced Senior Software Architect and Lead Code Reviewer, specializing in building robust, scalable, and maintainable [PROGRAMMING_LANGUAGE] applications. Your task is to perform a comprehensive architectural and code-level review of the provided code snippet and its context.
 
-When generating these approaches, please adhere to the following constraints:
-1.  Diversity: Ensure each approach represents a genuinely different angle or methodology, avoiding incremental variations of the same idea. Think across different domains, technologies, or psychological principles.
-2.  Perspective Shifts: Include at least one approach from each of these categories:
-    *   Radical/Disruptive: Solutions that challenge fundamental assumptions.
-    *   Resource-Light/Guerrilla: Solutions that leverage minimal resources or unconventional tactics.
-    *   Collaborative/Ecosystem-focused: Solutions involving partnerships or community engagement.
-    *   Preventative/Proactive: Solutions that address the root cause before it escalates.
-    *   Technology-Driven (if applicable): Solutions leveraging emerging tech.
-3.  Feasibility Spectrum: Present solutions that span a spectrum from highly practical and implementable in the short term, to ambitious and potentially long-term visionary concepts.
-4.  Avoid: Do not include any solutions that are widely considered &#39;best practices&#39; or &#39;obvious first steps&#39; for this type of challenge. We are looking for fresh perspectives.
+Focus your analysis on [PRIMARY_CONCERN_AREA: e.g., performance optimization, security vulnerabilities, maintainability, scalability, testability, adherence to design patterns]. Consider the implications for a [TARGET_AUDIENCE_OR_ENVIRONMENT: e.g., high-traffic microservice, real-time data processing pipeline, embedded system, mobile application backend].
 
-For each of the [NUMBER] approaches, provide:
-a.  A concise, catchy title.
-b.  A 2-3 sentence description explaining the core idea.
-c.  Briefly list 2-3 key benefits or unique selling points.
-d.  Identify the primary category it falls under (e.g., Radical, Resource-Light).
+Your review should identify potential issues, suggest concrete refactoring strategies, and propose architectural improvements. For each suggestion, explain the &#39;why&#39; and provide clear, actionable steps or code examples where appropriate. Assume the goal is to enhance the system&#39;s [KEY_METRIC: e.g., reliability, speed, cost-efficiency, developer experience].
 
-My core challenge is: [THE CORE CHALLENGE OR PROBLEM STATEMENT]
-I need [NUMBER] distinct approaches.
-Additional context or specific constraints to consider: [OPTIONAL: E.g., budget limits, target audience, specific technologies to avoid/include, desired impact, timeframe].</pre>
+Here is the context:
+[CONTEXT_DESCRIPTION: e.g., &#39;This code is part of a user authentication service responsible for...&#39;, &#39;It&#39;s a critical component in our data ingestion pipeline...&#39;, &#39;This module handles database interactions for...&#39;]
+
+Here is the code:
+```[PROGRAMMING_LANGUAGE]
+[CODE_SNIPPET]
+```
+
+Please structure your response as follows:
+1.  **Overall Architectural Observations**: High-level insights on design, patterns, and potential bottlenecks.
+2.  **Key Code Review Findings**: Specific issues (e.g., anti-patterns, complexity, readability, error handling) with line numbers or snippets.
+3.  **Refactoring Recommendations**: Concrete suggestions for improving the code, including small code examples if applicable.
+4.  **Debugging &amp; Testing Strategy**: Advice on how to approach debugging potential issues and improve test coverage.
+5.  **Scalability &amp; Performance Enhancements**: Ideas for future-proofing and optimizing the system.
+6.  **Potential Risks &amp; Trade-offs**: Any downsides or considerations for implementing your suggestions.
+7.  **Summary &amp; Next Steps**: Prioritized actions for the development team.</pre>
 </div>
-<section class="why-section"><h3>How to use this</h3><p>This prompt helps you break free from conventional thinking by forcing the AI to explore diverse solution categories. Fill in your core challenge and the desired number of ideas. Use the optional context to guide the AI further, ensuring the generated ideas are tailored to your specific needs and constraints.</p></section>
-<section class="example-section"><h3>Example</h3><p>Core Challenge: &#39;Reducing plastic waste in local coffee shops.&#39; Number: &#39;5&#39;. Additional context: &#39;Focus on solutions implementable by small businesses, avoiding high initial investment.&#39;</p></section>
+<section class="why-section"><h3>How to use this</h3><p>Provide your code and detailed context. Specify the primary concern (e.g., performance) and the target environment. The AI will act as a senior architect, offering structured feedback, refactoring suggestions, and architectural insights. Fill in all [SQUARE BRACKETS] for best results.</p></section>
+<section class="example-section"><h3>Example</h3><p>PROGRAMMING_LANGUAGE: Python, PRIMARY_CONCERN_AREA: scalability, TARGET_AUDIENCE_OR_ENVIRONMENT: high-load API endpoint, KEY_METRIC: throughput, CONTEXT_DESCRIPTION: &#39;This function processes incoming webhook events and stores them in a NoSQL database.&#39;</p></section>
 <script>
 (function() {
   document.querySelectorAll('.copy-btn').forEach(function(btn) {
@@ -197,7 +197,7 @@ Additional context or specific constraints to consider: [OPTIONAL: E.g., budget 
 </section>
 <section class="archive-section">
   <h2 style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin:0 0 8px">All prompts by category</h2>
-  <nav class="category-nav"><a href="#cat-coding">Coding <span class="cat-count">8</span></a><a href="#cat-writing">Writing <span class="cat-count">8</span></a><a href="#cat-analysis">Analysis <span class="cat-count">8</span></a><a href="#cat-research">Research <span class="cat-count">8</span></a><a href="#cat-creative">Creative <span class="cat-count">8</span></a><a href="#cat-data">Data <span class="cat-count">7</span></a><a href="#cat-decision">Decision-making <span class="cat-count">9</span></a><a href="#cat-debugging">Debugging <span class="cat-count">8</span></a><a href="#cat-learning">Learning <span class="cat-count">9</span></a><a href="#cat-communication">Communication <span class="cat-count">9</span></a><a href="#cat-problem">Problem-solving <span class="cat-count">9</span></a><a href="#cat-productivity">Productivity <span class="cat-count">9</span></a><a href="#cat-study">Study <span class="cat-count">9</span></a><a href="#cat-brainstorming">Brainstorming <span class="cat-count">8</span></a></nav>
+  <nav class="category-nav"><a href="#cat-coding">Coding <span class="cat-count">8</span></a><a href="#cat-writing">Writing <span class="cat-count">8</span></a><a href="#cat-analysis">Analysis <span class="cat-count">8</span></a><a href="#cat-research">Research <span class="cat-count">8</span></a><a href="#cat-creative">Creative <span class="cat-count">8</span></a><a href="#cat-data">Data <span class="cat-count">7</span></a><a href="#cat-decision">Decision-making <span class="cat-count">9</span></a><a href="#cat-debugging">Debugging <span class="cat-count">8</span></a><a href="#cat-learning">Learning <span class="cat-count">9</span></a><a href="#cat-communication">Communication <span class="cat-count">9</span></a><a href="#cat-problem">Problem-solving <span class="cat-count">9</span></a><a href="#cat-productivity">Productivity <span class="cat-count">9</span></a><a href="#cat-study">Study <span class="cat-count">9</span></a><a href="#cat-brainstorming">Brainstorming <span class="cat-count">9</span></a></nav>
 <section class="category-section" id="cat-coding">
   <h2 class="category-heading" style="border-bottom-color:#10B981">Coding <span class="cat-count">8</span></h2>
   <ul class="prompt-list">
@@ -373,7 +373,7 @@ Additional context or specific constraints to consider: [OPTIONAL: E.g., budget 
   </ul>
 </section>
 <section class="category-section" id="cat-brainstorming">
-  <h2 class="category-heading" style="border-bottom-color:#D946EF">Brainstorming <span class="cat-count">8</span></h2>
+  <h2 class="category-heading" style="border-bottom-color:#D946EF">Brainstorming <span class="cat-count">9</span></h2>
   <ul class="prompt-list">
     <li><a href="prompts/2026-05-06.html"><span class="prompt-date">May 6, 2026</span><span class="prompt-title">Brainstorming: Novel Solutions for [Specific Problem]</span></a></li>
     <li><a href="prompts/2026-05-20.html"><span class="prompt-date">May 20, 2026</span><span class="prompt-title">Divergent Idea Generator</span></a></li>
@@ -383,6 +383,7 @@ Additional context or specific constraints to consider: [OPTIONAL: E.g., budget 
     <li><a href="prompts/2026-07-15.html"><span class="prompt-date">July 15, 2026</span><span class="prompt-title">Idea Catalyst: Strategic Brainstorming Lenses</span></a></li>
     <li><a href="prompts/2026-07-29.html"><span class="prompt-date">July 29, 2026</span><span class="prompt-title">Divergent Solutions Brainstormer</span></a></li>
     <li><a href="prompts/2026-08-12.html"><span class="prompt-date">August 12, 2026</span><span class="prompt-title">Lateral Thinking Brainstorm for Unconventional Solutions</span></a></li>
+    <li><a href="prompts/2026-08-26.html"><span class="prompt-date">August 26, 2026</span><span class="prompt-title">Innovation Architect: Divergent Solution Brainstorm</span></a></li>
   </ul>
 </section>
 </section>
@@ -393,7 +394,7 @@ Additional context or specific constraints to consider: [OPTIONAL: E.g., budget 
     <p>Arunkumar Panchanana &middot; AI tools &middot; Automation &middot; IT Leadership</p>
     <p>Email: <a href="mailto:arunkumar.panchanana@gmail.com">arunkumar.panchanana@gmail.com</a></p>
     <div>Generated daily by AI.</div>
-    <div class="footer-meta">Updated <time datetime="2026-08-26T02:05:40Z">2026-08-26T02:05:40Z</time></div>
+    <div class="footer-meta">Updated <time datetime="2026-08-27T02:05:52Z">2026-08-27T02:05:52Z</time></div>
   </div>
 </footer>
 </body>
