@@ -706,5 +706,11 @@
     "theme": "Brainstorming",
     "themeId": "brainstorming",
     "path": "prompts/2026-08-26.html"
+  },
+  "2026-08-27": {
+    "title": "Senior Architect's Code & Architecture Review",
+    "theme": "Coding",
+    "themeId": "coding",
+    "path": "prompts/2026-08-27.html"
   }
 }
