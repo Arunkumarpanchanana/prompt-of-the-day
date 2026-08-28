@@ -134,40 +134,39 @@
 </header>
 
 <section>
-  <div class="section-eyebrow">August 27, 2026 &middot; Coding</div>
-  <h2 class="prompt-title">Senior Architect&#39;s Code &amp; Architecture Review</h2>
-  <p class="prompt-subtitle">Get a deep, actionable code and architectural review from an AI acting as a senior expert.</p>
+  <div class="section-eyebrow">August 28, 2026 &middot; Writing</div>
+  <h2 class="prompt-title">Audience &amp; Tone Adaptation Editor</h2>
+  <p class="prompt-subtitle">Transform any text&#39;s tone and structure to perfectly suit a new target audience and communication goal.</p>
   
 <div class="prompt-block">
   <div class="prompt-block-header">
     <span class="prompt-label">Prompt</span>
-    <button class="copy-btn" data-target="prompt-8b924ffa" type="button">Copy</button>
+    <button class="copy-btn" data-target="prompt-8c5d8560" type="button">Copy</button>
   </div>
-  <pre id="prompt-8b924ffa" class="prompt-text">You are an experienced Senior Software Architect and Lead Code Reviewer, specializing in building robust, scalable, and maintainable [PROGRAMMING_LANGUAGE] applications. Your task is to perform a comprehensive architectural and code-level review of the provided code snippet and its context.
+  <pre id="prompt-8c5d8560" class="prompt-text">You are a professional content editor specializing in audience adaptation and tonal refinement. Your task is to meticulously revise a provided text, transforming its tone, vocabulary, sentence structure, and overall organization to perfectly suit a new target audience and achieve a specific communication goal.
 
-Focus your analysis on [PRIMARY_CONCERN_AREA: e.g., performance optimization, security vulnerabilities, maintainability, scalability, testability, adherence to design patterns]. Consider the implications for a [TARGET_AUDIENCE_OR_ENVIRONMENT: e.g., high-traffic microservice, real-time data processing pipeline, embedded system, mobile application backend].
+I will provide:
+1.  The [ORIGINAL TEXT] you need to revise.
+2.  The [NEW TARGET AUDIENCE] (e.g., &#39;high school students&#39;, &#39;senior executives&#39;, &#39;general public interested in tech&#39;).
+3.  The [NEW COMMUNICATION GOAL] (e.g., &#39;to inform and inspire action&#39;, &#39;to simplify a complex topic&#39;, &#39;to persuade stakeholders to invest&#39;).
 
-Your review should identify potential issues, suggest concrete refactoring strategies, and propose architectural improvements. For each suggestion, explain the &#39;why&#39; and provide clear, actionable steps or code examples where appropriate. Assume the goal is to enhance the system&#39;s [KEY_METRIC: e.g., reliability, speed, cost-efficiency, developer experience].
+Your process should involve:
+-   Analyzing the original text&#39;s current style, complexity, and underlying assumptions.
+-   Rewriting the text to align with the new audience&#39;s knowledge level, interests, and preferred communication style.
+-   Adjusting the tone to match the new communication goal (e.g., more formal, informal, persuasive, empathetic, urgent).
+-   Reorganizing paragraphs or sections for optimal flow and impact in the new context.
+-   Maintaining the core message and essential information from the original.
+-   Aim for a [WORD COUNT OR PERCENTAGE CHANGE] (e.g., &#39;within 10% of original word count&#39;, &#39;no more than 500 words&#39;).
 
-Here is the context:
-[CONTEXT_DESCRIPTION: e.g., &#39;This code is part of a user authentication service responsible for...&#39;, &#39;It&#39;s a critical component in our data ingestion pipeline...&#39;, &#39;This module handles database interactions for...&#39;]
-
-Here is the code:
-```[PROGRAMMING_LANGUAGE]
-[CODE_SNIPPET]
-```
-
-Please structure your response as follows:
-1.  **Overall Architectural Observations**: High-level insights on design, patterns, and potential bottlenecks.
-2.  **Key Code Review Findings**: Specific issues (e.g., anti-patterns, complexity, readability, error handling) with line numbers or snippets.
-3.  **Refactoring Recommendations**: Concrete suggestions for improving the code, including small code examples if applicable.
-4.  **Debugging &amp; Testing Strategy**: Advice on how to approach debugging potential issues and improve test coverage.
-5.  **Scalability &amp; Performance Enhancements**: Ideas for future-proofing and optimizing the system.
-6.  **Potential Risks &amp; Trade-offs**: Any downsides or considerations for implementing your suggestions.
-7.  **Summary &amp; Next Steps**: Prioritized actions for the development team.</pre>
+Output Format:
+1.  **Revised Text:** The complete, rewritten content.
+2.  **Summary of Key Changes:** A bulleted list detailing 3-5 significant edits made and the strategic rationale behind each, explaining how they serve the new audience and goal.</pre>
 </div>
-<section class="why-section"><h3>How to use this</h3><p>Provide your code and detailed context. Specify the primary concern (e.g., performance) and the target environment. The AI will act as a senior architect, offering structured feedback, refactoring suggestions, and architectural insights. Fill in all [SQUARE BRACKETS] for best results.</p></section>
-<section class="example-section"><h3>Example</h3><p>PROGRAMMING_LANGUAGE: Python, PRIMARY_CONCERN_AREA: scalability, TARGET_AUDIENCE_OR_ENVIRONMENT: high-load API endpoint, KEY_METRIC: throughput, CONTEXT_DESCRIPTION: &#39;This function processes incoming webhook events and stores them in a NoSQL database.&#39;</p></section>
+<section class="why-section"><h3>How to use this</h3><p>Provide your existing content, specify who you want to reach, and what you want to achieve. The AI will act as a specialized editor, delivering a revised version tailored for maximum impact. It also explains its strategic choices, helping you understand the &#39;why&#39; behind the edits.</p></section>
+<section class="example-section"><h3>Example</h3><p>Original Text: &#39;The Q3 fiscal report indicates a 15% growth in SaaS subscriptions, primarily driven by market penetration in APAC.&#39;
+New Target Audience: &#39;Entry-level sales team&#39;
+New Communication Goal: &#39;To motivate them to understand their impact on company growth&#39;
+Word Count: &#39;within 10% of original&#39;</p></section>
 <script>
 (function() {
   document.querySelectorAll('.copy-btn').forEach(function(btn) {
@@ -197,9 +196,9 @@ Please structure your response as follows:
 </section>
 <section class="archive-section">
   <h2 style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin:0 0 8px">All prompts by category</h2>
-  <nav class="category-nav"><a href="#cat-coding">Coding <span class="cat-count">8</span></a><a href="#cat-writing">Writing <span class="cat-count">8</span></a><a href="#cat-analysis">Analysis <span class="cat-count">8</span></a><a href="#cat-research">Research <span class="cat-count">8</span></a><a href="#cat-creative">Creative <span class="cat-count">8</span></a><a href="#cat-data">Data <span class="cat-count">7</span></a><a href="#cat-decision">Decision-making <span class="cat-count">9</span></a><a href="#cat-debugging">Debugging <span class="cat-count">8</span></a><a href="#cat-learning">Learning <span class="cat-count">9</span></a><a href="#cat-communication">Communication <span class="cat-count">9</span></a><a href="#cat-problem">Problem-solving <span class="cat-count">9</span></a><a href="#cat-productivity">Productivity <span class="cat-count">9</span></a><a href="#cat-study">Study <span class="cat-count">9</span></a><a href="#cat-brainstorming">Brainstorming <span class="cat-count">9</span></a></nav>
+  <nav class="category-nav"><a href="#cat-coding">Coding <span class="cat-count">9</span></a><a href="#cat-writing">Writing <span class="cat-count">8</span></a><a href="#cat-analysis">Analysis <span class="cat-count">8</span></a><a href="#cat-research">Research <span class="cat-count">8</span></a><a href="#cat-creative">Creative <span class="cat-count">8</span></a><a href="#cat-data">Data <span class="cat-count">7</span></a><a href="#cat-decision">Decision-making <span class="cat-count">9</span></a><a href="#cat-debugging">Debugging <span class="cat-count">8</span></a><a href="#cat-learning">Learning <span class="cat-count">9</span></a><a href="#cat-communication">Communication <span class="cat-count">9</span></a><a href="#cat-problem">Problem-solving <span class="cat-count">9</span></a><a href="#cat-productivity">Productivity <span class="cat-count">9</span></a><a href="#cat-study">Study <span class="cat-count">9</span></a><a href="#cat-brainstorming">Brainstorming <span class="cat-count">9</span></a></nav>
 <section class="category-section" id="cat-coding">
-  <h2 class="category-heading" style="border-bottom-color:#10B981">Coding <span class="cat-count">8</span></h2>
+  <h2 class="category-heading" style="border-bottom-color:#10B981">Coding <span class="cat-count">9</span></h2>
   <ul class="prompt-list">
     <li><a href="prompts/2026-05-07.html"><span class="prompt-date">May 7, 2026</span><span class="prompt-title">Senior Architect&#39;s Code &amp; Architecture Review</span></a></li>
     <li><a href="prompts/2026-05-21.html"><span class="prompt-date">May 21, 2026</span><span class="prompt-title">Architectural &amp; Code Review with Refactoring Plan</span></a></li>
@@ -209,6 +208,7 @@ Please structure your response as follows:
     <li><a href="prompts/2026-07-16.html"><span class="prompt-date">July 16, 2026</span><span class="prompt-title">Senior Architect Code Review &amp; Refactor</span></a></li>
     <li><a href="prompts/2026-07-30.html"><span class="prompt-date">July 30, 2026</span><span class="prompt-title">Architectural Refactor for Scalability &amp; Maintainability</span></a></li>
     <li><a href="prompts/2026-08-13.html"><span class="prompt-date">August 13, 2026</span><span class="prompt-title">Architectural Code Review &amp; Refactoring Strategy</span></a></li>
+    <li><a href="prompts/2026-08-27.html"><span class="prompt-date">August 27, 2026</span><span class="prompt-title">Senior Architect&#39;s Code &amp; Architecture Review</span></a></li>
   </ul>
 </section>
 <section class="category-section" id="cat-writing">
@@ -394,7 +394,7 @@ Please structure your response as follows:
     <p>Arunkumar Panchanana &middot; AI tools &middot; Automation &middot; IT Leadership</p>
     <p>Email: <a href="mailto:arunkumar.panchanana@gmail.com">arunkumar.panchanana@gmail.com</a></p>
     <div>Generated daily by AI.</div>
-    <div class="footer-meta">Updated <time datetime="2026-08-27T02:05:52Z">2026-08-27T02:05:52Z</time></div>
+    <div class="footer-meta">Updated <time datetime="2026-08-28T02:08:49Z">2026-08-28T02:08:49Z</time></div>
   </div>
 </footer>
 </body>
