@@ -712,5 +712,11 @@
     "theme": "Coding",
     "themeId": "coding",
     "path": "prompts/2026-08-27.html"
+  },
+  "2026-08-28": {
+    "title": "Audience & Tone Adaptation Editor",
+    "theme": "Writing",
+    "themeId": "writing",
+    "path": "prompts/2026-08-28.html"
   }
 }
