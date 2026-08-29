@@ -718,5 +718,11 @@
     "theme": "Writing",
     "themeId": "writing",
     "path": "prompts/2026-08-28.html"
+  },
+  "2026-08-29": {
+    "title": "Root Cause & Pattern Analyst",
+    "theme": "Analysis",
+    "themeId": "analysis",
+    "path": "prompts/2026-08-29.html"
   }
 }
