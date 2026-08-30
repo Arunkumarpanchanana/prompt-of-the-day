@@ -724,5 +724,11 @@
     "theme": "Analysis",
     "themeId": "analysis",
     "path": "prompts/2026-08-29.html"
+  },
+  "2026-08-30": {
+    "title": "Multi-Source Synthesis & Gap Analysis",
+    "theme": "Research",
+    "themeId": "research",
+    "path": "prompts/2026-08-30.html"
   }
 }
