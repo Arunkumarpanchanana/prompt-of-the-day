@@ -736,5 +736,11 @@
     "theme": "Creative",
     "themeId": "creative",
     "path": "prompts/2026-08-31.html"
+  },
+  "2026-09-01": {
+    "title": "Data Strategist: Raw Data to Actionable Insights",
+    "theme": "Data",
+    "themeId": "data",
+    "path": "prompts/2026-09-01.html"
   }
 }
