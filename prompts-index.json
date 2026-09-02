@@ -742,5 +742,11 @@
     "theme": "Data",
     "themeId": "data",
     "path": "prompts/2026-09-01.html"
+  },
+  "2026-09-02": {
+    "title": "Structured Tradeoff Decision Guide",
+    "theme": "Decision-making",
+    "themeId": "decision",
+    "path": "prompts/2026-09-02.html"
   }
 }
