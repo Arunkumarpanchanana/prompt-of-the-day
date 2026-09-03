@@ -748,5 +748,11 @@
     "theme": "Decision-making",
     "themeId": "decision",
     "path": "prompts/2026-09-02.html"
+  },
+  "2026-09-03": {
+    "title": "Root Cause Analyst: Debugging Assistant",
+    "theme": "Debugging",
+    "themeId": "debugging",
+    "path": "prompts/2026-09-03.html"
   }
 }
